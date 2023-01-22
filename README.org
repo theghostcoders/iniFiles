@@ -1,10 +1,10 @@
-*Ini Files:
+*Ini Files:*
 
 This Repository contains the structure of the files from the Client/Server.
 All help is appreciated on this documentation.
 
 * Ini Files
   - /data/db
-    + [[https://github.com/theghostcoders/iniFiles/tree/main/iniFiles/S_ElfCollect][S_ElfCollect.ini]]
+    + [[https://github.com/theghostcoders/iniFiles/tree/main/S_ElfCollect][S_ElfCollect.ini]]
 
-    + [[https://github.com/theghostcoders/iniFiles/tree/main/iniFiles/C_Elf.ini][S_Elf.ini | C_Elf.ini]]
+    + [[https://github.com/theghostcoders/iniFiles/tree/main/C_Elf.ini][S_Elf.ini | C_Elf.ini]]
