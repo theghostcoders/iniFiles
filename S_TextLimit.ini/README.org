@@ -1,0 +1,9 @@
+* S_TextLimit.ini
+
+This file is self explanatory:
+
+| INT_COUNT | BAD_WORD | REPETITION(?) |
+
+You can use the words in the list to forbid what can and cannot be said.
+
+=In my opinion:= A true server with no crybabies use nothing inside this file but the version. Free speech and let them kill theirselves in PvP.
