@@ -1,4 +1,4 @@
-*S_Node.ini
+* S_Node.ini
 
 This file is related to the maps and how things may behave and look on each one of them.
 
@@ -25,10 +25,10 @@ Also, this documentation is kinda hard, too much parameters.
 | 12 | Sprite Kings' Fight Club |
 | 13 | Guild Dungeon Lost Caves |
 | 14 | Sprite Island / Sprite Model House |
-| 15 | Special Event Dungeons[1] | 
+| 15 | Special Event Dungeons  [fn:1] | 
 | 16 | Yggdrasil |
-| 17 | Instances[2] |
-| 18 | Hunting Grounds[3] |
+| 17 | Instances  [fn:2] |
+| 18 | Hunting Grounds [fn:3] |
 | 19 | Vilefiend Spire (aka Tower / VFS) |
 | 20 | Infatuated Cupid |
 | 21 | Besotted Cupid |
@@ -234,8 +234,8 @@ Just like UNK7, UNK8 also copy values from previous UNK7 values:
 
 
 
-[1] Endless Trial Dungeon, Jelly Rabit Trial Arena, "Use in fun instances", Jane's Illusorium, Rampage Ranch, Thief's Den, Colosseum, Break through the Jale Blockade, Mystery Summer Festival, Confession Ring, Footbal Field, Golitty's Plains, Farm Pathway, Heirloom Peninsula Judgement, Great Battle of Contradictions, Land of Madness.
+[fn:1] Endless Trial Dungeon, Jelly Rabit Trial Arena, "Use in fun instances", Jane's Illusorium, Rampage Ranch, Thief's Den, Colosseum, Break through the Jale Blockade, Mystery Summer Festival, Confession Ring, Footbal Field, Golitty's Plains, Farm Pathway, Heirloom Peninsula Judgement, Great Battle of Contradictions, Land of Madness.
 
-[2] Great Mushroom Refuge, Territory Battle, Apprenticeship Station, Gold Coin Mania.
+[fn:2] Great Mushroom Refuge, Territory Battle, Apprenticeship Station, Gold Coin Mania.
 
-[3] Novice Hunting Ground, Intermediate Hunting Ground, Advanced Hunting Ground, Chaos Realm, Road to Prosperity, Ruins Archeological Site, Land of Truth, Place of Ressurrection, Chaos Moonlight Forest, 
+[fn:3] Novice Hunting Ground, Intermediate Hunting Ground, Advanced Hunting Ground, Chaos Realm, Road to Prosperity, Ruins Archeological Site, Land of Truth, Place of Ressurrection, Chaos Moonlight Forest, 
