@@ -3,7 +3,7 @@
 | Level | Chinese Class Name | HP | MP | STR | VIT | INT | WIL | AGI ||||||| SPELL_ID | SPELL_ID |||||
 
 
-* <CLASSNAME>
+*** <CLASSNAME>
 
 This should be used as: *S_Assassin* for example. All values are listed bellow.
 
@@ -18,18 +18,18 @@ This should be used as: *S_Assassin* for example. All values are listed bellow.
 - TimeTraveler
 - Wizard
 
-* Level
+*** Level
 1 - 100
 
-* Chinese Class Name
+*** Chinese Class Name
 
 Chinese Name of the class.
 
-* HP, MP, STR, VIT, INT, WIL, AGI
+** HP, MP, STR, VIT, INT, WIL, AGI
 
 Stats you can change in the class you're modifying.
 
-* SPELL_ID
+*** SPELL_ID
 
 ID of the spell that comes from: *S_Spell.ini* file
 
