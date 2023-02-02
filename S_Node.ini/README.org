@@ -25,10 +25,10 @@ Also, this documentation is kinda hard, too much parameters.
 | 12 | Sprite Kings' Fight Club |
 | 13 | Guild Dungeon Lost Caves |
 | 14 | Sprite Island / Sprite Model House |
-| 15 | Special Event Dungeons[fn:1] | 
+| 15 | Special Event Dungeons[1] | 
 | 16 | Yggdrasil |
-| 17 | Instances[fn:2] |
-| 18 | Hunting Grounds[fn:3] |
+| 17 | Instances[2] |
+| 18 | Hunting Grounds[3] |
 | 19 | Vilefiend Spire (aka Tower / VFS) |
 | 20 | Infatuated Cupid |
 | 21 | Besotted Cupid |
@@ -122,7 +122,7 @@ Values are almost the same from *UNK5* the difference is:
 
 - UNK7:
 
-Values 3, 5, 16, 17, 25, 26, 30\*, 44, 47, 48  are *the same from *UNK6*.
+Values 3, 5, 16, 17, 25, 26, 30*, 44, 47, 48  are *the same from *UNK6*.
 
 
 Conversion table:
@@ -133,28 +133,32 @@ Values that are X in UNK7 were Y in UNK6. Table bellow
 | 11 | 47 |
 | 19 | 47 |
 | 28 | 47 |
-| 29 | 47\* |
-| 31 | 47\* |
+| 29 | 47* |
+| 31 | 47* |
 | 39 | 24 | 
 
 
 > Exceptions: 
 
-+--------------------+
 | Twin Lion Mountain |
-+--------------------+
+
 | 29      |       26 |
-+--------------------+
+
+------
+
 | Shell Hills        |
 | Panic Gathering Request |
-+--------------------+
+
+
 | 30      |       47 |
-+--------------------+
+
+------
+
 | Eternal Mountains  |
 | Oblivion Border    |
-+--------------------+
+
 | 31      |       50 |
-+--------------------+
+
 
 
 Exact values:
@@ -175,14 +179,14 @@ Unk8 is the last value before the audio file sequence.
 
 Just like UNK7, UNK8 also copy values from previous UNK7 values:
 
-3, 5, 16, 17, 25\*, 26, 30,
+3, 5, 16, 17, 25*, 26, 30,
 
 | UNK8 | UNK7 |
 | 20 | 30 |
 | 37 | 47 |
 | 44 | 44 |
-| 46 | 19\* |
-| 47 | 47\* |
+| 46 | 19* |
+| 47 | 47* |
 | 48 | 48 |
 | 49 | 31 |
 
@@ -190,38 +194,48 @@ Just like UNK7, UNK8 also copy values from previous UNK7 values:
 
 > Exceptions: 
 
-+--------------------+
 | Mystic Realm       |
 | BoneReef Peninsula |
-+--------------------+
+
+
 | 25      |       39 |
-+--------------------+
+
+------
+
 | Oblivion Border    |
-+--------------------+
+
 | 25      |       27 |
-+--------------------+
+
+------
+
 | Chiyu Temple       |
-+--------------------+
+
 | 42      |       42 |
-+--------------------+
+
+------
+
 | Carso Cave Church |
-+--------------------+
+
 | 46      |       46 |
-+--------------------+
+
+------
+
 | Scorching Wind Desert |
-+--------------------+
+
 | 45      |       28 |
-+--------------------+
+
+------
+
 | Endless Trial Dungeon |
 | Summon Lost Realm |
-+--------------------+
+
 | 47      |       29 |
-+--------------------+
 
 
 
-[fn:1] Endless Trial Dungeon, Jelly Rabit Trial Arena, "Use in fun instances", Jane's Illusorium, Rampage Ranch, Thief's Den, Colosseum, Break through the Jale Blockade, Mystery Summer Festival, Confession Ring, Footbal Field, Golitty's Plains, Farm Pathway, Heirloom Peninsula Judgement, Great Battle of Contradictions, Land of Madness.
 
-[fn:2] Great Mushroom Refuge, Territory Battle, Apprenticeship Station, Gold Coin Mania.
+[1] Endless Trial Dungeon, Jelly Rabit Trial Arena, "Use in fun instances", Jane's Illusorium, Rampage Ranch, Thief's Den, Colosseum, Break through the Jale Blockade, Mystery Summer Festival, Confession Ring, Footbal Field, Golitty's Plains, Farm Pathway, Heirloom Peninsula Judgement, Great Battle of Contradictions, Land of Madness.
 
-[fn:3] Novice Hunting Ground, Intermediate Hunting Ground, Advanced Hunting Ground, Chaos Realm, Road to Prosperity, Ruins Archeological Site, Land of Truth, Place of Ressurrection, Chaos Moonlight Forest, 
+[2] Great Mushroom Refuge, Territory Battle, Apprenticeship Station, Gold Coin Mania.
+
+[3] Novice Hunting Ground, Intermediate Hunting Ground, Advanced Hunting Ground, Chaos Realm, Road to Prosperity, Ruins Archeological Site, Land of Truth, Place of Ressurrection, Chaos Moonlight Forest, 
