@@ -1,0 +1,12 @@
+* S_SysSetup.ini
+
+This file is relative to the version of the files of the game.
+
+It contains only one line and it's explained as bellow
+
+| 1 | VERSION_NUMBER | CHINESE_TEXT |
+
+** In the real world
+
+| 1 | 058 | Chinese characters for "DataVersionNumber" |
+
