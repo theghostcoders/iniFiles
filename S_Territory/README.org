@@ -1,0 +1,15 @@
+* S_TextIndex.ini
+
+This file is relative to all texts shown in game.
+
+All text said by sprites, npcs etc is loaded from the index of this files.
+
+| INDEX | SEQ(?) | TEXT |
+
+- SEQ (not confirmed):
+
+Sequence (1 - 3).
+
+- TEXT
+
+Text to show, can be multiline. (IN CHINESE, translated version at *T_TextIndex.ini* inside translate folder)
