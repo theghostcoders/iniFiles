@@ -2,7 +2,7 @@
 
 Description: This file relative to what sprites collect during gathering expeditions. If you want to see items that your sprite craft you should check S_ElfCombine.ini
 
-| ID_HARVEST | ID_HARVEST_TYPE | LOW_LEVEL_EXP | HI_LEVEL_EXP | | | | | COST | | ID_ITEM1 | | QT_ITEM1 | | ID_ITEM2 | | QT_ITEM2 | | | | | | COLLECT_FAIL_CHANCE | CONDITIONS | CHINESE_TEXT_DESC |
+| ID_HARVEST | ID_HARVEST_TYPE | LOW_LEVEL_EXP | HI_LEVEL_EXP | 100? | ELF_EXP_OBTAINED | HARVEST_TIME | ENERGY_WASTED | COST | | ID_ITEM1 | CHINESE_NAME_ITEM_1 | QT_ITEM1 | HARVEST_CHANCE | ID_ITEM2 | CHINESE_NAME_ITEM_2 | QT_ITEM2 | HARVEST_CHANCE_ITEM_2 | | | | | EVENT_DICE_ROLL | CONDITIONS | CHINESE_TEXT_DESC |
 
 *ID_HARVEST:*\\
 1-214 
@@ -33,9 +33,13 @@ Are the levels that give exp to the sprite. Ex:\\
 
 How much cost for this activity
 
-*COLLECT_FAIL_CHANCE (not confirmed):*
+*TIME: (not confirmed)*
 
-Chance to fail at gathering. 20 = 0% (every dismantle has it, and only dismantle have it)
+Time of gathering or Dismantle. 
+
+Dismantle: 20\\
+Collect: 35
+
 
 *CONDITIONS*
 
@@ -69,4 +73,4 @@ Chance to fail at gathering. 20 = 0% (every dismantle has it, and only dismantle
 Description of the action in chinese.
 
 
-_Special thanks to PararatibumRx for the help_
+_Special thanks to _PararatibumRx_ for the help_
