@@ -4,6 +4,8 @@ This File refers to the classes of the game, containing the following content:
 
 | Class ID || LEVEL_MIN | LEVEL_MAX ||
 
+** Values
+
 | *Class ID* | *Class Name* |
 | 0 | Novice |
 | 1 | Fighter | 
