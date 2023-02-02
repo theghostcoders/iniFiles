@@ -1,0 +1,11 @@
+* S_Title.ini
+
+This file is relative to the titles inside the game.
+
+| ID | CHINESE_NAME | UNK(?) | UNK2(?) | EFFECT_ID | CHINESE_DESCRIPTION |
+
+- EFFECT_ID:
+
+Is the effect linked to the ID of the *S_Enchant.ini*
+
+
