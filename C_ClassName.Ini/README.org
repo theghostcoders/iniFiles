@@ -1,0 +1,35 @@
+* S_<CLASSNAME>.ini
+
+| Level | Chinese Class Name | HP | MP | STR | VIT | INT | WIL | AGI ||||||| SPELL_ID | SPELL_ID |||||
+
+
+* <CLASSNAME>
+
+This should be used as: *S_Assassin* for example. All values are listed bellow.
+
+Assassin
+Assault
+Berserker
+Necromancer
+Paladin
+Ranger
+Sage
+Templar
+TimeTraveler
+Wizard
+
+* Level
+1 - 100
+
+* Chinese Class Name
+
+Chinese Name of the class.
+
+* HP, MP, STR, VIT, INT, WIL, AGI
+
+Stats you can change in the class you're modifying.
+
+* SPELL_ID
+
+ID of the spell that comes from: *S_Spell.ini* file
+
