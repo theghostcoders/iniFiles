@@ -137,8 +137,9 @@ Values that are X in UNK7 were Y in UNK6. Table bellow
 | 31 | 47* |
 | 39 | 24 | 
 
+------
 
-= Exceptions: =
+=Exceptions:=
 
 | Twin Lion Mountain |
 
@@ -190,9 +191,9 @@ Just like UNK7, UNK8 also copy values from previous UNK7 values:
 | 48 | 48 |
 | 49 | 31 |
 
+------
 
-
-= Exceptions: =
+=Exceptions:=
 
 | Mystic Realm       |
 | BoneReef Peninsula |
