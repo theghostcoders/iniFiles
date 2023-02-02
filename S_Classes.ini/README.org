@@ -1,0 +1,68 @@
+* S_Classes.ini
+
+This File refers to the classes of the game, containing the following content:
+
+| Class ID || LEVEL_MIN | LEVEL_MAX ||
+
+| *Class ID* | *Class Name* |
+| 0 | Novice |
+| 1 | Fighter | 
+| 2 |  Warrior |
+| 3 |  Berserker |
+| 4 |  Paladin |
+| 5 |  Hunter |
+| 6 |  Archer |
+| 7 |  Ranger |
+| 8 |  Assassin |
+| 9 |  Acolyte |
+| 10 |  Priest |
+| 11 |  Cleric |
+| 12 |  Sage |
+| 13 |  Spellcaster |
+| 14 |  Mage |
+| 15 |  Wizzard |
+| 16 |  Necromancer |
+| 17 |  Warlord |
+| 18 |  Templar |
+| 19 |  Sharpshooter |
+| 20 |  Darkstalker |
+| 21 |  Prophet |
+| 22 |  Mystic |
+| 23 |  Archmage |
+| 24 |  Demonologist |
+| 25 |  Mechanic |
+| 26 |  Machinist |
+| 27 |  Engineer |
+| 28 |  Demolitionist |
+| 29 |  Gearmaster |
+| 30 |  Gunner |
+| 32 |  Deathknight |
+| 33 |  Crusader |
+| 34 |  Hawkeye |
+| 35 |  Windshadow |
+| 36 |  Saint |
+| 37 |  Shaman |
+| 38 |  Avatar |
+| 39 |  Shadowlord |
+| 40 |  Destroyer |
+| 41 |  Holy Knight |
+| 42 |  Predator |
+| 43 |  Shinobi |
+| 44 |  Arcangel |
+| 45 |  Druid |
+| 46 |  Warlock |
+| 47 |  Shinigami |
+| 48 |  Cogmaster |
+| 49 |  Bombardier |
+| 50 |  Mechmaster |
+| 51 |  Artillerist |
+| 52 |  Wanderer |
+| 53 |  Drifter |
+| 54 |  Void Runner |
+| 55 |  Time Traveler |
+| 56 |  Dimensionalist |
+| 57 |  Key Master |
+| 58 |  Reaper |
+| 59 |  Chronomancer |
+| 60 |  Phantom |
+| 61 |  Chronoshifter |
