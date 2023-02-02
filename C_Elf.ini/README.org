@@ -3,7 +3,7 @@
 Description: This file relative to what sprites collect during gathering expeditions. If you want to see items that your sprite craft you should check S_ElfCombine.ini
 
 
-| ID_ELF | ID_SPRITE_ELF | MIN_LEVEL_TO_SUMMON | 1 | CHINESE_NAME | ELF_ENERGY | | ELF_EXP | | | ELF_FAMILIAR | ELF_SKILL_ID | ELF_SKILL1_LEVEL | ELF_SKILL2_ID | ELF_SKILL2_LEVEL | ELF_SKILL3_ID | ELF_SKILL3_LEVEL | ELF_SKILL4_ID | ELF_SKILL4_LEVEL | | | | | | | | | | | | | | | | | | | UNKNOWN_NUMBER |
+| ID_ELF | ID_SPRITE_ELF | MIN_LEVEL_TO_SUMMON | IS_WILD_ELF | CHINESE_NAME | ELF_ENERGY | | ELF_EXP | | | ELF_FAMILIAR | ELF_SKILL_ID | ELF_SKILL1_LEVEL | ELF_SKILL2_ID | ELF_SKILL2_LEVEL | ELF_SKILL3_ID | ELF_SKILL3_LEVEL | ELF_SKILL4_ID | ELF_SKILL4_LEVEL | | | | | | | | | | | | | | | | | | | UNKNOWN_NUMBER |
 
 *ID_ELF:*
 
@@ -11,13 +11,20 @@ Description: This file relative to what sprites collect during gathering expedit
 
 *ID_SPRITE_ELF:*
 
-Probably related to the color or the texture of the sprite in models file.
+Probably related to the color or the texture of the elf in models file.
+
+Value 2 stands for Guardian Sprite.
 
 *MIN_LEVEL_TO_SUMMON*:
 
 1-91;
 
 Minimum level to summon the sprite.
+
+*IS_WILD_ELF:*
+
+- 0: Guardian Elf
+- 1: Wild Elf (can be dropped and released to nature)
 
 *ELF_ENERGY:*\\ 
 0-400
@@ -60,4 +67,4 @@ The higher it is, the lower the prices are and the higher the chance to obtain b
 | 27 | Gas |
 | 81 | Anima Shard |
 
-_Special thanks to Cobertor and xBibas for the help._
+_Special thanks to _Cobertor_ and _xBibas_ for the help._
