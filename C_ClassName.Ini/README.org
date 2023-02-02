@@ -7,16 +7,16 @@
 
 This should be used as: *S_Assassin* for example. All values are listed bellow.
 
-Assassin
-Assault
-Berserker
-Necromancer
-Paladin
-Ranger
-Sage
-Templar
-TimeTraveler
-Wizard
+- Assassin
+- Assault
+- Berserker
+- Necromancer
+- Paladin
+- Ranger
+- Sage
+- Templar
+- TimeTraveler
+- Wizard
 
 * Level
 1 - 100
