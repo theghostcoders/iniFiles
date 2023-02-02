@@ -1,0 +1,227 @@
+*S_Node.ini
+
+This file is related to the maps and how things may behave and look on each one of them.
+
+Also, this documentation is kinda hard, too much parameters.
+
+
+| ID | CHINESE_NAME | TYPE_OF_NODE | NODE_ID | TEXTURE_RELATED? | MAP_DRAWING_RELATED? | UNK1(?) | UNK2(?) | UNK3(?) | UNK4(?) | UNK5(?) | UNK6(?) | UNK7(?) | UNK8(?) | BGM_01 | BGM_02 | BGM_03 | BGM_04 | UNK9(?) | UNK10(?) | UNK11 (?) | UNK12(?) | DLR1 | DLR2 | DLR3 | DLR4 | UNK13(?) | UNK14(?) | UNK15(?) | UNK16(?) | UNK17(?) | UNK18(?) | UNK19(?) | UNK20(?) | UNK21(?) | UNK22(?) | UNK23(?) | UNK24(?) | UNK25(?) | UNK26(?) | X_MAP_DESC_1 | Y_MAP_DESC_1 | CHINESE_DESC_1 | X_MAP_DESC_2 | Y_MAP_DESC_2 | CHINESE_DESC_2 | X_MAP_DESC_3 | Y_MAP_DESC_3 | CHINESE_DESC_3 | X_MAP_DESC_4 | Y_MAP_DESC_4 | CHINESE_DESC_4 | X_MAP_DESC_5 | Y_MAP_DESC_5 | CHINESE_DESC_5 | X_MAP_DESC_6 | Y_MAP_DESC_6 | CHINESE_DESC_6 | X_MAP_DESC_7 | Y_MAP_DESC_7 | CHINESE_DESC_7 | X_MAP_DESC_8 | Y_MAP_DESC_8 | CHINESE_DESC_8 | X_MAP_DESC_9 | Y_MAP_DESC_9 | CHINESE_DESC_9 | UNK27(?) | UNK28(?) | UNK29(?) | UNK30(?) |
+
+
+
+- TYPE_OF_NODE:
+
+| 1 | open world (also login and creation of characters) | 
+| 2 | scene (cutscene only) |
+| 3 | capitals and rebel base |
+| 4 | all dungeons |
+| 5 | Battlefield Arenas, Wedding Chappel, Sprite Academy, Seething Kaslow |
+| 6 | Mutated dungeons |
+| 7 | Guild Base |
+| 8 | GvG Maps |
+| 9 | Guild Dungeon Trials |
+| 10 | GM MAP! |
+| 11 | Sealed Land, Deepfathom Core |
+| 12 | Sprite Kings' Fight Club |
+| 13 | Guild Dungeon Lost Caves |
+| 14 | Sprite Island / Sprite Model House |
+| 15 | Special Event Dungeons[fn:1] | 
+| 16 | Yggdrasil |
+| 17 | Instances[fn:2] |
+| 18 | Hunting Grounds[fn:3] |
+| 19 | Vilefiend Spire (aka Tower / VFS) |
+| 20 | Infatuated Cupid |
+| 21 | Besotted Cupid |
+| 22 | Sprite Sanctuary |
+
+- BGM:
+
+*BGM_01* and *BGM_02* are EXACTLY THE SAME!
+
+*BGM_03* and *BGM_04* are EXACTLY THE SAME!
+
+
+- DLR:
+
+*DLR1, DLR2, DLR3, DLR4* are all the same value: NULL FOR EVERYTHING 
+
+Except for Desert Lost Realm: the 4 fields are 100.
+
+** For studying process:
+
+- UNK1:
+
+It is only 5, 6 or NULL (no value)
+
+- UNK2: 
+
+It is only 7, 8, 9, 10 (Frosfire pass only) or NULL
+
+| 10 | Frosfire Pass |
+
+- UNK3:
+
+It is only 15, 16, 17, 18 or NULL.
+
+  + Every node that is 16 have *UNK1* = 5 and *UNK2* = 7
+  + Every node that is 18 have *UNK1* = 6 and *UNK2* = 8
+  
+- UNK4:
+
+It has values that vary, not documented values are: 20, 21 or NULL
+
+| 1 | Chiyu Temple |
+| 18 | Frostfire Pass |
+| 19 | Plague Forest and Alt. Dim. Kaslow Plain |
+
+- UNK5:
+
+Values are: 3, 5, 16, 17, 25, 26, 27, 30, 44, 47, 50
+
+| 18 | Lost Highlands |
+| 24 | Bone Reef Peninsula and Mystic Realm |
+| 42 | Blakatoa Range |
+| 46 | Carso Cave Church |
+| 48 | Black Swamp, Chaos Realm |
+
+- UNK6:
+
+Values are almost the same from *UNK5* the difference is:
+
+| UNK5 | UNK6 | MAP |
+| 17 | 47 | Scorching Wind Desert |
+| 17 | 47 | Ruins Archaeological Site |
+| 18 | 47 | Lost Highlands |
+| 27 | 47 | Shell Hill |
+| 27 | 47 | Panic Gathering Request |
+| 50 | 47 | Siwa Island [01 - 09] |
+| 50 | 47 | Sakura Island |
+| 50 | 47 | Photo Scene |
+| 50 | 47 | Old Siwa Island |
+| 50 | 47 | White Sand Battlefield |
+| 50 | 47 | Infatuated Cupid |
+| 50 | 47 | Besotted Cupid |
+| 50 | 47 | Blue Bay |
+| 50 | 47 | Blood Soaked Bay |
+| 50 | 47 | Trial Maze |
+| 50 | 47 | Coconut Casino |
+| 50 | 47 | Sprite Arena Theme Stadium |
+| 50 | 47 | Sprite Racing Pavilion |
+| 50 | 47 | Sprite Island |
+| 50 | 47 | Model Sprite Island |
+| 50 | 47 | Angoya Island Chapel |
+| 50 | 47 | Red Coconut City Wedding Party |
+| 50 | 47 | Deepfathom Core |
+| 50 | 47 | Decoration Exhibithion Island |
+| 50 | 47 | Sealed Land |
+| 50 | 47 | Summer Holiday Island |
+| 50 | 47 | Mirage Trial - Shadow |
+| 50 | 47 | Mirage Trial - Silence |
+| 50 | 47 | Condemned Island |
+| 50 | 47 | Island of Lost Dreams |
+
+- UNK7:
+
+Values 3, 5, 16, 17, 25, 26, 30\*, 44, 47, 48  are *the same from *UNK6*.
+
+
+Conversion table:
+
+Values that are X in UNK7 were Y in UNK6. Table bellow
+
+| UNK7 | UNK6 |
+| 11 | 47 |
+| 19 | 47 |
+| 28 | 47 |
+| 29 | 47\* |
+| 31 | 47\* |
+| 39 | 24 | 
+
+
+> Exceptions: 
+
++--------------------+
+| Twin Lion Mountain |
++--------------------+
+| 29      |       26 |
++--------------------+
+| Shell Hills        |
+| Panic Gathering Request |
++--------------------+
+| 30      |       47 |
++--------------------+
+| Eternal Mountains  |
+| Oblivion Border    |
++--------------------+
+| 31      |       50 |
++--------------------+
+
+
+Exact values:
+| UNK6 | UNK7 | MAP |
+| 27 | 27 | Misty Wetlands |
+| 42 | 42 | Chiyu Temple |
+| 46 | 46 | Carso Cave Church |
+| 48 | 48 | Black Swamp |
+| 48 | 48 | Chaos Realm |
+
+- UNK8:
+
+The numbers: 36, 42 are different from the table before
+
+Unk8 is the last value before the audio file sequence.
+
+42 in UNK8 is mostly 29 or 31 in UNK7.
+
+Just like UNK7, UNK8 also copy values from previous UNK7 values:
+
+3, 5, 16, 17, 25\*, 26, 30,
+
+| UNK8 | UNK7 |
+| 20 | 30 |
+| 37 | 47 |
+| 44 | 44 |
+| 46 | 19\* |
+| 47 | 47\* |
+| 48 | 48 |
+| 49 | 31 |
+
+
+
+> Exceptions: 
+
++--------------------+
+| Mystic Realm       |
+| BoneReef Peninsula |
++--------------------+
+| 25      |       39 |
++--------------------+
+| Oblivion Border    |
++--------------------+
+| 25      |       27 |
++--------------------+
+| Chiyu Temple       |
++--------------------+
+| 42      |       42 |
++--------------------+
+| Carso Cave Church |
++--------------------+
+| 46      |       46 |
++--------------------+
+| Scorching Wind Desert |
++--------------------+
+| 45      |       28 |
++--------------------+
+| Endless Trial Dungeon |
+| Summon Lost Realm |
++--------------------+
+| 47      |       29 |
++--------------------+
+
+
+
+[fn:1] Endless Trial Dungeon, Jelly Rabit Trial Arena, "Use in fun instances", Jane's Illusorium, Rampage Ranch, Thief's Den, Colosseum, Break through the Jale Blockade, Mystery Summer Festival, Confession Ring, Footbal Field, Golitty's Plains, Farm Pathway, Heirloom Peninsula Judgement, Great Battle of Contradictions, Land of Madness.
+
+[fn:2] Great Mushroom Refuge, Territory Battle, Apprenticeship Station, Gold Coin Mania.
+
+[fn:3] Novice Hunting Ground, Intermediate Hunting Ground, Advanced Hunting Ground, Chaos Realm, Road to Prosperity, Ruins Archeological Site, Land of Truth, Place of Ressurrection, Chaos Moonlight Forest, 
