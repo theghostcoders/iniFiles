@@ -1,0 +1,30 @@
+* S_Parameter.ini
+
+This is one of the most important files of the server since it controls almost every major change in game.
+
+*WARNING:* This file is still under documentation, you can help by sending issue/pull request, the only thing I ask you is to CONFIRM before sending.
+
+It's a table that contents
+
+| ID | VALUE | CHINESE_DESCRIPTION |
+
+Where:
+
+- ID: =An integer for index=
+- Value: =The value of the action=
+- Chinese_description: =The chinese descritpion of the action=
+
+We're documenting this on english so this will have ENGLISH description instead.
+
+You can also see some observations (NOT NEEDED WHEN EDITING)
+
+| ID | VALUE | DESCRIPTION | OBS |
+| 106 | 10 | Reduction of equipment durability when you DIE. | Can be 0. |
+| 140 | 3500000 | Exp required to Level up 1 point of mastery. | Needs editing at C_Parameter.ini to work |
+| 143 | 10 | How much EXP you lose when you die. | Can be 0. |
+| 277 | 2 | How much Teleport stones you need to teleport | Can be 0. No stone needed in bag to teleport |
+
+
+
+
+This file is a bit boring to document since there are a lot of parameters and their name is in chinese, not good translation even with translators tho.
