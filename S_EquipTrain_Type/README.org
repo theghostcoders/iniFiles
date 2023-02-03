@@ -8,7 +8,8 @@ It's basic a table with no ID, just the attribute and where you can use it.
 
 Where PART_OF_USE is the part of the equipment that can or canot use depending on the value recived.
 
-*1: on, <blank space>: off*
+*1: on*\\
+*<blank space>: off*
 
 *IMPORTANT NOTE:* If you try to use any number that isn't 1 your server WON'T START. (In fact your client will be stuck at character selection).
 
