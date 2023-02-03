@@ -1,0 +1,41 @@
+* S_Equip_Train_Type
+
+This file is related to how you grow stats in your equip by giving it experience.
+
+It's basic a table with no ID, just the attribute and where you can use it.
+
+| ATTRIBUTE | PART_OF_USE1 | ... | PART_OF_USE_N ||
+
+Where PART_OF_USE is the part of the equipment that can or canot use depending on the value recived.
+
+*1: on, <blank space>: off*
+
+*IMPORTANT NOTE:* If you try to use any number that isn't 1 your server WON'T START. (In fact your client will be stuck at character selection).
+
+|STR|
+|VIT|
+|INT|
+|WIL|
+|AGI|
+|HP|
+|MP|
+|ATK|
+|R-ATK|
+|M-ATK|
+|EVA|
+|HIT|
+|DEF|
+|M-DEF|
+|Crit|
+|M-CRIT|
+|Toughness (anti-crit)*|
+|Magic Fortitude (Anti-Magic crit)*|
+|Physical Penetration*|
+|Magic Penetration*|
+|Material wear reduction*|
+|Magic Wear Reduction*|
+
+*= CUSTOM STATS, they exist, but if you put they will not work as well. They'd get the min value of signed 4 bytes. -2,157B\\
+So it's not recommended to use since they're not unsigned.
+
+
