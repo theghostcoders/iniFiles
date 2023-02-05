@@ -1,0 +1,40 @@
+* S_item.ini
+
+Description: This file is related to game items
+
+Item_refer: 25181
+
+| ID_ITEM | ID_ICON | ? | ITEM_BOX_ORIGIN | ? | ? | ? | SOUND_SFX | ? | CHINESE_ITEM_NAME | SLOT_EQUIP | ? | ? | ? | NECESSARY_LEVEL | | | | | | | ? | | | | | | | STR_STAT_ITEM | VIT_STAT_ITEM |  |  | AGI_STAT_ITEM | | | | | | | DEF_ITEM | | MDEF_ITEM | | EVADE_STATS_% | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ITEM_DURABILITY || 2 | 800 ||||| 14 |||||
+
+*ID_ITEM*
+
+Is the item ID
+
+*ID_ICON*
+
+This parameter reads and searches the luncher's image files for the item's image, all images are in .dds format.
+
+*ITEM_BOX_ORIGIN*
+
+This parameter delimits which box the item will come out of, the box is also in the image files in .dds format.
+
+*SOUND_SFX*
+
+Determines the sound of the item when equipped, they are in the sound files in the game folder
+
+*CHINESE_ITEM_NAME*
+
+Name of the item in Chinese, I still don't know if the name can be changed in the file and what this change is subject to, since it is in Chinese both in C_Item and S_Item, I still don't understand how to delimit the names of the items
+
+*SLOT_EQUIP*
+
+Slot where the item will be equipped
+
+| SLOT_EQUIP | POSITION |
+| 1 | Hat |
+| 2 | Body |
+| 3 | Legs |
+| 4 | Gloves |
+| 5 | Boots |
+
+*NECESSARY_LEVEL*
