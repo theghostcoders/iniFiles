@@ -21,9 +21,9 @@ You can also see some observations (NOT NEEDED WHEN EDITING)
 #+ATTR_HTML: <style> td, th { text-align: center; }</style>
 | ID | Value | Description | Obs |
 |----+-------+-------------+-----|
-| 1 | 40 | Body constitution conversion and maximum life formula parameter:  |  |
-| 2 | 0.5 | Body constitution conversion and life recovery formula parameter: . |  |
-| 3 | 20 | Willpower conversion and energy limit formula parameter:  |  |
+| 1 | 40 | Parameter for the formula to convert vitality into maximum health.  | For example 1 VIT is = 40 Max HP. |
+| 2 | 0.5 | Formula parameters for converting vitality to health recovery. | Not tested, might be for every 1 VIT it recovers 0.5 health per second. |
+| 3 | 20 | Willpower conversion to mana.  | For example 1 WIL is = 20 Max Mana. |
 | 4 | 0.4 | Willpower conversion and energy recovery formula parameter: . |  |
 | 5 | 3 | Strength conversion and attack formula parameter:  |  |
 | 6 | 3 | Agility conversion and ranged attack formula parameter:  |  |
