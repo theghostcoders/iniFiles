@@ -21,17 +21,17 @@ You can also see some observations (NOT NEEDED WHEN EDITING)
 #+ATTR_HTML: <style> td, th { text-align: center; }</style>
 | ID | Value | Description | Obs |
 |----+-------+-------------+-----|
-| 1 | 40 | Parameter for the formula to convert vitality into maximum health.  | For example 1 VIT is = 40 Max HP. |
-| 2 | 0.5 | Formula parameters for converting vitality to health recovery. | Not tested, might be for every 1 VIT it recovers 0.5 health per second. |
-| 3 | 20 | Willpower conversion to mana.  | For example 1 WIL is = 20 Max Mana. |
-| 4 | 0.4 | Willpower conversion and energy recovery formula parameter: . |  |
-| 5 | 3 | Strength conversion and attack formula parameter:  |  |
-| 6 | 3 | Agility conversion and ranged attack formula parameter:  |  |
-| 7 | 3 | Wisdom conversion and magic attack formula parameter:  |  |
-| 8 | 1.5 | Body constitution conversion and defense formula parameter: . |  |
-| 9 | 1.5 | Willpower conversion and magic defense formula parameter: . |  |
-| 10 | 10 | Agility conversion and evasion formula parameter:  |  |
-| 11 | 28 | Agility conversion and critical hit formula parameter:  |  |
+| 1 | 40 | Parameter for the formula to convert vitality into maximum health. (For example 1 VIT is = 40 Max HP.) |  |
+| 2 | 0.5 | Formula parameter for converting vitality to health recovery. (Not tested, might be for every 1 VIT it recovers 0.5 health per second.) |  |
+| 3 | 20 | Willpower conversion to mana.  (For example 1 WIL is = 20 Max MP.) |  |
+| 4 | 0.4 | Willpower conversion to mana recover. (Not tested, might be for every 1 WIL it recovers 0.4 MP per second.) |  |
+| 5 | 3 | Parameter for the formula to convert strength into melee attack.  (For every 1 STR = 3 P. ATK) |  |
+| 6 | 3 | Parameter for the formula to convert agility into ranged attack. (For every 1 AGI = 3 R. ATK) |  |
+| 7 | 3 | Parameter for the formula to convert intelligence into magic health. (For every 1 INT = 3 M. ATK) |  |
+| 8 | 1.5 | Vitality to Defense conversion formula parameter. (For every 1 VIT = 1.5 DEF) |  |
+| 9 | 1.5 | Willpower to Magic Defense conversion formula parameter. (For every 1 WIL = 1.5 M. DEF) |  |
+| 10 | 10 | Agility to Dodge % conversion formula parameter. (For every 10 AGI = 1% Dodge) |  |
+| 11 | 28 | Agility to P. Crit % conversion formula parameter. (For every 28 AGI = 1% P. Crit) |  |
 | 12 | 5 | Agility conversion and critical hit formula & Wisdom conversion and magic critical formula basic critical probability parameter:  |  |
 | 13 | 150 | Base critical damage formula parameter:  | This is equal to 150% critical damage, base crit dmg. Not tested yet. |
 | 14 | 28 | Wisdom conversion and magic critical formula parameter:  |  |
@@ -630,7 +630,3 @@ You can also see some observations (NOT NEEDED WHEN EDITING)
 | 607 | nan | Interval time for sending guild recruitment letters to a single character unit: hours |  |
 | 608 | nan | Minimum character level for sending guild recruitment letters. |  |
 
-
-
-
-This file is a bit boring to document since there are a lot of parameters and their name is in chinese, not good translation even with translators tho.
