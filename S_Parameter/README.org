@@ -18,616 +18,617 @@ We're documenting this on english so this will have ENGLISH description instead.
 
 You can also see some observations (NOT NEEDED WHEN EDITING)
 
-| <center>ID</center> | <center>Value</center> | <center>Description</center> | <center>Observation</center> |
-|----------------|------------------|-------------------------|---------------|
-| <center>1</center> | <center>3.0</center> | <center>Body constitution conversion and maximum life formula parameter: ,</center> | <center>nan</center> |
-| <center>2</center> | <center>40.0</center> | <center>Body constitution conversion and life recovery formula parameter: ,.</center> | <center>nan</center> |
-| <center>3</center> | <center>0.5</center> | <center>Willpower conversion and energy limit formula parameter: ,</center> | <center>nan</center> |
-| <center>4</center> | <center>20.0</center> | <center>Willpower conversion and energy recovery formula parameter: ,.</center> | <center>nan</center> |
-| <center>5</center> | <center>0.4</center> | <center>Strength conversion and attack formula parameter: ,</center> | <center>nan</center> |
-| <center>6</center> | <center>3.0</center> | <center>Agility conversion and ranged attack formula parameter: ,</center> | <center>nan</center> |
-| <center>7</center> | <center>3.0</center> | <center>Wisdom conversion and magic attack formula parameter: ,</center> | <center>nan</center> |
-| <center>8</center> | <center>3.0</center> | <center>Body constitution conversion and defense formula parameter: ,.</center> | <center>nan</center> |
-| <center>9</center> | <center>1.5</center> | <center>Willpower conversion and magic defense formula parameter: ,.</center> | <center>nan</center> |
-| <center>10</center> | <center>1.5</center> | <center>Agility conversion and evasion formula parameter: ,</center> | <center>nan</center> |
-| <center>11</center> | <center>10.0</center> | <center>Agility conversion and critical hit formula parameter: ,</center> | <center>nan</center> |
-| <center>12</center> | <center>28.0</center> | <center>Agility conversion and critical hit formula & Wisdom conversion and magic critical formula, basic critical probability parameter: ,</center> | <center>nan</center> |
-| <center>13</center> | <center>5.0</center> | <center>Basic critical damage formula parameter: ,</center> | <center>nan</center> |
-| <center>14</center> | <center>150.0</center> | <center>Wisdom conversion and magic critical formula parameter: ,</center> | <center>nan</center> |
-| <center>15</center> | <center>28.0</center> | <center>Basic magic critical damage formula parameter: ,</center> | <center>nan</center> |
-| <center>16</center> | <center>150.0</center> | <center>, Formula parameter for additional damage, type advantage damage, and other diminishing returns.</center> | <center>nan</center> |
-| <center>17</center> | <center>10.0</center> | <center>., Represents the attack speed in barehanded state, i.e., the interval time required for each attack.</center> | <center>nan</center> |
-| <center>18</center> | <center>1.5</center> | <center>, Represents the movement speed in normal walking state, i.e., the number of grids that can be moved per second.</center> | <center>nan</center> |
-| <center>19</center> | <center>10.0</center> | <center>., Adjustment variable for main hand weapon attack speed when calculating attack speed in dual-wield state.</center> | <center>nan</center> |
-| <center>20</center> | <center>0.9</center> | <center>., Adjustment variable for off-hand weapon attack speed when calculating attack speed in dual-wield state.</center> | <center>nan</center> |
-| <center>21</center> | <center>0.9</center> | <center>, Parameter value for the corresponding attack level check of the defender's strength in the block damage diminishing formula.</center> | <center>nan</center> |
-| <center>22</center> | <center>8.0</center> | <center>., Percentage of damage to be diminished after blocking in the block damage diminishing formula.</center> | <center>nan</center> |
-| <center>23</center> | <center>0.8</center> | <center>., Percentage of damage not to be diminished after blocking in the block damage diminishing formula.</center> | <center>nan</center> |
-| <center>24</center> | <center>0.2</center> | <center>., Adjustment parameter for adding the damage of the main hand and off-hand weapons when in dual-wield state.</center> | <center>nan</center> |
-| <center>25</center> | <center>0.5</center> | <center>, Distance of the player's barehanded normal attack, in grid units, where  grid represents . meters in the game world.</center> | <center>nan</center> |
-| <center>26</center> | <center>2.0</center> | <center>., Diminishing value of HP recovery when not sitting down.</center> | <center>nan</center> |
-| <center>27</center> | <center>0.25</center> | <center>., Diminishing value of energy recovery when not sitting down.</center> | <center>nan</center> |
-| <center>28</center> | <center>0.25</center> | <center>., Adjustment parameter for adding the attack power of the main hand and off-hand weapons when in dual-wield state.</center> | <center>nan</center> |
-| <center>29</center> | <center>0.75</center> | <center>, Parameter value for the equal difference adjustment of the attack, defense, and hit rate formula.</center> | <center>nan</center> |
-| <center>30</center> | <center>4.0</center> | <center>, Basic probability of attack hit for normal attacks and physical skills.</center> | <center>nan</center> |
-| <center>31</center> | <center>100.0</center> | <center>,, Parameter value for the arithmetic progression correction of normal attack damage.</center> | <center>nan</center> |
-| <center>32</center> | <center>5.0</center> | <center>,, Parameter value for the defense correction of normal attack and physical skill damage formulas for the defending side.</center> | <center>nan</center> |
-| <center>33</center> | <center>1.0</center> | <center>,, Minimum random value used in calculating damage when attacking with bare hands.</center> | <center>nan</center> |
-| <center>34</center> | <center>5.0</center> | <center>,, Maximum random value used in calculating damage when attacking with bare hands.</center> | <center>nan</center> |
-| <center>35</center> | <center>10.0</center> | <center>,, Parameter value for the arithmetic progression correction of physical skill damage.</center> | <center>nan</center> |
-| <center>36</center> | <center>10.0</center> | <center>,, Parameter value for the arithmetic progression correction of magic skill hit formula.</center> | <center>nan</center> |
-| <center>37</center> | <center>3.0</center> | <center>,, Base probability of the attacker hitting with a magic skill.</center> | <center>nan</center> |
-| <center>38</center> | <center>100.0</center> | <center>,, Parameter value for the magic skill damage formula defense correction of the defending side's magic defense.</center> | <center>nan</center> |
-| <center>39</center> | <center>1.0</center> | <center>,, Parameter value for the arithmetic progression correction of the normal attack and defense critical hit formula.</center> | <center>nan</center> |
-| <center>40</center> | <center>2.0</center> | <center>,, Parameter value for the arithmetic progression correction of the experience point formula.</center> | <center>nan</center> |
-| <center>41</center> | <center>20.0</center> | <center>,, Parameter value for the non-depreciation of experience points within N levels in the arithmetic progression correction of the experience point formula.</center> | <center>nan</center> |
-| <center>42</center> | <center>3.0</center> | <center>,, Reward parameter value in the team experience distribution formula.</center> | <center>nan</center> |
-| <center>43</center> | <center>15.0</center> | <center>,, Parameter value in the damage monster's impact on personal hatred calculation formula.</center> | <center>nan</center> |
-| <center>44</center> | <center>10.0</center> | <center>,., Parameter value in the healing skill's impact on personal hatred calculation formula.</center> | <center>nan</center> |
-| <center>45</center> | <center>1.2</center> | <center>,, Number of points of stamina recovered by the elf every  seconds.</center> | <center>nan</center> |
-| <center>46</center> | <center>3.0</center> | <center>When the elf's mood value is between  and , the percentage of extra time required to perform a task.</center> | <center>nan</center> |
-| <center>47</center> | <center>150.0</center> | <center>When the elf's mood value is between  and , the percentage of extra time required to perform a task.</center> | <center>nan</center> |
-| <center>48</center> | <center>200.0</center> | <center>When the elf's mood value is between  and , the additional experience points that can be obtained upon completion of a task.</center> | <center>nan</center> |
-| <center>49</center> | <center>1.0</center> | <center>When the elf's mood value is between  and , the additional experience points that can be obtained upon completion of a task.</center> | <center>nan</center> |
-| <center>50</center> | <center>2.0</center> | <center>The radius of the no-shooting zone, which represents the range where ranged weapons cannot be used.</center> | <center>nan</center> |
-| <center>51</center> | <center>5.0</center> | <center>The duration in seconds that summoned monsters remain alive when not in combat, after their summoner has died.</center> | <center>nan</center> |
-| <center>52</center> | <center>180.0</center> | <center>The range within which monsters will chase a player character, measured in grid units.</center> | <center>nan</center> |
-| <center>53</center> | <center>100.0</center> | <center>Every N seconds in standby mode, one monster is summoned.</center> | <center>nan</center> |
-| <center>54</center> | <center>10.0</center> | <center>Every N seconds in combat mode, one monster is summoned.</center> | <center>nan</center> |
-| <center>55</center> | <center>2.0</center> | <center>For each point of armor enhancement, the percentage of additional defense that the armor provides.</center> | <center>nan</center> |
-| <center>56</center> | <center>3.0</center> | <center>For each point of weapon enhancement, the percentage of additional attack power that the weapon provides.</center> | <center>nan</center> |
-| <center>57</center> | <center>3.0</center> | <center>When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction.</center> | <center>nan</center> |
-| <center>58</center> | <center>-0.05</center> | <center>When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction.</center> | <center>nan</center> |
-| <center>59</center> | <center>-0.03</center> | <center>When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction.</center> | <center>nan</center> |
-| <center>60</center> | <center>-0.01</center> | <center>When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction.</center> | <center>nan</center> |
-| <center>61</center> | <center>0.02</center> | <center>,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%.</center> | <center>nan</center> |
-| <center>62</center> | <center>0.04</center> | <center>,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%.</center> | <center>nan</center> |
-| <center>63</center> | <center>0.06</center> | <center>,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%.</center> | <center>nan</center> |
-| <center>64</center> | <center>0.08</center> | <center>,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at %.</center> | <center>nan</center> |
-| <center>65</center> | <center>0.1</center> | <center>,,The required intimacy value for elf prayer.</center> | <center>nan</center> |
-| <center>66</center> | <center>100.0</center> | <center>,,The required stamina value for elf prayer.</center> | <center>nan</center> |
-| <center>67</center> | <center>50.0</center> | <center>,,The required mood value for elf prayer.</center> | <center>nan</center> |
-| <center>68</center> | <center>200.0</center> | <center>,,The range of grid squares in which a sound effect built into the dynamic effect editor can be heard when played in the game.</center> | <center>nan</center> |
-| <center>69</center> | <center>20.0</center> | <center>,,The static effect parameter used if no special effect is specified for a summoned monster.</center> | <center>nan</center> |
-| <center>70</center> | <center>33052.0</center> | <center>,,The static effect parameter used when a summoned monster is killed or meets the necessary conditions to disappear.</center> | <center>nan</center> |
-| <center>71</center> | <center>33052.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>72</center> | <center>98.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>73</center> | <center>95.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>74</center> | <center>92.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>75</center> | <center>88.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>76</center> | <center>84.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>77</center> | <center>80.0</center> | <center>,,The percentage of the original price at which an item can be bought when the reputation level reaches .</center> | <center>nan</center> |
-| <center>78</center> | <center>75.0</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>79</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>80</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>81</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>82</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>83</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>84</center> | <center>nan</center> | <center>,,Reserved for store discount usage...</center> | <center>nan</center> |
-| <center>85</center> | <center>nan</center> | <center>,,The probability of reducing the maximum durability value when repairing equipment with a current durability value of .</center> | <center>nan</center> |
-| <center>86</center> | <center>60.0</center> | <center>,,The amount of time (in / second increments) a character is temporarily unable to participate in a battlefield when they exit the battlefield.</center> | <center>10 Min</center> |
-| <center>87</center> | <center>6000.0</center> | <center>,,The invincibility time (in / second increments) a character has when they are killed.</center> | <center>nan</center> |
-| <center>88</center> | <center>50.0</center> | <center>,,The weakness time (in / second increments) a character has when they are killed.</center> | <center>nan</center> |
-| <center>89</center> | <center>150.0</center> | <center>,,The parameter for the HP regeneration rate formula to ensure that low-level characters quickly recover their HP.</center> | <center>nan</center> |
-| <center>90</center> | <center>24.0</center> | <center>,,The parameter for the MP regeneration rate formula to ensure that low-level characters quickly recover their MP.</center> | <center>nan</center> |
-| <center>91</center> | <center>12.0</center> | <center>: The difference between a player's level and the level of the task they are accepting must be less than or equal to this value. Additionally, the combined value of the player's character experience, guild experience, and reputation must equal the value of parameter .</center> | <center>nan</center> |
-| <center>92</center> | <center>4.0</center> | <center>: Same as parameter , but with different values for the difference between levels and the required combined value.</center> | <center>nan</center> |
-| <center>93</center> | <center>6.0</center> | <center>: Same as parameter , but with different values for the difference between levels and the required combined value.</center> | <center>nan</center> |
-| <center>94</center> | <center>8.0</center> | <center>: Same as parameter , but with different values for the difference between levels and the required combined value. If the difference between levels is greater than this value, the combined value of character experience, guild experience, and reputation must equal the value of parameter .</center> | <center>nan</center> |
-| <center>95</center> | <center>10.0</center> | <center>: This is a parameter that determines the decay of character experience, guild experience, and reputation for completing a task.</center> | <center>nan</center> |
-| <center>96</center> | <center>100.0</center> | <center>: Same as parameter , but with a different decay value.</center> | <center>nan</center> |
-| <center>97</center> | <center>75.0</center> | <center>: Same as parameter , but with a different decay value.</center> | <center>nan</center> |
-| <center>98</center> | <center>50.0</center> | <center>: Same as parameter , but with a different decay value.</center> | <center>nan</center> |
-| <center>99</center> | <center>25.0</center> | <center>: Same as parameter , but with a different decay value.</center> | <center>nan</center> |
-| <center>100</center> | <center>0.0</center> | <center>: This parameter determines the time interval for random special actions to occur when a player's character is idle.</center> | <center>nan</center> |
-| <center>101</center> | <center>10.0</center> | <center>: This parameter determines the probability that a special action will occur when a player's character is idle.</center> | <center>nan</center> |
-| <center>102</center> | <center>15.0</center> | <center>: This parameter determines the amount of time a player's character can be idle before automatically sitting down.</center> | <center>nan</center> |
-| <center>103</center> | <center>180.0</center> | <center>: This parameter is used in the formula for determining the amount a player will receive for selling an item to an NPC.</center> | <center>nan</center> |
-| <center>104</center> | <center>0.05</center> | <center>: This parameter determines the probability of weapon durability decreasing when a player uses a normal attack or skill.</center> | <center>nan</center> |
-| <center>105</center> | <center>2.0</center> | <center>: This parameter determines the probability of armor durability decreasing when a player receives a normal or skill attack.</center> | <center>nan</center> |
-| <center>106</center> | <center>1.0</center> | <center>: When a player dies, this parameter determines the percentage of durability lost from all equipped weapons and armor.</center> | <center>nan</center> |
-| <center>107</center> | <center>10.0</center> | <center>: When repairing equipment, there is a chance that the maximum durability value will decrease. This parameter determines the probability of that happening when the current durability value is not zero.</center> | <center>nan</center> |
-| <center>108</center> | <center>20.0</center> | <center>: When repairing equipment, there is a chance that the maximum durability value will decrease. This parameter determines the percentage of the maximum durability value that will be lost.</center> | <center>nan</center> |
-| <center>109</center> | <center>10.0</center> | <center>: This parameter is used in the formula for determining the cost of repairing equipment durability.</center> | <center>nan</center> |
-| <center>110</center> | <center>0.08</center> | <center>: This parameter determines the amount of time a player has to pick up an item before it disappears.</center> | <center>nan</center> |
-| <center>111</center> | <center>60.0</center> | <center>: After a scene's environmental sound effects have finished playing, this parameter determines how many seconds to wait before checking if background music should play. If not, the environmental sound effects continue.</center> | <center>nan</center> |
-| <center>112</center> | <center>5.0</center> | <center>: After a scene's environmental sound effects have finished playing and the wait period specified in parameter  has ended, this parameter determines the probability of playing background music.</center> | <center>nan</center> |
-| <center>113</center> | <center>10.0</center> | <center>: This parameter determines the time interval for a monster to scan for its next movement point.</center> | <center>nan</center> |
-| <center>114</center> | <center>4.0</center> | <center>: When a player or monster is injured by an attack, this parameter determines the probability of playing an injury animation.</center> | <center>nan</center> |
-| <center>115</center> | <center>50.0</center> | <center>: When a player or monster is critically injured by an attack, this parameter determines the probability of playing a critical injury animation.</center> | <center>nan</center> |
-| <center>116</center> | <center>50.0</center> | <center>,,When characters or monsters dodge attacks, there is an N% chance of performing a dodge action.</center> | <center>nan</center> |
-| <center>117</center> | <center>100.0</center> | <center>,,When releasing a Regen fairy at levels -, the reputation value is %.</center> | <center>nan</center> |
-| <center>118</center> | <center>1000.0</center> | <center>,,When releasing a Regen fairy at levels -, the reputation value is %.</center> | <center>nan</center> |
-| <center>119</center> | <center>4000.0</center> | <center>,,When releasing a Regen fairy at levels -, the reputation value is %.</center> | <center>nan</center> |
-| <center>120</center> | <center>9000.0</center> | <center>,,When releasing a Regen fairy at levels -, the reputation value is %.</center> | <center>nan</center> |
-| <center>121</center> | <center>16000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>122</center> | <center>25000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>123</center> | <center>36000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>124</center> | <center>49000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>125</center> | <center>64000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>126</center> | <center>81000.0</center> | <center>, When releasing a regression elf of level -, the reputation value is %.</center> | <center>nan</center> |
-| <center>127</center> | <center>100000.0</center> | <center>, The time difference between the action launched by the client. When the skill has a flying effect and a target is required, the hit time is equal to the server's calculation distance time plus parameter  (in units of / second).</center> | <center>nan</center> |
-| <center>128</center> | <center>6.0</center> | <center>, The time difference between the flying distance and the client. When the skill has a flying effect and no target is needed, the hit time is equal to parameter  plus parameter  (in units of / second). Cannot calculate distance time because the target cannot be found.</center> | <center>nan</center> |
-| <center>129</center> | <center>4.0</center> | <center>, Reserved.</center> | <center>nan</center> |
-| <center>130</center> | <center>0.0</center> | <center>, Reserved.</center> | <center>nan</center> |
-| <center>131</center> | <center>0.0</center> | <center>, Battlefield type : Central crystal acquisition score.</center> | <center>nan</center> |
-| <center>132</center> | <center>20.0</center> | <center>, Battlefield type : Mine crystal acquisition score.</center> | <center>nan</center> |
-| <center>133</center> | <center>10.0</center> | <center>, Battlefield type : North village crystal acquisition score.</center> | <center>nan</center> |
-| <center>134</center> | <center>10.0</center> | <center>, Battlefield type : Forest crystal acquisition score.</center> | <center>nan</center> |
-| <center>135</center> | <center>10.0</center> | <center>, Battlefield type : South village crystal acquisition score.</center> | <center>nan</center> |
-| <center>136</center> | <center>10.0</center> | <center>, Battlefield type : Victory determining score.</center> | <center>nan</center> |
-| <center>137</center> | <center>250.0</center> | <center>, Battlefield type : Round time.</center> | <center>nan</center> |
-| <center>138</center> | <center>1200.0</center> | <center>, Battlefield type : Winning score coefficient.</center> | <center>nan</center> |
-| <center>139</center> | <center>1.0</center> | <center>, Battlefield type : Losing score coefficient.</center> | <center>nan</center> |
-| <center>140</center> | <center>0.5</center> | <center>, AA experience value.</center> | <center>nan</center> |
-| <center>141</center> | <center>3500000.0</center> | <center>, Invincibility time after battlefield resurrection, in tenths of a second.</center> | <center>nan</center> |
-| <center>142</center> | <center>150.0</center> | <center>, For the small monsters summoned by the king monster, the number of seconds they will automatically disappear if they have not entered combat.</center> | <center>nan</center> |
-| <center>143</center> | <center>10.0</center> | <center>, The percentage of experience value deduction after death and resurrection.</center> | <center>nan</center> |
-| <center>144</center> | <center>10.0</center> | <center>, The percentage of health recovery after death and resurrection.</center> | <center>nan</center> |
-| <center>145</center> | <center>10.0</center> | <center>, The percentage of energy recovery after death and resurrection.</center> | <center>nan</center> |
-| <center>146</center> | <center>10.0</center> | <center>, Guild battle: victory determining score.</center> | <center>nan</center> |
-| <center>147</center> | <center>5000.0</center> | <center>, Guild battle: round time.</center> | <center>nan</center> |
-| <center>148</center> | <center>3600.0</center> | <center>, Guild battle: maximum number of participants.</center> | <center>nan</center> |
-| <center>149</center> | <center>75.0</center> | <center>, Guild battle: time for advancing victory after occupation of the altar by the same camp.</center> | <center>nan</center> |
-| <center>150</center> | <center>300.0</center> | <center>, Guild battle: unit score for occupying the altar at the end.</center> | <center>nan</center> |
-| <center>151</center> | <center>1000.0</center> | <center>,,- level elf battlefield world king summoning score</center> | <center>nan</center> |
-| <center>152</center> | <center>200.0</center> | <center>,,Number of teleportation stones required for automatic mission teleportation</center> | <center>nan</center> |
-| <center>153</center> | <center>2.0</center> | <center>,,PVP server protection level</center> | <center>nan</center> |
-| <center>154</center> | <center>16.0</center> | <center>,,Percentage of experience points deducted from PVP death and resurrection</center> | <center>nan</center> |
-| <center>155</center> | <center>0.0</center> | <center>,,Percentage of health restored upon PVP death and resurrection</center> | <center>nan</center> |
-| <center>156</center> | <center>100.0</center> | <center>,,Percentage of energy restored upon PVP death and resurrection</center> | <center>nan</center> |
-| <center>157</center> | <center>100.0</center> | <center>,,Percentage of current durability of equipped weapons and armor deducted upon PVP character death</center> | <center>nan</center> |
-| <center>158</center> | <center>1.0</center> | <center>,,Location of PVP character resurrection</center> | <center>nan</center> |
-| <center>159</center> | <center>1.0</center> | <center>,,Percentage of experience points deducted for resurrection at the nearest location upon death</center> | <center>nan</center> |
-| <center>160</center> | <center>10.0</center> | <center>,,Percentage of health restored upon resurrection at the nearest location upon death</center> | <center>nan</center> |
-| <center>161</center> | <center>25.0</center> | <center>,,Percentage of energy restored upon resurrection at the nearest location upon death</center> | <center>nan</center> |
-| <center>162</center> | <center>25.0</center> | <center>,,Percentage of current durability of equipped weapons and armor deducted upon resurrection at the nearest location upon death</center> | <center>nan</center> |
-| <center>163</center> | <center>20.0</center> | <center>,,Percentage increase in defense for each + upgrade for armor + to +</center> | <center>nan</center> |
-| <center>164</center> | <center>4.0</center> | <center>,,Percentage increase in attack for each + upgrade for weapons + to +</center> | <center>nan</center> |
-| <center>165</center> | <center>4.0</center> | <center>,,Percentage increase in defense for each + upgrade for armor + to +</center> | <center>nan</center> |
-| <center>166</center> | <center>6.0</center> | <center>,,Percentage increase in attack for each + upgrade for weapons + to +</center> | <center>nan</center> |
-| <center>167</center> | <center>6.0</center> | <center>,,Percentage increase in defense for each + upgrade for armor + to +</center> | <center>nan</center> |
-| <center>168</center> | <center>10.0</center> | <center>,,Percentage increase in attack for each + upgrade for weapons + to +</center> | <center>nan</center> |
-| <center>169</center> | <center>10.0</center> | <center>,,Total number of character creation times</center> | <center>nan</center> |
-| <center>170</center> | <center>12.0</center> | <center>,.,Parameter for attack power when the elf's mood is happy.</center> | <center>nan</center> |
-| <center>171</center> | <center>0.4</center> | <center>,.,When the elf's mood is happy, the parameter by which attack power is multiplied:</center> | <center>nan</center> |
-| <center>172</center> | <center>0.2</center> | <center>,.,When the elf's mood is normal, the parameter by which attack power is multiplied:</center> | <center>nan</center> |
-| <center>173</center> | <center>0.15</center> | <center>,.,When the elf's mood is down, the parameter by which attack power is multiplied:</center> | <center>nan</center> |
-| <center>174</center> | <center>0.05</center> | <center>,.,When the elf's mood is sad, the parameter by which attack power is multiplied:</center> | <center>nan</center> |
-| <center>175</center> | <center>0.02</center> | <center>,,Invisibility time after revival in the battlefield, in tenths of a second:</center> | <center>nan</center> |
-| <center>176</center> | <center>300.0</center> | <center>,,The attack range of the elf's combat (. equals  grid):</center> | <center>nan</center> |
-| <center>177</center> | <center>26.0</center> | <center>,,New rule in the Flame War: if the score difference between the two sides is greater than this value, a player will be randomly selected to perform the event specified in parameter .</center> | <center>nan</center> |
-| <center>178</center> | <center>35.0</center> | <center>,,New rule in the Flame War: event given when the score difference between the two sides reaches this value:</center> | <center>nan</center> |
-| <center>179</center> | <center>200.0</center> | <center>,,Points earned for killing an opponent in the free PK area:</center> | <center>nan</center> |
-| <center>180</center> | <center>10.0</center> | <center>,.,Correction factor for attack speed of elf's single-handed weapons (faster <  (normal) < slower):</center> | <center>nan</center> |
-| <center>181</center> | <center>0.9</center> | <center>,.,Correction factor for attack speed of elf's two-handed weapons (faster <  (normal) < slower):</center> | <center>nan</center> |
-| <center>182</center> | <center>0.8</center> | <center>,.,Correction factor for attack speed of elf's staff-type weapons (faster <  (normal) < slower):</center> | <center>nan</center> |
-| <center>183</center> | <center>0.7</center> | <center>,.,Correction factor for attack speed of elf's long-range weapons (faster <  (normal) < slower):</center> | <center>nan</center> |
-| <center>184</center> | <center>0.6</center> | <center>,,Number of skills that can be converted into super specialization skills:</center> | <center>nan</center> |
-| <center>185</center> | <center>2.0</center> | <center>,,Upper limit of points for a single super specialization:</center> | <center>nan</center> |
-| <center>186</center> | <center>15.0</center> | <center>,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor:</center> | <center>nan</center> |
-| <center>187</center> | <center>6.0</center> | <center>,,For every + upgrade of a weapon from + to +, represents the percentage increase of attack power of the weapon:</center> | <center>nan</center> |
-| <center>188</center> | <center>6.0</center> | <center>,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor:</center> | <center>nan</center> |
-| <center>189</center> | <center>6.0</center> | <center>,,For every + upgrade of a weapon from + to +, represents the percentage increase of attack power of the weapon:</center> | <center>nan</center> |
-| <center>190</center> | <center>6.0</center> | <center>,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor:</center> | <center>nan</center> |
-| <center>191</center> | <center>10.0</center> | <center>,,Weapon +~+ strengthening every time +, representing the percentage increase in the weapon's attack power.</center> | <center>nan</center> |
-| <center>192</center> | <center>10.0</center> | <center>,,Red Coconut City Optimization - Lucky Star Special Prize.</center> | <center>nan</center> |
-| <center>193</center> | <center>40351.0</center> | <center>,,The basic parameter that gives the rating value to the small island (player's activity execution small island).</center> | <center>nan</center> |
-| <center>194</center> | <center>1.0</center> | <center>,,An additional basic parameter that gives the player's own small island a rating value when performing actions on another player's small island.</center> | <center>nan</center> |
-| <center>195</center> | <center>2.0</center> | <center>,.,The proportion of score obtained when performing actions on the small island (currently: fishing, feeding, building restoration).</center> | <center>nan</center> |
-| <center>196</center> | <center>0.2</center> | <center>,,Red Coconut City Optimization - Lucky Wheel Grand Prize.</center> | <center>nan</center> |
-| <center>197</center> | <center>47864.0</center> | <center>,,Red Coconut City Optimization - Lucky Star Lottery ID.</center> | <center>nan</center> |
-| <center>198</center> | <center>38431.0</center> | <center>,,PK Arena - Winning Points.</center> | <center>nan</center> |
-| <center>199</center> | <center>25.0</center> | <center>,,PK Arena - Draw Points.</center> | <center>nan</center> |
-| <center>200</center> | <center>10.0</center> | <center>,,PK Arena - Losing Points.</center> | <center>nan</center> |
-| <center>201</center> | <center>5.0</center> | <center>,,PK Arena - Additional points for winning three consecutive games.</center> | <center>nan</center> |
-| <center>202</center> | <center>70.0</center> | <center>,,PK Arena - Additional points for two wins, two losses, and one tie.</center> | <center>nan</center> |
-| <center>203</center> | <center>0.0</center> | <center>,,PK Arena - st Place Reward Title.</center> | <center>nan</center> |
-| <center>204</center> | <center>8256.0</center> | <center>,,PK Arena - nd and rd Place Reward Title.</center> | <center>nan</center> |
-| <center>205</center> | <center>8257.0</center> | <center>,,PK Arena - th to th Place Reward Title.</center> | <center>nan</center> |
-| <center>206</center> | <center>8258.0</center> | <center>,,PK Arena - th to th Place Reward Title.</center> | <center>nan</center> |
-| <center>207</center> | <center>8259.0</center> | <center>,,PK Arena - st to th Place Reward Title.</center> | <center>nan</center> |
-| <center>208</center> | <center>8260.0</center> | <center>,,Kuso Synthesis - Fragment ID.</center> | <center>nan</center> |
-| <center>209</center> | <center>42170.0</center> | <center>,,Kuso Synthesis - IK Back Fragment Required Quantity.</center> | <center>nan</center> |
-| <center>210</center> | <center>3.0</center> | <center>,,Kuso Synthesis - IK Head Fragment Required Quantity.</center> | <center>nan</center> |
-| <center>211</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-IK set blocks required.</center> | <center>nan</center> |
-| <center>212</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-IK shield blocks required.</center> | <center>nan</center> |
-| <center>213</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-IK one-handed weapon blocks required.</center> | <center>nan</center> |
-| <center>214</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-IK two-handed weapon blocks required.</center> | <center>nan</center> |
-| <center>215</center> | <center>6.0</center> | <center>,: Number of Kuso synthesis-GK back accessory blocks required.</center> | <center>nan</center> |
-| <center>216</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-GK head blocks required.</center> | <center>nan</center> |
-| <center>217</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-GK set blocks required.</center> | <center>nan</center> |
-| <center>218</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-GK shield blocks required.</center> | <center>nan</center> |
-| <center>219</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-GK one-handed weapon blocks required.</center> | <center>nan</center> |
-| <center>220</center> | <center>3.0</center> | <center>,: Number of Kuso synthesis-GK two-handed weapon blocks required.</center> | <center>nan</center> |
-| <center>221</center> | <center>6.0</center> | <center>,: Number of Kuso synthesis-IK composite materials required.</center> | <center>nan</center> |
-| <center>222</center> | <center>2.0</center> | <center>,: Number of Kuso synthesis-GK composite materials required.</center> | <center>nan</center> |
-| <center>223</center> | <center>3.0</center> | <center>,: Probability of Kuso synthesis-IK composite white equipment upgrading to green equipment.</center> | <center>nan</center> |
-| <center>224</center> | <center>50.0</center> | <center>,: Probability of Kuso synthesis-IK composite green equipment upgrading to blue equipment.</center> | <center>nan</center> |
-| <center>225</center> | <center>40.0</center> | <center>,: Probability of Kuso synthesis-IK composite blue equipment upgrading to yellow equipment.</center> | <center>nan</center> |
-| <center>226</center> | <center>20.0</center> | <center>,: Probability of Kuso synthesis-GK composite white equipment upgrading to green equipment.</center> | <center>nan</center> |
-| <center>227</center> | <center>50.0</center> | <center>,: Probability of Kuso synthesis-GK composite green equipment upgrading to blue equipment.</center> | <center>nan</center> |
-| <center>228</center> | <center>40.0</center> | <center>,: Probability of Kuso synthesis-GK composite blue equipment upgrading to yellow equipment.</center> | <center>nan</center> |
-| <center>229</center> | <center>20.0</center> | <center>,, Starting score for Illya Guild War</center> | <center>nan</center> |
-| <center>230</center> | <center>2600.0</center> | <center>,, Basic score for the winning team in Illya Guild War</center> | <center>nan</center> |
-| <center>231</center> | <center>1500.0</center> | <center>,, Basic score for the losing team in Illya Guild War</center> | <center>nan</center> |
-| <center>232</center> | <center>750.0</center> | <center>,, Bonus score for activating magic in the Guild War</center> | <center>nan</center> |
-| <center>233</center> | <center>20.0</center> | <center>,, Score for picking up the battle flag in Illya Guild War</center> | <center>nan</center> |
-| <center>234</center> | <center>1.0</center> | <center>,, Score for using battlefield magic in Illya Guild War</center> | <center>nan</center> |
-| <center>235</center> | <center>10.0</center> | <center>,, Personal score for achieving A grade in Illya Guild War</center> | <center>nan</center> |
-| <center>236</center> | <center>200.0</center> | <center>,, Personal score for achieving B grade in Illya Guild War</center> | <center>nan</center> |
-| <center>237</center> | <center>100.0</center> | <center>,, Personal score for achieving C grade in Illya Guild War</center> | <center>nan</center> |
-| <center>238</center> | <center>50.0</center> | <center>,, Personal score for achieving D grade in Illya Guild War</center> | <center>nan</center> |
-| <center>239</center> | <center>0.0</center> | <center>,, Penalty score for using battlefield magic against the enemy in Illya Guild War</center> | <center>nan</center> |
-| <center>240</center> | <center>300.0</center> | <center>,, Time limit for flag capture in Illya Guild War</center> | <center>nan</center> |
-| <center>241</center> | <center>5.0</center> | <center>,, Time limit for tower capture in Illya Guild War</center> | <center>nan</center> |
-| <center>242</center> | <center>15.0</center> | <center>,, Time limit for blessing in Illya Guild War</center> | <center>nan</center> |
-| <center>243</center> | <center>10.0</center> | <center>,, Preparation time for entering dungeons</center> | <center>nan</center> |
-| <center>244</center> | <center>30.0</center> | <center>,, Time limit for dungeons</center> | <center>nan</center> |
-| <center>245</center> | <center>900.0</center> | <center>,., Ratio of equipment experience value</center> | <center>nan</center> |
-| <center>246</center> | <center>0.1</center> | <center>,., Equipment attribute multiplier - single weapon</center> | <center>nan</center> |
-| <center>247</center> | <center>1.1</center> | <center>,., Equipment attribute multiplier - dual weapon</center> | <center>nan</center> |
-| <center>248</center> | <center>2.2</center> | <center>,, Equipment attribute multiplier - head armor</center> | <center>nan</center> |
-| <center>249</center> | <center>1.0</center> | <center>,., Equipment attribute multiplier - body armor</center> | <center>nan</center> |
-| <center>250</center> | <center>1.2</center> | <center>,., Equipment attribute multiplier - leg armor</center> | <center>nan</center> |
-| <center>251</center> | <center>0.8</center> | <center>,, Equipment attribute multiplier - hand armor</center> | <center>nan</center> |
-| <center>252</center> | <center>1.0</center> | <center>,, Equipment attribute multiplier - foot armor</center> | <center>nan</center> |
-| <center>253</center> | <center>1.0</center> | <center>,., Equipment attribute multiplier - accessory armor</center> | <center>nan</center> |
-| <center>254</center> | <center>0.5</center> | <center>,, Equipment attribute multiplier - back armor</center> | <center>nan</center> |
-| <center>255</center> | <center>1.0</center> | <center>,, Relationship decay value for the marriage system - calculated every  minutes when only one person is online</center> | <center>nan</center> |
-| <center>256</center> | <center>15.0</center> | <center>,, Relationship decay value for the marriage system - calculated every  minutes when both parties are online</center> | <center>nan</center> |
-| <center>257</center> | <center>10.0</center> | <center>,, Basic parameter for catching level  fish on the player's own island during fishing activities</center> | <center>nan</center> |
-| <center>258</center> | <center>1.0</center> | <center>,, Basic parameter for catching level  fish on another player's island during fishing activities</center> | <center>nan</center> |
-| <center>259</center> | <center>2.0</center> | <center>,, Basic parameter for catching level  fish on the player's own island during fishing activities</center> | <center>nan</center> |
-| <center>260</center> | <center>2.0</center> | <center>,, Basic parameter for catching level  fish on another player's island during fishing activities</center> | <center>nan</center> |
-| <center>261</center> | <center>3.0</center> | <center>,, Basic parameter for catching level  fish on the player's own island during fishing activities</center> | <center>nan</center> |
-| <center>262</center> | <center>3.0</center> | <center>,, Basic parameter for catching level  fish on another player's island during fishing activities</center> | <center>nan</center> |
-| <center>263</center> | <center>4.0</center> | <center>,, Title for the first-ranked island in island rankings</center> | <center>nan</center> |
-| <center>264</center> | <center>8660.0</center> | <center>,, Title for the second to third-ranked islands in island rankings</center> | <center>nan</center> |
-| <center>265</center> | <center>8661.0</center> | <center>,, Title for the fourth to tenth-ranked islands in island rankings</center> | <center>nan</center> |
-| <center>266</center> | <center>8662.0</center> | <center>,, Title for the th to th-ranked islands in island rankings</center> | <center>nan</center> |
-| <center>267</center> | <center>8663.0</center> | <center>,, Title for the most popular island in island rankings</center> | <center>nan</center> |
-| <center>268</center> | <center>8664.0</center> | <center>,, Title for the second to third-most popular islands in island rankings</center> | <center>nan</center> |
-| <center>269</center> | <center>8665.0</center> | <center>,, Title for the fourth to tenth-most popular islands in island rankings</center> | <center>nan</center> |
-| <center>270</center> | <center>8666.0</center> | <center>,, Title for the th to th-most popular islands in island rankings</center> | <center>nan</center> |
-| <center>271</center> | <center>8667.0</center> | <center>The names and titles for the th to th most popular players on the island.</center> | <center>nan</center> |
-| <center>272</center> | <center>5.0</center> | <center>The reward evaluation for upgrading a crop to a normal state on the island.</center> | <center>nan</center> |
-| <center>273</center> | <center>20.0</center> | <center>The reward evaluation for upgrading a crop to a good state on the island.</center> | <center>nan</center> |
-| <center>274</center> | <center>30.0</center> | <center>The reward evaluation for upgrading a crop to the best state on the island.</center> | <center>nan</center> |
-| <center>275</center> | <center>10.0</center> | <center>The maximum number of marriage battlefields that can be opened at the same time.</center> | <center>nan</center> |
-| <center>276</center> | <center>200.0</center> | <center>The maximum number of players allowed in a marriage battlefield.</center> | <center>nan</center> |
-| <center>277</center> | <center>300000.0</center> | <center>The cost to enter a marriage battlefield.</center> | <center>nan</center> |
-| <center>278</center> | <center>2.0</center> | <center>The amount of resources consumed when using the map teleportation feature.</center> | <center>nan</center> |
-| <center>279</center> | <center>50.0</center> | <center>The probability of not decreasing the level of equipment when transferring it to another player.</center> | <center>nan</center> |
-| <center>280</center> | <center>25.0</center> | <center>The probability of decreasing the level of equipment by one when transferring it to another player.</center> | <center>nan</center> |
-| <center>281</center> | <center>15.0</center> | <center>The probability of decreasing the level of equipment by two when transferring it to another player.</center> | <center>nan</center> |
-| <center>282</center> | <center>10.0</center> | <center>The probability of decreasing the level of equipment by three when transferring it to another player.</center> | <center>nan</center> |
-| <center>283</center> | <center>20.0</center> | <center>The total number of questions in the Elf Academy.</center> | <center>nan</center> |
-| <center>284</center> | <center>10.0</center> | <center>The interval time after each question in the Elf Academy.</center> | <center>nan</center> |
-| <center>285</center> | <center>5.0</center> | <center>The basic score that can be obtained for each question in the Elf Academy.</center> | <center>nan</center> |
-| <center>286</center> | <center>58206.0</center> | <center>The ID number of the treasure sending table in the Elf Academy.</center> | <center>nan</center> |
-| <center>287</center> | <center>8690.0</center> | <center>The title reward for the first-place winner in the Elf Academy.</center> | <center>nan</center> |
-| <center>288</center> | <center>8691.0</center> | <center>The title reward for the nd-rd place winners in the Elf Academy.</center> | <center>nan</center> |
-| <center>289</center> | <center>8692.0</center> | <center>The title reward for the th-th place winners in the Elf Academy.</center> | <center>nan</center> |
-| <center>290</center> | <center>8693.0</center> | <center>The title reward for the th-th place winners in the Elf Academy.</center> | <center>nan</center> |
-| <center>291</center> | <center>8694.0</center> | <center>The title reward for the st-th place winners in the Elf Academy.</center> | <center>nan</center> |
-| <center>292</center> | <center>1.0</center> | <center>,,Price of purchasing Star Essence.</center> | <center>nan</center> |
-| <center>293</center> | <center>2.0</center> | <center>,,Multiplier for purchasing Star Essence.</center> | <center>nan</center> |
-| <center>294</center> | <center>10.0</center> | <center>,,Quantity of Star Essence that can be purchased at once.</center> | <center>nan</center> |
-| <center>295</center> | <center>5.0</center> | <center>,,Quantity of Star Essence for the first level of general exchange.</center> | <center>nan</center> |
-| <center>296</center> | <center>15.0</center> | <center>,,Quantity of Star Essence for the second level of general exchange.</center> | <center>nan</center> |
-| <center>297</center> | <center>30.0</center> | <center>,,Quantity of Star Essence for the third level of general exchange.</center> | <center>nan</center> |
-| <center>298</center> | <center>55.0</center> | <center>,,Quantity of Star Essence for the fourth level of general exchange.</center> | <center>nan</center> |
-| <center>299</center> | <center>80.0</center> | <center>,,Quantity of Star Essence for the fifth level of general exchange.</center> | <center>nan</center> |
-| <center>300</center> | <center>5.0</center> | <center>,,Quantity of Star Essence for the first level of random exchange.</center> | <center>nan</center> |
-| <center>301</center> | <center>10.0</center> | <center>,,Quantity of Star Essence for the second level of random exchange.</center> | <center>nan</center> |
-| <center>302</center> | <center>15.0</center> | <center>,,Quantity of Star Essence for the third level of random exchange.</center> | <center>nan</center> |
-| <center>303</center> | <center>20.0</center> | <center>,,Quantity of Star Essence for the fourth level of random exchange.</center> | <center>nan</center> |
-| <center>304</center> | <center>30.0</center> | <center>,,Quantity of Star Essence for the fifth level of random exchange.</center> | <center>nan</center> |
-| <center>305</center> | <center>0.1</center> | <center>,.,Ratio of growth mount experience value.</center> | <center>nan</center> |
-| <center>306</center> | <center>1.0</center> | <center>,,Ratio of combat mount I version experience gain.</center> | <center>nan</center> |
-| <center>307</center> | <center>0.5</center> | <center>,.,Ratio of combat mount G version experience gain.</center> | <center>nan</center> |
-| <center>308</center> | <center>50000.0</center> | <center>,,Amount of gold deducted each time a player participates in the "Gladiator Contest".</center> | <center>nan</center> |
-| <center>309</center> | <center>60.0</center> | <center>,,Probability of winning elves gaining skill experience after completing a full "Gladiator Contest".</center> | <center>nan</center> |
-| <center>310</center> | <center>3.0</center> | <center>,,Amount of skill experience that winning elves have a chance to gain after completing a full "Gladiator Contest".</center> | <center>nan</center> |
-| <center>311</center> | <center>50.0</center> | <center>,,When the total number of wins and losses recorded by a player in a month exceeds this parameter, they will be ranked on the leaderboard.</center> | <center>nan</center> |
-| <center>312</center> | <center>30.0</center> | <center>,,Amount of elf stamina deducted each time they participate in the Gladiator Contest.</center> | <center>nan</center> |
-| <center>313</center> | <center>45000.0</center> | <center>,,Experience required for upgrading a first-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>314</center> | <center>80000.0</center> | <center>,,Experience required for upgrading a second-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>315</center> | <center>100000.0</center> | <center>,,Experience required for upgrading a third-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>316</center> | <center>10.0</center> | <center>,,Constant value for equipping spirit for the first-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>317</center> | <center>5.0</center> | <center>,,Constant value for equipping spirit for the second-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>318</center> | <center>1.0</center> | <center>,,Constant value for equipping spirit for the third-tier combat skill of an elf.</center> | <center>nan</center> |
-| <center>319</center> | <center>0.09</center> | <center>,.,Level coefficient for equipping spirits for levels -.</center> | <center>nan</center> |
-| <center>320</center> | <center>0.4</center> | <center>,.,Level coefficient for equipping spirits for levels -.</center> | <center>nan</center> |
-| <center>321</center> | <center>1.0</center> | <center>,,Level coefficient for equipping spirits for levels -.</center> | <center>nan</center> |
-| <center>322</center> | <center>1.8</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>323</center> | <center>2.02</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>324</center> | <center>2.04</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>325</center> | <center>2.1</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>326</center> | <center>2.16</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>327</center> | <center>2.16</center> | <center>,., Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>328</center> | <center>2.0</center> | <center>,, Elf Transformation Equipment Level Coefficient -,</center> | <center>nan</center> |
-| <center>329</center> | <center>1.0</center> | <center>,, Points required to upgrade Elf Battle Skill to level ,</center> | <center>nan</center> |
-| <center>330</center> | <center>2.0</center> | <center>,, Points required to upgrade Elf Battle Skill to level ,</center> | <center>nan</center> |
-| <center>331</center> | <center>4.0</center> | <center>,, Points required to upgrade Elf Battle Skill to level ,</center> | <center>nan</center> |
-| <center>332</center> | <center>7.0</center> | <center>,, Points required to upgrade Elf Battle Skill to level ,</center> | <center>nan</center> |
-| <center>333</center> | <center>11.0</center> | <center>,, Points required to upgrade Elf Battle Skill to level ,</center> | <center>nan</center> |
-| <center>334</center> | <center>0.5</center> | <center>,., Elf Transformation Equipment Quality Coefficient - Green,</center> | <center>nan</center> |
-| <center>335</center> | <center>0.8</center> | <center>,., Elf Transformation Equipment Quality Coefficient - Blue,</center> | <center>nan</center> |
-| <center>336</center> | <center>5.0</center> | <center>,, Elf Transformation Equipment Quality Coefficient - Orange,</center> | <center>nan</center> |
-| <center>337</center> | <center>300.0</center> | <center>,, Elf Transformation Equipment Quality Coefficient - Yellow,</center> | <center>nan</center> |
-| <center>338</center> | <center>1350.0</center> | <center>,, Elf Transformation Equipment Quality Coefficient - Purple,</center> | <center>nan</center> |
-| <center>339</center> | <center>250.0</center> | <center>,, Maximum cumulative skill points for Elf Transformation Equipment,</center> | <center>nan</center> |
-| <center>340</center> | <center>55267.0</center> | <center>,, Skill automatically given to players when they open the basic Elf Battle Skill,</center> | <center>nan</center> |
-| <center>341</center> | <center>55291.0</center> | <center>,, Skill automatically given to players when they open the basic Elf Battle Skill,</center> | <center>nan</center> |
-| <center>342</center> | <center>55369.0</center> | <center>,, Skill automatically given to players when they open the intermediate Elf Battle Skill,</center> | <center>nan</center> |
-| <center>343</center> | <center>55363.0</center> | <center>,, Skill automatically given to players when they open the intermediate Elf Battle Skill,</center> | <center>nan</center> |
-| <center>344</center> | <center>55429.0</center> | <center>,, Skill automatically given to players when they open the advanced Elf Battle Skill,</center> | <center>nan</center> |
-| <center>345</center> | <center>8771.0</center> | <center>,, Reward title for st place in the Top  Fighters list,</center> | <center>nan</center> |
-| <center>346</center> | <center>8772.0</center> | <center>,, Reward title for nd-rd place in the Top  Fighters list,</center> | <center>nan</center> |
-| <center>347</center> | <center>8773.0</center> | <center>,, Reward title for th-th place in the Top  Fighters list,</center> | <center>nan</center> |
-| <center>348</center> | <center>8774.0</center> | <center>,, Reward title for th-th place in the Top  Fighters list,</center> | <center>nan</center> |
-| <center>349</center> | <center>8775.0</center> | <center>,, Reward title for st-th place in the Top  Fighters list,</center> | <center>nan</center> |
-| <center>350</center> | <center>1.0</center> | <center>,, Boxing King Lottery Setting,</center> | <center>nan</center> |
-| <center>351</center> | <center>1.0</center> | <center>,, Maximum number of Boxing King changes per week,</center> | <center>nan</center> |
-| <center>352</center> | <center>30.0</center> | <center>,, Summoning cooldown for Elf Island (in /th of a second),</center> | <center>nan</center> |
-| <center>353</center> | <center>21116.0</center> | <center>,, Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>354</center> | <center>21112.0</center> | <center>,, Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>355</center> | <center>21113.0</center> | <center>,, Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>356</center> | <center>21114.0</center> | <center>,, Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>357</center> | <center>21115.0</center> | <center>,, Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>358</center> | <center>20.0</center> | <center>,, Points required for Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>359</center> | <center>100.0</center> | <center>,, Points required for Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>360</center> | <center>300.0</center> | <center>,, Points required for Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>361</center> | <center>500.0</center> | <center>,, Points required for Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>362</center> | <center>1000.0</center> | <center>,, Points required for Free PK Arena Reward ,</center> | <center>nan</center> |
-| <center>363</center> | <center>5.0</center> | <center>,, For each + upgrade to a weapon from + to +, it represents the percentage increase in the weapon's attack power.,</center> | <center>nan</center> |
-| <center>364</center> | <center>10.0</center> | <center>,, For each + upgrade to a weapon from + to +, it represents the percentage increase in the weapon's attack power.</center> | <center>nan</center> |
-| <center>365</center> | <center>5.0</center> | <center>,,Armor +~+, each enhancement +, represents the percentage increase in defense power of the armor.</center> | <center>nan</center> |
-| <center>366</center> | <center>10.0</center> | <center>,,Armor +~+, each enhancement +, represents the percentage increase in defense power of the armor.</center> | <center>nan</center> |
-| <center>367</center> | <center>3000.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Winning Score.</center> | <center>nan</center> |
-| <center>368</center> | <center>1500.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Performance Score of Winning Guild.</center> | <center>nan</center> |
-| <center>369</center> | <center>400.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Performance Score of Losing Guild.</center> | <center>nan</center> |
-| <center>370</center> | <center>500.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Flag Capture Score.</center> | <center>nan</center> |
-| <center>371</center> | <center>10.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Winning Guild.</center> | <center>nan</center> |
-| <center>372</center> | <center>5.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Losing Guild.</center> | <center>nan</center> |
-| <center>373</center> | <center>2.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Kill Score of Winning Guild.</center> | <center>nan</center> |
-| <center>374</center> | <center>1.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Kill Score of Losing Guild.</center> | <center>nan</center> |
-| <center>375</center> | <center>1000.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Maximum Score for a Kill.</center> | <center>nan</center> |
-| <center>376</center> | <center>900.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Attack Time for the Flag.</center> | <center>nan</center> |
-| <center>377</center> | <center>500.0</center> | <center>,,Guardian's Score in Kiel's Defense War - Score for Attacking the Flag.</center> | <center>nan</center> |
-| <center>378</center> | <center>100.0</center> | <center>,,Experience required to upgrade Guild Tree to Level .</center> | <center>nan</center> |
-| <center>379</center> | <center>200.0</center> | <center>,,Experience required to upgrade Guild Tree to Level .</center> | <center>nan</center> |
-| <center>380</center> | <center>300.0</center> | <center>,,Experience required to upgrade Guild Tree to Level .</center> | <center>nan</center> |
-| <center>381</center> | <center>100.0</center> | <center>,,Energy Limit of Guild Tree - Level .</center> | <center>nan</center> |
-| <center>382</center> | <center>200.0</center> | <center>,,Energy Limit of Guild Tree - Level .</center> | <center>nan</center> |
-| <center>383</center> | <center>300.0</center> | <center>,,Energy Limit of Guild Tree - Level .</center> | <center>nan</center> |
-| <center>384</center> | <center>400.0</center> | <center>,,Energy Limit of Guild Tree - Level .</center> | <center>nan</center> |
-| <center>385</center> | <center>100.0</center> | <center>,,Maximum Energy Bar of a player.</center> | <center>nan</center> |
-| <center>386</center> | <center>100.0</center> | <center>,,Maximum Water Content of Guild Tree.</center> | <center>nan</center> |
-| <center>387</center> | <center>0.1</center> | <center>,.,Water Consumption per second for Guild Tree.</center> | <center>nan</center> |
-| <center>388</center> | <center>1.0</center> | <center>,,Maximum number of Specializations.</center> | <center>nan</center> |
-| <center>389</center> | <center>20.0</center> | <center>,,Maximum number of Specialization Points.</center> | <center>nan</center> |
-| <center>390</center> | <center>1.0</center> | <center>,,Login Reward Switch.</center> | <center>nan</center> |
-| <center>391</center> | <center>1.0</center> | <center>,,Starting number of transition prompt images.</center> | <center>nan</center> |
-| <center>392</center> | <center>104.0</center> | <center>,,Ending number of transition prompt images.</center> | <center>nan</center> |
-| <center>393</center> | <center>42170.0</center> | <center>,,Item ID of Enchanted Alchemy Fragment.</center> | <center>nan</center> |
-| <center>394</center> | <center>1.0</center> | <center>,,Amount of Mount Points that can be earned by using "Enchanted Alchemy Fragment".</center> | <center>nan</center> |
-| <center>395</center> | <center>2.0</center> | <center>,,Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis I" operation flag.</center> | <center>nan</center> |
-| <center>396</center> | <center>2.0</center> | <center>,,Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis G" operation flag.</center> | <center>nan</center> |
-| <center>397</center> | <center>1.0</center> | <center>, , "Magical Alchemy Fragment" minimum GK requirement for ability washing,</center> | <center>nan</center> |
-| <center>398</center> | <center>40.0</center> | <center>, , "Magical Alchemy Fragment" maximum GK requirement for white washing,</center> | <center>nan</center> |
-| <center>399</center> | <center>60.0</center> | <center>, , "Magical Alchemy Fragment" maximum GK requirement for green washing,</center> | <center>nan</center> |
-| <center>400</center> | <center>80.0</center> | <center>, , "Magical Alchemy Fragment" maximum GK requirement for blue washing,</center> | <center>nan</center> |
-| <center>401</center> | <center>139.0</center> | <center>, , "Magical Alchemy Fragment" maximum GK requirement for orange washing,</center> | <center>nan</center> |
-| <center>402</center> | <center>999.0</center> | <center>, , "Magical Alchemy Fragment" maximum GK requirement for yellow washing,</center> | <center>nan</center> |
-| <center>403</center> | <center>1.0</center> | <center>, , "Magical Alchemy Fragment" minimum IK requirement for ability washing,</center> | <center>nan</center> |
-| <center>404</center> | <center>56.0</center> | <center>, , "Magical Alchemy Fragment" maximum IK requirement for white washing,</center> | <center>nan</center> |
-| <center>405</center> | <center>90.0</center> | <center>, , "Magical Alchemy Fragment" maximum IK requirement for green washing,</center> | <center>nan</center> |
-| <center>406</center> | <center>114.0</center> | <center>, , "Magical Alchemy Fragment" maximum IK requirement for blue washing,</center> | <center>nan</center> |
-| <center>407</center> | <center>238.0</center> | <center>, , "Magical Alchemy Fragment" maximum IK requirement for orange washing.</center> | <center>nan</center> |
-| <center>408</center> | <center>999.0</center> | <center>,,Maximum GK Requirement for Washing Magic Alchemy Fragments in Yellow,</center> | <center>nan</center> |
-| <center>409</center> | <center>4.0</center> | <center>,,Base parameter for giving the player's activity island a level  fishing seed.</center> | <center>nan</center> |
-| <center>410</center> | <center>5.0</center> | <center>,,When fishing on another player's island, obtain basic parameters for catching level  fish.</center> | <center>nan</center> |
-| <center>411</center> | <center>5.0</center> | <center>,,Give the player's island (where the activity is being executed) the basic parameters for catching level  fish.</center> | <center>nan</center> |
-| <center>412</center> | <center>6.0</center> | <center>,,When fishing on another player's island, obtain basic parameters for catching level  fish.</center> | <center>nan</center> |
-| <center>413</center> | <center>10.0</center> | <center>,,Recruitment price for players with guild mail.</center> | <center>nan</center> |
-| <center>414</center> | <center>168.0</center> | <center>,,Time limit for guild transfer queue and duration of transferred guild buff (in hours).</center> | <center>nan</center> |
-| <center>415</center> | <center>50614.0</center> | <center>,,Guild transfer buff.</center> | <center>nan</center> |
-| <center>416</center> | <center>200.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>417</center> | <center>250.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>418</center> | <center>300.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>419</center> | <center>350.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>420</center> | <center>400.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>421</center> | <center>450.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>422</center> | <center>500.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>423</center> | <center>600.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>424</center> | <center>800.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>425</center> | <center>1000.0</center> | <center>,,Guild Energy LV..</center> | <center>nan</center> |
-| <center>426</center> | <center>100.0</center> | <center>,,Guild experience conversion to guild energy parameter.</center> | <center>nan</center> |
-| <center>427</center> | <center>5.0</center> | <center>,,Guild prestige conversion to guild energy parameter.</center> | <center>nan</center> |
-| <center>428</center> | <center>100.0</center> | <center>,,Number of participants in the guild tree challenge.</center> | <center>nan</center> |
-| <center>429</center> | <center>49176.0</center> | <center>,,Newcomer reward items.</center> | <center>nan</center> |
-| <center>430</center> | <center>1.0</center> | <center>,,Amount of sprite coins obtainable by greeting.</center> | <center>nan</center> |
-| <center>431</center> | <center>200.0</center> | <center>,,Depth Guard Rights - maximum number of deaths allowed before the game ends.</center> | <center>nan</center> |
-| <center>432</center> | <center>1.0</center> | <center>,,Depth Guard Rights - number of additional deaths per death.</center> | <center>nan</center> |
-| <center>433</center> | <center>50.0</center> | <center>,,Depth Guard Rights - health of the main tower.</center> | <center>nan</center> |
-| <center>434</center> | <center>1.0</center> | <center>,,Depth Guard Rights - damage dealt by monsters to the main tower.</center> | <center>nan</center> |
-| <center>435</center> | <center>1500.0</center> | <center>,,Depth Guard Rights - base score for winning team.</center> | <center>nan</center> |
-| <center>436</center> | <center>500.0</center> | <center>,,Depth Guard Rights - base score for losing team.</center> | <center>nan</center> |
-| <center>437</center> | <center>3.0</center> | <center>,,Depth Guard Rights - survival bonus multiplier for winning team.</center> | <center>nan</center> |
-| <center>438</center> | <center>1.0</center> | <center>,,Depth Guard Rights - survival bonus multiplier for losing team.</center> | <center>nan</center> |
-| <center>439</center> | <center>800.0</center> | <center>,,Depth Guard Rights - score for killing the king monster.</center> | <center>nan</center> |
-| <center>440</center> | <center>750.0</center> | <center>,,Depth Guard Rights - upper limit score for interference bonus of the winning team.</center> | <center>nan</center> |
-| <center>441</center> | <center>250.0</center> | <center>,,Depth Guard Rights - upper limit score for interference bonus of the losing team.</center> | <center>nan</center> |
-| <center>442</center> | <center>15.0</center> | <center>,,Master-Apprentice System-Open Level,</center> | <center>nan</center> |
-| <center>443</center> | <center>40.0</center> | <center>,,Master-Apprentice System-Master Open Level,</center> | <center>nan</center> |
-| <center>444</center> | <center>1.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>445</center> | <center>2.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>446</center> | <center>4.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>447</center> | <center>8.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>448</center> | <center>12.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>449</center> | <center>20.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>450</center> | <center>40.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>451</center> | <center>100.0</center> | <center>,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -,</center> | <center>nan</center> |
-| <center>452</center> | <center>4.0</center> | <center>,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have,</center> | <center>nan</center> |
-| <center>453</center> | <center>5.0</center> | <center>,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have,</center> | <center>nan</center> |
-| <center>454</center> | <center>6.0</center> | <center>,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have,</center> | <center>nan</center> |
-| <center>455</center> | <center>7.0</center> | <center>,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have,</center> | <center>nan</center> |
-| <center>456</center> | <center>8.0</center> | <center>,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have,</center> | <center>nan</center> |
-| <center>457</center> | <center>1.0</center> | <center>,,Maximum value for "Transcendence" level,</center> | <center>nan</center> |
-| <center>458</center> | <center>0.1</center> | <center>,.,Parameter for calculating "Experience Gain" based on Transcendence Evaluation,</center> | <center>nan</center> |
-| <center>459</center> | <center>0.1</center> | <center>,.,Parameter for calculating "Experience Gain" based on Transcendence Level,</center> | <center>nan</center> |
-| <center>460</center> | <center>2.5</center> | <center>,.,Parameter for calculating "Attribute Bonus",</center> | <center>nan</center> |
-| <center>461</center> | <center>1.0</center> | <center>,,Parameter for calculating the amount of money required to learn a "Memory Skill" per level,</center> | <center>nan</center> |
-| <center>462</center> | <center>2.0</center> | <center>,,Parameter for calculating the "Super Specialization" limit increase,</center> | <center>nan</center> |
-| <center>463</center> | <center>4.0</center> | <center>,,Parameter for calculating the "Extreme Specialization" limit increase,</center> | <center>nan</center> |
-| <center>464</center> | <center>62.0</center> | <center>,,Color (green) of the character's name display for Transcendence level  (enter the color code number),</center> | <center>nan</center> |
-| <center>465</center> | <center>5.0</center> | <center>,,Color (blue) of the character's name display for Transcendence level ,</center> | <center>nan</center> |
-| <center>466</center> | <center>9.0</center> | <center>,,Color (orange) of the character's name display for Transcendence level ,</center> | <center>nan</center> |
-| <center>467</center> | <center>7.0</center> | <center>,,Color (yellow) of the character's name display for Transcendence level ,</center> | <center>nan</center> |
-| <center>468</center> | <center>0.0</center> | <center>,,Obsolete and not in use,</center> | <center>nan</center> |
-| <center>469</center> | <center>8.0</center> | <center>,,Exchange rate of  gold coins for Coconut Coins,</center> | <center>nan</center> |
-| <center>470</center> | <center>40.0</center> | <center>,,Exchange rate of  gold coins for Coconut Coins,</center> | <center>nan</center> |
-| <center>471</center> | <center>80.0</center> | <center>,,Exchange rate of  gold coins for Coconut Coins,</center> | <center>nan</center> |
-| <center>472</center> | <center>200.0</center> | <center>,,Exchange rate of  gold coins for Coconut Coins,</center> | <center>nan</center> |
-| <center>473</center> | <center>400.0</center> | <center>,,Exchange rate of  gold coins for Coconut Coins.</center> | <center>nan</center> |
-| <center>474</center> | <center>2.0</center> | <center>When failing in the Elf Race, deduct victory points by (fill in  or a positive integer).</center> | <center>nan</center> |
-| <center>475</center> | <center>10.0</center> | <center>When winning in the Elf Race, increase victory points by (fill in  or a positive integer).</center> | <center>nan</center> |
-| <center>476</center> | <center>130.0</center> | <center>The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race).</center> | <center>nan</center> |
-| <center>477</center> | <center>150.0</center> | <center>The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race).</center> | <center>nan</center> |
-| <center>478</center> | <center>175.0</center> | <center>The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race).</center> | <center>nan</center> |
-| <center>479</center> | <center>0.3</center> | <center>The ratio of experience points given as a reincarnation bonus ( = %).</center> | <center>nan</center> |
-| <center>480</center> | <center>2.0</center> | <center>The maximum auction days Y value that can be set when auctioning items in the auction interface.</center> | <center>nan</center> |
-| <center>481</center> | <center>60.0</center> | <center>The percentage Z value of the auction tax charged when the auction days of an item are greater than ; enter an integer, and the actual value will be divided by .</center> | <center>nan</center> |
-| <center>482</center> | <center>90.0</center> | <center>New restriction parameter for participating in the Beast Tower based on level.</center> | <center>nan</center> |
-| <center>483</center> | <center>10.0</center> | <center>New daily challenge limit for participating in the Beast Tower.</center> | <center>nan</center> |
-| <center>484</center> | <center>30.0</center> | <center>New maximum number of challengers per group in the Beast Tower.</center> | <center>nan</center> |
-| <center>485</center> | <center>1.0</center> | <center>The number of guild groups that can be created for the Beast Tower LV-LV (maximum of ).</center> | <center>nan</center> |
-| <center>486</center> | <center>2.0</center> | <center>The number of guild groups that can be created for the Beast Tower LV and above (maximum of ).</center> | <center>nan</center> |
-| <center>487</center> | <center>60000000.0</center> | <center>The cost to create a guild group for the Beast Tower.</center> | <center>nan</center> |
-| <center>488</center> | <center>1.0</center> | <center>The time in hours for returning undelivered mail with postage due; enter an integer.</center> | <center>nan</center> |
-| <center>489</center> | <center>15.0</center> | <center>The minimum level requirement for using postage due for mailing.</center> | <center>nan</center> |
-| <center>490</center> | <center>30008.0</center> | <center>The special shop item number required to reset the daily exchange limit in the barter interface.</center> | <center>nan</center> |
-| <center>491</center> | <center>5.0</center> | <center>The number of clay used per consumption in advanced alchemy.</center> | <center>nan</center> |
-| <center>492</center> | <center>0.0</center> | <center>The probability of getting a white item in normal alchemy.</center> | <center>nan</center> |
-| <center>493</center> | <center>0.0</center> | <center>The probability of getting a green item in normal alchemy.</center> | <center>nan</center> |
-| <center>494</center> | <center>0.0</center> | <center>The probability of getting a blue item in normal alchemy.</center> | <center>nan</center> |
-| <center>495</center> | <center>0.0</center> | <center>The probability of getting a yellow item in normal alchemy.</center> | <center>nan</center> |
-| <center>496</center> | <center>0.0</center> | <center>The probability of getting a white item in enchanted alchemy.</center> | <center>nan</center> |
-| <center>497</center> | <center>0.0</center> | <center>The probability of getting a green item in enchanted alchemy.</center> | <center>nan</center> |
-| <center>498</center> | <center>0.0</center> | <center>The probability of getting a blue item in enchanted alchemy.</center> | <center>nan</center> |
-| <center>499</center> | <center>0.0</center> | <center>The probability of getting a yellow item in enchanted alchemy.</center> | <center>nan</center> |
-| <center>500</center> | <center>0.0</center> | <center>The probability of getting a white item in advanced alchemy.</center> | <center>nan</center> |
-| <center>501</center> | <center>0.0</center> | <center>The probability of getting a green item in advanced alchemy.</center> | <center>nan</center> |
-| <center>502</center> | <center>0.0</center> | <center>The probability of getting a blue item in advanced alchemy.</center> | <center>nan</center> |
-| <center>503</center> | <center>0.0</center> | <center>The probability of getting a yellow item in advanced alchemy.</center> | <center>nan</center> |
-| <center>504</center> | <center>1.0</center> | <center>The number of throne points affected by "Enchanted Alchemy Fragments".</center> | <center>nan</center> |
-| <center>505</center> | <center>2.0</center> | <center>Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis I".</center> | <center>nan</center> |
-| <center>506</center> | <center>2.0</center> | <center>Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis G".</center> | <center>nan</center> |
-| <center>507</center> | <center>1.0</center> | <center>The minimum number of GK required for the washing ability of "Enchanted Alchemy Fragments".</center> | <center>nan</center> |
-| <center>508</center> | <center>40.0</center> | <center>"Minimum number of GK with ability to cleanse 'Enchanted Alchemy Fragment'"</center> | <center>nan</center> |
-| <center>509</center> | <center>52.0</center> | <center>,, "Magic Alchemy Fragment" maximum demand for white GK washing,</center> | <center>nan</center> |
-| <center>510</center> | <center>62.0</center> | <center>,, "Magic Alchemy Fragment" maximum demand for green GK washing,</center> | <center>nan</center> |
-| <center>511</center> | <center>72.0</center> | <center>,, "Magic Alchemy Fragment" maximum demand for blue GK washing,</center> | <center>nan</center> |
-| <center>512</center> | <center>999.0</center> | <center>,, "Magic Alchemy Fragment" maximum demand for orange GK washing,</center> | <center>nan</center> |
-| <center>513</center> | <center>1.0</center> | <center>,, "Magic Alchemy Fragment" maximum demand for yellow GK washing,</center> | <center>nan</center> |
-| <center>514</center> | <center>56.0</center> | <center>,, Minimum demand for IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>515</center> | <center>90.0</center> | <center>,, Maximum demand for white IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>516</center> | <center>124.0</center> | <center>,, Maximum demand for green IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>517</center> | <center>198.0</center> | <center>,, Maximum demand for blue IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>518</center> | <center>999.0</center> | <center>,, Maximum demand for orange IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>519</center> | <center>1.0</center> | <center>,, Maximum demand for yellow IK washing with "Magic Alchemy Fragment",</center> | <center>nan</center> |
-| <center>520</center> | <center>350.0</center> | <center>,, Advanced Alchemy Switch,  for off, others for on (requires UI replacement),</center> | <center>nan</center> |
-| <center>521</center> | <center>350.0</center> | <center>,, Probability of adding  special abilities to red equipment: fill in , sum of  is .,</center> | <center>nan</center> |
-| <center>522</center> | <center>250.0</center> | <center>,, Probability of adding  special ability to red equipment: fill in , sum of  is .,</center> | <center>nan</center> |
-| <center>523</center> | <center>50.0</center> | <center>,, Probability of adding  special abilities to red equipment: fill in , sum of  is .,</center> | <center>nan</center> |
-| <center>524</center> | <center>2.0</center> | <center>,, Probability of adding  special abilities to red equipment: fill in , sum of  is .,</center> | <center>nan</center> |
-| <center>525</center> | <center>2.0</center> | <center>,, Points received when weapon awakening fails (fill in ),</center> | <center>nan</center> |
-| <center>526</center> | <center>100.0</center> | <center>,, Points received when armor awakening fails (fill in ),</center> | <center>nan</center> |
-| <center>527</center> | <center>93191.0</center> | <center>,, Parameter value for calculating the repair cost of the Throne's durability,</center> | <center>nan</center> |
-| <center>528</center> | <center>500.0</center> | <center>,, New Year's Eve fireworks special effect number,</center> | <center>nan</center> |
-| <center>529</center> | <center>85.0</center> | <center>,, Maximum personal performance score in Gaslow Guild War,</center> | <center>nan</center> |
-| <center>530</center> | <center>14.0</center> | <center>,, Probability of adding one-star rune, combinable once,</center> | <center>nan</center> |
-| <center>531</center> | <center>1.0</center> | <center>,, Probability of adding two-star rune, combinable three times,</center> | <center>nan</center> |
-| <center>532</center> | <center>2.0</center> | <center>,, Probability of adding three-star rune, combinable five times,</center> | <center>nan</center> |
-| <center>533</center> | <center>85.0</center> | <center>,, Daily increase in the number of challenges in the Holy Sanctum,</center> | <center>nan</center> |
-| <center>534</center> | <center>14.0</center> | <center>,, Probability of adding one-star crystal, combinable once,</center> | <center>nan</center> |
-| <center>535</center> | <center>1.0</center> | <center>,, Probability of adding two-star crystal, combinable twice,</center> | <center>nan</center> |
-| <center>536</center> | <center>7.0</center> | <center>,, Probability of adding three-star crystal, combinable three times,</center> | <center>nan</center> |
-| <center>537</center> | <center>16633.0</center> | <center>,, Duration of the opening of the Wishing Pool, in real-time days,</center> | <center>nan</center> |
-| <center>538</center> | <center>16637.0</center> | <center>,, Minimum interval value for general item messages in Wishing Pool (non-announcement items),</center> | <center>nan</center> |
-| <center>539</center> | <center>16571.0</center> | <center>,, Maximum interval value for general item messages in Wishing Pool, value must be greater than or equal to parameter  (non-announcement items),</center> | <center>nan</center> |
-| <center>540</center> | <center>16573.0</center> | <center>,, Minimum interval value for rare item messages in Wishing Pool (announcement items),</center> | <center>nan</center> |
-| <center>541</center> | <center>16569.0</center> | <center>,, Maximum interval value for rare item messages in Wishing Pool, value must be greater than or equal to parameter  (announcement items),</center> | <center>nan</center> |
-| <center>542</center> | <center>16570.0</center> | <center>,, Minimum interval value for performance messages in Wishing Pool.</center> | <center>nan</center> |
-| <center>543</center> | <center>85.0</center> | <center>,,Message for Wishing Pool : Maximum value of interval during performance, value must be greater than or equal to parameter .</center> | <center>nan</center> |
-| <center>544</center> | <center>14.0</center> | <center>,,Probability of adding one star to souvenir, can be combined once.</center> | <center>nan</center> |
-| <center>545</center> | <center>1.0</center> | <center>,,Probability of adding two stars to souvenir, can be combined twice.</center> | <center>nan</center> |
-| <center>546</center> | <center>16.0</center> | <center>,,Probability of adding three stars to souvenir, can be combined three times.</center> | <center>nan</center> |
-| <center>547</center> | <center>90.0</center> | <center>,,Minimum required level for leaving a message on the message board (greater than or equal to).</center> | <center>nan</center> |
-| <center>548</center> | <center>10.0</center> | <center>,,When washing red equipment, probability of adding one-star ability, after addition can obtain one combination ability.</center> | <center>nan</center> |
-| <center>549</center> | <center>1775.0</center> | <center>,,When washing red equipment, probability of adding two-star ability, after addition can obtain two combination abilities.</center> | <center>nan</center> |
-| <center>550</center> | <center>10.0</center> | <center>,,Upper limit of specialization points.</center> | <center>nan</center> |
-| <center>551</center> | <center>15.0</center> | <center>,,After sending a hyperlink to a message channel, it cannot be sent again within a certain number of seconds.</center> | <center>nan</center> |
-| <center>552</center> | <center>12.0</center> | <center>,,Self-effect status in BUFF_ICON, will be displayed if less than this number of seconds.</center> | <center>nan</center> |
-| <center>553</center> | <center>5.0</center> | <center>,,Condition for opening the World Tree of Hardship.</center> | <center>nan</center> |
-| <center>554</center> | <center>60.0</center> | <center>,,Punishment for clicking too quickly_time that the server receives the command, in seconds.</center> | <center>nan</center> |
-| <center>555</center> | <center>18000.0</center> | <center>,,Punishment for clicking too quickly_within the time parameter , the total number of commands received, in units of times.</center> | <center>nan</center> |
-| <center>556</center> | <center>10.0</center> | <center>,,Duration of the punishment_BUFF for clicking too quickly, in units of . seconds.</center> | <center>nan</center> |
-| <center>557</center> | <center>30.0</center> | <center>,,Speed of automatic alchemy function, in units of . seconds.</center> | <center>nan</center> |
-| <center>558</center> | <center>100.0</center> | <center>,,Refresh frequency of detailed attributes, in units of . seconds.</center> | <center>nan</center> |
-| <center>559</center> | <center>53993.0</center> | <center>,,Base money cost of decoration, in copper units.</center> | <center>nan</center> |
-| <center>560</center> | <center>53994.0</center> | <center>,,Limitation of dungeon attempts, recoverable using items (rank one).</center> | <center>nan</center> |
-| <center>561</center> | <center>512.0</center> | <center>,,Limitation of dungeon attempts, recoverable using items (rank two).</center> | <center>nan</center> |
-| <center>562</center> | <center>1024.0</center> | <center>,,(Abandoned but available).</center> | <center>nan</center> |
-| <center>563</center> | <center>40.0</center> | <center>,,(Abandoned but available).</center> | <center>nan</center> |
-| <center>564</center> | <center>55.0</center> | <center>,,Decoration system - Probability of reducing perfection when decorating from + to + (%).</center> | <center>nan</center> |
-| <center>565</center> | <center>70.0</center> | <center>,,Decoration system - Probability of reducing perfection when decorating from + to + (%).</center> | <center>nan</center> |
-| <center>566</center> | <center>90.0</center> | <center>,,Decoration system - Probability of reducing perfection when decorating from + to + (%).</center> | <center>nan</center> |
-| <center>567</center> | <center>6.0</center> | <center>,,Decoration system - Probability of reducing perfection when decorating from + to + (%).</center> | <center>nan</center> |
-| <center>568</center> | <center>5.0</center> | <center>,,Decoration system - Maximum perfect value for orange quality.</center> | <center>nan</center> |
-| <center>569</center> | <center>4.0</center> | <center>,,Decoration system - Maximum perfect value for yellow quality.</center> | <center>nan</center> |
-| <center>570</center> | <center>3.0</center> | <center>,,Decoration system - Maximum perfect value for purple quality.</center> | <center>nan</center> |
-| <center>571</center> | <center>0.5</center> | <center>,,Decoration system - Maximum perfect value for red quality.</center> | <center>nan</center> |
-| <center>572</center> | <center>1.0</center> | <center>,.,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %.</center> | <center>nan</center> |
-| <center>573</center> | <center>2.0</center> | <center>,,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %.</center> | <center>nan</center> |
-| <center>574</center> | <center>1.0</center> | <center>,,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %.</center> | <center>nan</center> |
-| <center>575</center> | <center>2.0</center> | <center>,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %.</center> | <center>nan</center> |
-| <center>576</center> | <center>4.0</center> | <center>,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %.</center> | <center>nan</center> |
-| <center>577</center> | <center>0.5</center> | <center>,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %.</center> | <center>nan</center> |
-| <center>578</center> | <center>1.0</center> | <center>,.,Decoration levels -, ratio of defense attribute bonus for jewelry, in units of %.</center> | <center>nan</center> |
-| <center>579</center> | <center>250.0</center> | <center>,,Decoration levels -, ratio of defense attribute bonus for back equipment, in units of %,...</center> | <center>nan</center> |
-| <center>580</center> | <center>10.0</center> | <center>Maximum number of times for automatic alchemy.</center> | <center>nan</center> |
-| <center>581</center> | <center>50.0</center> | <center>,,Auto alchemy limit</center> | <center>nan</center> |
-| <center>582</center> | <center>6.0</center> | <center>,,Base amount of copper coins required for decorating repair</center> | <center>nan</center> |
-| <center>583</center> | <center>15.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decoration, unit: %</center> | <center>nan</center> |
-| <center>584</center> | <center>29.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>585</center> | <center>50.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>586</center> | <center>100.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>587</center> | <center>1.8</center> | <center>,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: %</center> | <center>nan</center> |
-| <center>588</center> | <center>4.5</center> | <center>,.,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>589</center> | <center>12.0</center> | <center>,.,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>590</center> | <center>34.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>591</center> | <center>100.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>592</center> | <center>1.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: %</center> | <center>nan</center> |
-| <center>593</center> | <center>3.5</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>594</center> | <center>11.0</center> | <center>,.,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>595</center> | <center>33.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>596</center> | <center>100.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  decorations, unit: %</center> | <center>nan</center> |
-| <center>597</center> | <center>10.0</center> | <center>,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: %</center> | <center>nan</center> |
-| <center>598</center> | <center>15.0</center> | <center>,,Price of gold coins required for resetting specialization at Master level (per  point of specialization)</center> | <center>nan</center> |
-| <center>599</center> | <center>20.0</center> | <center>,,Price of gold coins required for resetting specialization at Legendary level (per  point of specialization)</center> | <center>nan</center> |
-| <center>600</center> | <center>28.0</center> | <center>,,Price of gold coins required for resetting specialization at Mythical level (per  point of specialization)</center> | <center>nan</center> |
-| <center>601</center> | <center>35.0</center> | <center>,,Price of gold coins required for resetting specialization at Extreme level (per  point of specialization)</center> | <center>nan</center> |
-| <center>602</center> | <center>0.0</center> | <center>,,Price of gold coins required for resetting specialization at Infinite level (per  point of specialization)</center> | <center>nan</center> |
-| <center>603</center> | <center>1.0</center> | <center>,,Percentage of specialization refunded by gold coins (~); if  is entered in this table, the reset button will be hidden on the client side.</center> | <center>nan</center> |
-| <center>604</center> | <center>15.0</center> | <center>,,GM characters with specified level of permissions or higher are not affected by the "Hide Other Players" function.</center> | <center>nan</center> |
-| <center>605</center> | <center>24.0</center> | <center>,,Minimum level requirement for sending messages</center> | <center>nan</center> |
-| <center>606</center> | <center>24.0</center> | <center>,,Cooling time for rejoining a guild after voluntarily leaving it, unit: hours</center> | <center>nan</center> |
-| <center>607</center> | <center>16.0</center> | <center>Interval time for sending guild recruitment letters to a single character, unit: hours</center> | <center>nan</center> |
-| <center>608</center> | <center>nan</center> | <center>Minimum character level for sending guild recruitment letters.</center> | <center>nan</center> |
+#+ATTR_HTML: <style> td, th { text-align: center; }</style>
+| ID | Value | Description | Obs |
+|----+-------+-------------+-----|
+| 1 | 3.0 | Body constitution conversion and maximum life formula parameter: , | nan |
+| 2 | 40.0 | Body constitution conversion and life recovery formula parameter: ,. | nan |
+| 3 | 0.5 | Willpower conversion and energy limit formula parameter: , | nan |
+| 4 | 20.0 | Willpower conversion and energy recovery formula parameter: ,. | nan |
+| 5 | 0.4 | Strength conversion and attack formula parameter: , | nan |
+| 6 | 3.0 | Agility conversion and ranged attack formula parameter: , | nan |
+| 7 | 3.0 | Wisdom conversion and magic attack formula parameter: , | nan |
+| 8 | 3.0 | Body constitution conversion and defense formula parameter: ,. | nan |
+| 9 | 1.5 | Willpower conversion and magic defense formula parameter: ,. | nan |
+| 10 | 1.5 | Agility conversion and evasion formula parameter: , | nan |
+| 11 | 10.0 | Agility conversion and critical hit formula parameter: , | nan |
+| 12 | 28.0 | Agility conversion and critical hit formula & Wisdom conversion and magic critical formula, basic critical probability parameter: , | nan |
+| 13 | 5.0 | Basic critical damage formula parameter: , | nan |
+| 14 | 150.0 | Wisdom conversion and magic critical formula parameter: , | nan |
+| 15 | 28.0 | Basic magic critical damage formula parameter: , | nan |
+| 16 | 150.0 | , Formula parameter for additional damage, type advantage damage, and other diminishing returns. | nan |
+| 17 | 10.0 | ., Represents the attack speed in barehanded state, i.e., the interval time required for each attack. | nan |
+| 18 | 1.5 | , Represents the movement speed in normal walking state, i.e., the number of grids that can be moved per second. | nan |
+| 19 | 10.0 | ., Adjustment variable for main hand weapon attack speed when calculating attack speed in dual-wield state. | nan |
+| 20 | 0.9 | ., Adjustment variable for off-hand weapon attack speed when calculating attack speed in dual-wield state. | nan |
+| 21 | 0.9 | , Parameter value for the corresponding attack level check of the defender's strength in the block damage diminishing formula. | nan |
+| 22 | 8.0 | ., Percentage of damage to be diminished after blocking in the block damage diminishing formula. | nan |
+| 23 | 0.8 | ., Percentage of damage not to be diminished after blocking in the block damage diminishing formula. | nan |
+| 24 | 0.2 | ., Adjustment parameter for adding the damage of the main hand and off-hand weapons when in dual-wield state. | nan |
+| 25 | 0.5 | , Distance of the player's barehanded normal attack, in grid units, where  grid represents . meters in the game world. | nan |
+| 26 | 2.0 | ., Diminishing value of HP recovery when not sitting down. | nan |
+| 27 | 0.25 | ., Diminishing value of energy recovery when not sitting down. | nan |
+| 28 | 0.25 | ., Adjustment parameter for adding the attack power of the main hand and off-hand weapons when in dual-wield state. | nan |
+| 29 | 0.75 | , Parameter value for the equal difference adjustment of the attack, defense, and hit rate formula. | nan |
+| 30 | 4.0 | , Basic probability of attack hit for normal attacks and physical skills. | nan |
+| 31 | 100.0 | ,, Parameter value for the arithmetic progression correction of normal attack damage. | nan |
+| 32 | 5.0 | ,, Parameter value for the defense correction of normal attack and physical skill damage formulas for the defending side. | nan |
+| 33 | 1.0 | ,, Minimum random value used in calculating damage when attacking with bare hands. | nan |
+| 34 | 5.0 | ,, Maximum random value used in calculating damage when attacking with bare hands. | nan |
+| 35 | 10.0 | ,, Parameter value for the arithmetic progression correction of physical skill damage. | nan |
+| 36 | 10.0 | ,, Parameter value for the arithmetic progression correction of magic skill hit formula. | nan |
+| 37 | 3.0 | ,, Base probability of the attacker hitting with a magic skill. | nan |
+| 38 | 100.0 | ,, Parameter value for the magic skill damage formula defense correction of the defending side's magic defense. | nan |
+| 39 | 1.0 | ,, Parameter value for the arithmetic progression correction of the normal attack and defense critical hit formula. | nan |
+| 40 | 2.0 | ,, Parameter value for the arithmetic progression correction of the experience point formula. | nan |
+| 41 | 20.0 | ,, Parameter value for the non-depreciation of experience points within N levels in the arithmetic progression correction of the experience point formula. | nan |
+| 42 | 3.0 | ,, Reward parameter value in the team experience distribution formula. | nan |
+| 43 | 15.0 | ,, Parameter value in the damage monster's impact on personal hatred calculation formula. | nan |
+| 44 | 10.0 | ,., Parameter value in the healing skill's impact on personal hatred calculation formula. | nan |
+| 45 | 1.2 | ,, Number of points of stamina recovered by the elf every  seconds. | nan |
+| 46 | 3.0 | When the elf's mood value is between  and , the percentage of extra time required to perform a task. | nan |
+| 47 | 150.0 | When the elf's mood value is between  and , the percentage of extra time required to perform a task. | nan |
+| 48 | 200.0 | When the elf's mood value is between  and , the additional experience points that can be obtained upon completion of a task. | nan |
+| 49 | 1.0 | When the elf's mood value is between  and , the additional experience points that can be obtained upon completion of a task. | nan |
+| 50 | 2.0 | The radius of the no-shooting zone, which represents the range where ranged weapons cannot be used. | nan |
+| 51 | 5.0 | The duration in seconds that summoned monsters remain alive when not in combat, after their summoner has died. | nan |
+| 52 | 180.0 | The range within which monsters will chase a player character, measured in grid units. | nan |
+| 53 | 100.0 | Every N seconds in standby mode, one monster is summoned. | nan |
+| 54 | 10.0 | Every N seconds in combat mode, one monster is summoned. | nan |
+| 55 | 2.0 | For each point of armor enhancement, the percentage of additional defense that the armor provides. | nan |
+| 56 | 3.0 | For each point of weapon enhancement, the percentage of additional attack power that the weapon provides. | nan |
+| 57 | 3.0 | When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction. | nan |
+| 58 | -0.05 | When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction. | nan |
+| 59 | -0.03 | When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction. | nan |
+| 60 | -0.01 | When the elf's return gauge is between  and %, the parameter value used in the reputation calculation formula for the elf's faction. | nan |
+| 61 | 0.02 | ,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. | nan |
+| 62 | 0.04 | ,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. | nan |
+| 63 | 0.06 | ,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. | nan |
+| 64 | 0.08 | ,.,The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at %. | nan |
+| 65 | 0.1 | ,,The required intimacy value for elf prayer. | nan |
+| 66 | 100.0 | ,,The required stamina value for elf prayer. | nan |
+| 67 | 50.0 | ,,The required mood value for elf prayer. | nan |
+| 68 | 200.0 | ,,The range of grid squares in which a sound effect built into the dynamic effect editor can be heard when played in the game. | nan |
+| 69 | 20.0 | ,,The static effect parameter used if no special effect is specified for a summoned monster. | nan |
+| 70 | 33052.0 | ,,The static effect parameter used when a summoned monster is killed or meets the necessary conditions to disappear. | nan |
+| 71 | 33052.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 72 | 98.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 73 | 95.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 74 | 92.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 75 | 88.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 76 | 84.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 77 | 80.0 | ,,The percentage of the original price at which an item can be bought when the reputation level reaches . | nan |
+| 78 | 75.0 | ,,Reserved for store discount usage... | nan |
+| 79 | nan | ,,Reserved for store discount usage... | nan |
+| 80 | nan | ,,Reserved for store discount usage... | nan |
+| 81 | nan | ,,Reserved for store discount usage... | nan |
+| 82 | nan | ,,Reserved for store discount usage... | nan |
+| 83 | nan | ,,Reserved for store discount usage... | nan |
+| 84 | nan | ,,Reserved for store discount usage... | nan |
+| 85 | nan | ,,The probability of reducing the maximum durability value when repairing equipment with a current durability value of . | nan |
+| 86 | 60.0 | ,,The amount of time (in / second increments) a character is temporarily unable to participate in a battlefield when they exit the battlefield. | 10 Min |
+| 87 | 6000.0 | ,,The invincibility time (in / second increments) a character has when they are killed. | nan |
+| 88 | 50.0 | ,,The weakness time (in / second increments) a character has when they are killed. | nan |
+| 89 | 150.0 | ,,The parameter for the HP regeneration rate formula to ensure that low-level characters quickly recover their HP. | nan |
+| 90 | 24.0 | ,,The parameter for the MP regeneration rate formula to ensure that low-level characters quickly recover their MP. | nan |
+| 91 | 12.0 | : The difference between a player's level and the level of the task they are accepting must be less than or equal to this value. Additionally, the combined value of the player's character experience, guild experience, and reputation must equal the value of parameter . | nan |
+| 92 | 4.0 | : Same as parameter , but with different values for the difference between levels and the required combined value. | nan |
+| 93 | 6.0 | : Same as parameter , but with different values for the difference between levels and the required combined value. | nan |
+| 94 | 8.0 | : Same as parameter , but with different values for the difference between levels and the required combined value. If the difference between levels is greater than this value, the combined value of character experience, guild experience, and reputation must equal the value of parameter . | nan |
+| 95 | 10.0 | : This is a parameter that determines the decay of character experience, guild experience, and reputation for completing a task. | nan |
+| 96 | 100.0 | : Same as parameter , but with a different decay value. | nan |
+| 97 | 75.0 | : Same as parameter , but with a different decay value. | nan |
+| 98 | 50.0 | : Same as parameter , but with a different decay value. | nan |
+| 99 | 25.0 | : Same as parameter , but with a different decay value. | nan |
+| 100 | 0.0 | : This parameter determines the time interval for random special actions to occur when a player's character is idle. | nan |
+| 101 | 10.0 | : This parameter determines the probability that a special action will occur when a player's character is idle. | nan |
+| 102 | 15.0 | : This parameter determines the amount of time a player's character can be idle before automatically sitting down. | nan |
+| 103 | 180.0 | : This parameter is used in the formula for determining the amount a player will receive for selling an item to an NPC. | nan |
+| 104 | 0.05 | : This parameter determines the probability of weapon durability decreasing when a player uses a normal attack or skill. | nan |
+| 105 | 2.0 | : This parameter determines the probability of armor durability decreasing when a player receives a normal or skill attack. | nan |
+| 106 | 1.0 | : When a player dies, this parameter determines the percentage of durability lost from all equipped weapons and armor. | nan |
+| 107 | 10.0 | : When repairing equipment, there is a chance that the maximum durability value will decrease. This parameter determines the probability of that happening when the current durability value is not zero. | nan |
+| 108 | 20.0 | : When repairing equipment, there is a chance that the maximum durability value will decrease. This parameter determines the percentage of the maximum durability value that will be lost. | nan |
+| 109 | 10.0 | : This parameter is used in the formula for determining the cost of repairing equipment durability. | nan |
+| 110 | 0.08 | : This parameter determines the amount of time a player has to pick up an item before it disappears. | nan |
+| 111 | 60.0 | : After a scene's environmental sound effects have finished playing, this parameter determines how many seconds to wait before checking if background music should play. If not, the environmental sound effects continue. | nan |
+| 112 | 5.0 | : After a scene's environmental sound effects have finished playing and the wait period specified in parameter  has ended, this parameter determines the probability of playing background music. | nan |
+| 113 | 10.0 | : This parameter determines the time interval for a monster to scan for its next movement point. | nan |
+| 114 | 4.0 | : When a player or monster is injured by an attack, this parameter determines the probability of playing an injury animation. | nan |
+| 115 | 50.0 | : When a player or monster is critically injured by an attack, this parameter determines the probability of playing a critical injury animation. | nan |
+| 116 | 50.0 | ,,When characters or monsters dodge attacks, there is an N% chance of performing a dodge action. | nan |
+| 117 | 100.0 | ,,When releasing a Regen fairy at levels -, the reputation value is %. | nan |
+| 118 | 1000.0 | ,,When releasing a Regen fairy at levels -, the reputation value is %. | nan |
+| 119 | 4000.0 | ,,When releasing a Regen fairy at levels -, the reputation value is %. | nan |
+| 120 | 9000.0 | ,,When releasing a Regen fairy at levels -, the reputation value is %. | nan |
+| 121 | 16000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 122 | 25000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 123 | 36000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 124 | 49000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 125 | 64000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 126 | 81000.0 | , When releasing a regression elf of level -, the reputation value is %. | nan |
+| 127 | 100000.0 | , The time difference between the action launched by the client. When the skill has a flying effect and a target is required, the hit time is equal to the server's calculation distance time plus parameter  (in units of / second). | nan |
+| 128 | 6.0 | , The time difference between the flying distance and the client. When the skill has a flying effect and no target is needed, the hit time is equal to parameter  plus parameter  (in units of / second). Cannot calculate distance time because the target cannot be found. | nan |
+| 129 | 4.0 | , Reserved. | nan |
+| 130 | 0.0 | , Reserved. | nan |
+| 131 | 0.0 | , Battlefield type : Central crystal acquisition score. | nan |
+| 132 | 20.0 | , Battlefield type : Mine crystal acquisition score. | nan |
+| 133 | 10.0 | , Battlefield type : North village crystal acquisition score. | nan |
+| 134 | 10.0 | , Battlefield type : Forest crystal acquisition score. | nan |
+| 135 | 10.0 | , Battlefield type : South village crystal acquisition score. | nan |
+| 136 | 10.0 | , Battlefield type : Victory determining score. | nan |
+| 137 | 250.0 | , Battlefield type : Round time. | nan |
+| 138 | 1200.0 | , Battlefield type : Winning score coefficient. | nan |
+| 139 | 1.0 | , Battlefield type : Losing score coefficient. | nan |
+| 140 | 0.5 | , AA experience value. | nan |
+| 141 | 3500000.0 | , Invincibility time after battlefield resurrection, in tenths of a second. | nan |
+| 142 | 150.0 | , For the small monsters summoned by the king monster, the number of seconds they will automatically disappear if they have not entered combat. | nan |
+| 143 | 10.0 | , The percentage of experience value deduction after death and resurrection. | nan |
+| 144 | 10.0 | , The percentage of health recovery after death and resurrection. | nan |
+| 145 | 10.0 | , The percentage of energy recovery after death and resurrection. | nan |
+| 146 | 10.0 | , Guild battle: victory determining score. | nan |
+| 147 | 5000.0 | , Guild battle: round time. | nan |
+| 148 | 3600.0 | , Guild battle: maximum number of participants. | nan |
+| 149 | 75.0 | , Guild battle: time for advancing victory after occupation of the altar by the same camp. | nan |
+| 150 | 300.0 | , Guild battle: unit score for occupying the altar at the end. | nan |
+| 151 | 1000.0 | ,,- level elf battlefield world king summoning score | nan |
+| 152 | 200.0 | ,,Number of teleportation stones required for automatic mission teleportation | nan |
+| 153 | 2.0 | ,,PVP server protection level | nan |
+| 154 | 16.0 | ,,Percentage of experience points deducted from PVP death and resurrection | nan |
+| 155 | 0.0 | ,,Percentage of health restored upon PVP death and resurrection | nan |
+| 156 | 100.0 | ,,Percentage of energy restored upon PVP death and resurrection | nan |
+| 157 | 100.0 | ,,Percentage of current durability of equipped weapons and armor deducted upon PVP character death | nan |
+| 158 | 1.0 | ,,Location of PVP character resurrection | nan |
+| 159 | 1.0 | ,,Percentage of experience points deducted for resurrection at the nearest location upon death | nan |
+| 160 | 10.0 | ,,Percentage of health restored upon resurrection at the nearest location upon death | nan |
+| 161 | 25.0 | ,,Percentage of energy restored upon resurrection at the nearest location upon death | nan |
+| 162 | 25.0 | ,,Percentage of current durability of equipped weapons and armor deducted upon resurrection at the nearest location upon death | nan |
+| 163 | 20.0 | ,,Percentage increase in defense for each + upgrade for armor + to + | nan |
+| 164 | 4.0 | ,,Percentage increase in attack for each + upgrade for weapons + to + | nan |
+| 165 | 4.0 | ,,Percentage increase in defense for each + upgrade for armor + to + | nan |
+| 166 | 6.0 | ,,Percentage increase in attack for each + upgrade for weapons + to + | nan |
+| 167 | 6.0 | ,,Percentage increase in defense for each + upgrade for armor + to + | nan |
+| 168 | 10.0 | ,,Percentage increase in attack for each + upgrade for weapons + to + | nan |
+| 169 | 10.0 | ,,Total number of character creation times | nan |
+| 170 | 12.0 | ,.,Parameter for attack power when the elf's mood is happy. | nan |
+| 171 | 0.4 | ,.,When the elf's mood is happy, the parameter by which attack power is multiplied: | nan |
+| 172 | 0.2 | ,.,When the elf's mood is normal, the parameter by which attack power is multiplied: | nan |
+| 173 | 0.15 | ,.,When the elf's mood is down, the parameter by which attack power is multiplied: | nan |
+| 174 | 0.05 | ,.,When the elf's mood is sad, the parameter by which attack power is multiplied: | nan |
+| 175 | 0.02 | ,,Invisibility time after revival in the battlefield, in tenths of a second: | nan |
+| 176 | 300.0 | ,,The attack range of the elf's combat (. equals  grid): | nan |
+| 177 | 26.0 | ,,New rule in the Flame War: if the score difference between the two sides is greater than this value, a player will be randomly selected to perform the event specified in parameter . | nan |
+| 178 | 35.0 | ,,New rule in the Flame War: event given when the score difference between the two sides reaches this value: | nan |
+| 179 | 200.0 | ,,Points earned for killing an opponent in the free PK area: | nan |
+| 180 | 10.0 | ,.,Correction factor for attack speed of elf's single-handed weapons (faster <  (normal) < slower): | nan |
+| 181 | 0.9 | ,.,Correction factor for attack speed of elf's two-handed weapons (faster <  (normal) < slower): | nan |
+| 182 | 0.8 | ,.,Correction factor for attack speed of elf's staff-type weapons (faster <  (normal) < slower): | nan |
+| 183 | 0.7 | ,.,Correction factor for attack speed of elf's long-range weapons (faster <  (normal) < slower): | nan |
+| 184 | 0.6 | ,,Number of skills that can be converted into super specialization skills: | nan |
+| 185 | 2.0 | ,,Upper limit of points for a single super specialization: | nan |
+| 186 | 15.0 | ,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor: | nan |
+| 187 | 6.0 | ,,For every + upgrade of a weapon from + to +, represents the percentage increase of attack power of the weapon: | nan |
+| 188 | 6.0 | ,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor: | nan |
+| 189 | 6.0 | ,,For every + upgrade of a weapon from + to +, represents the percentage increase of attack power of the weapon: | nan |
+| 190 | 6.0 | ,,For every + upgrade of an armor from + to +, represents the percentage increase of defense of the armor: | nan |
+| 191 | 10.0 | ,,Weapon +~+ strengthening every time +, representing the percentage increase in the weapon's attack power. | nan |
+| 192 | 10.0 | ,,Red Coconut City Optimization - Lucky Star Special Prize. | nan |
+| 193 | 40351.0 | ,,The basic parameter that gives the rating value to the small island (player's activity execution small island). | nan |
+| 194 | 1.0 | ,,An additional basic parameter that gives the player's own small island a rating value when performing actions on another player's small island. | nan |
+| 195 | 2.0 | ,.,The proportion of score obtained when performing actions on the small island (currently: fishing, feeding, building restoration). | nan |
+| 196 | 0.2 | ,,Red Coconut City Optimization - Lucky Wheel Grand Prize. | nan |
+| 197 | 47864.0 | ,,Red Coconut City Optimization - Lucky Star Lottery ID. | nan |
+| 198 | 38431.0 | ,,PK Arena - Winning Points. | nan |
+| 199 | 25.0 | ,,PK Arena - Draw Points. | nan |
+| 200 | 10.0 | ,,PK Arena - Losing Points. | nan |
+| 201 | 5.0 | ,,PK Arena - Additional points for winning three consecutive games. | nan |
+| 202 | 70.0 | ,,PK Arena - Additional points for two wins, two losses, and one tie. | nan |
+| 203 | 0.0 | ,,PK Arena - st Place Reward Title. | nan |
+| 204 | 8256.0 | ,,PK Arena - nd and rd Place Reward Title. | nan |
+| 205 | 8257.0 | ,,PK Arena - th to th Place Reward Title. | nan |
+| 206 | 8258.0 | ,,PK Arena - th to th Place Reward Title. | nan |
+| 207 | 8259.0 | ,,PK Arena - st to th Place Reward Title. | nan |
+| 208 | 8260.0 | ,,Kuso Synthesis - Fragment ID. | nan |
+| 209 | 42170.0 | ,,Kuso Synthesis - IK Back Fragment Required Quantity. | nan |
+| 210 | 3.0 | ,,Kuso Synthesis - IK Head Fragment Required Quantity. | nan |
+| 211 | 3.0 | ,: Number of Kuso synthesis-IK set blocks required. | nan |
+| 212 | 3.0 | ,: Number of Kuso synthesis-IK shield blocks required. | nan |
+| 213 | 3.0 | ,: Number of Kuso synthesis-IK one-handed weapon blocks required. | nan |
+| 214 | 3.0 | ,: Number of Kuso synthesis-IK two-handed weapon blocks required. | nan |
+| 215 | 6.0 | ,: Number of Kuso synthesis-GK back accessory blocks required. | nan |
+| 216 | 3.0 | ,: Number of Kuso synthesis-GK head blocks required. | nan |
+| 217 | 3.0 | ,: Number of Kuso synthesis-GK set blocks required. | nan |
+| 218 | 3.0 | ,: Number of Kuso synthesis-GK shield blocks required. | nan |
+| 219 | 3.0 | ,: Number of Kuso synthesis-GK one-handed weapon blocks required. | nan |
+| 220 | 3.0 | ,: Number of Kuso synthesis-GK two-handed weapon blocks required. | nan |
+| 221 | 6.0 | ,: Number of Kuso synthesis-IK composite materials required. | nan |
+| 222 | 2.0 | ,: Number of Kuso synthesis-GK composite materials required. | nan |
+| 223 | 3.0 | ,: Probability of Kuso synthesis-IK composite white equipment upgrading to green equipment. | nan |
+| 224 | 50.0 | ,: Probability of Kuso synthesis-IK composite green equipment upgrading to blue equipment. | nan |
+| 225 | 40.0 | ,: Probability of Kuso synthesis-IK composite blue equipment upgrading to yellow equipment. | nan |
+| 226 | 20.0 | ,: Probability of Kuso synthesis-GK composite white equipment upgrading to green equipment. | nan |
+| 227 | 50.0 | ,: Probability of Kuso synthesis-GK composite green equipment upgrading to blue equipment. | nan |
+| 228 | 40.0 | ,: Probability of Kuso synthesis-GK composite blue equipment upgrading to yellow equipment. | nan |
+| 229 | 20.0 | ,, Starting score for Illya Guild War | nan |
+| 230 | 2600.0 | ,, Basic score for the winning team in Illya Guild War | nan |
+| 231 | 1500.0 | ,, Basic score for the losing team in Illya Guild War | nan |
+| 232 | 750.0 | ,, Bonus score for activating magic in the Guild War | nan |
+| 233 | 20.0 | ,, Score for picking up the battle flag in Illya Guild War | nan |
+| 234 | 1.0 | ,, Score for using battlefield magic in Illya Guild War | nan |
+| 235 | 10.0 | ,, Personal score for achieving A grade in Illya Guild War | nan |
+| 236 | 200.0 | ,, Personal score for achieving B grade in Illya Guild War | nan |
+| 237 | 100.0 | ,, Personal score for achieving C grade in Illya Guild War | nan |
+| 238 | 50.0 | ,, Personal score for achieving D grade in Illya Guild War | nan |
+| 239 | 0.0 | ,, Penalty score for using battlefield magic against the enemy in Illya Guild War | nan |
+| 240 | 300.0 | ,, Time limit for flag capture in Illya Guild War | nan |
+| 241 | 5.0 | ,, Time limit for tower capture in Illya Guild War | nan |
+| 242 | 15.0 | ,, Time limit for blessing in Illya Guild War | nan |
+| 243 | 10.0 | ,, Preparation time for entering dungeons | nan |
+| 244 | 30.0 | ,, Time limit for dungeons | nan |
+| 245 | 900.0 | ,., Ratio of equipment experience value | nan |
+| 246 | 0.1 | ,., Equipment attribute multiplier - single weapon | nan |
+| 247 | 1.1 | ,., Equipment attribute multiplier - dual weapon | nan |
+| 248 | 2.2 | ,, Equipment attribute multiplier - head armor | nan |
+| 249 | 1.0 | ,., Equipment attribute multiplier - body armor | nan |
+| 250 | 1.2 | ,., Equipment attribute multiplier - leg armor | nan |
+| 251 | 0.8 | ,, Equipment attribute multiplier - hand armor | nan |
+| 252 | 1.0 | ,, Equipment attribute multiplier - foot armor | nan |
+| 253 | 1.0 | ,., Equipment attribute multiplier - accessory armor | nan |
+| 254 | 0.5 | ,, Equipment attribute multiplier - back armor | nan |
+| 255 | 1.0 | ,, Relationship decay value for the marriage system - calculated every  minutes when only one person is online | nan |
+| 256 | 15.0 | ,, Relationship decay value for the marriage system - calculated every  minutes when both parties are online | nan |
+| 257 | 10.0 | ,, Basic parameter for catching level  fish on the player's own island during fishing activities | nan |
+| 258 | 1.0 | ,, Basic parameter for catching level  fish on another player's island during fishing activities | nan |
+| 259 | 2.0 | ,, Basic parameter for catching level  fish on the player's own island during fishing activities | nan |
+| 260 | 2.0 | ,, Basic parameter for catching level  fish on another player's island during fishing activities | nan |
+| 261 | 3.0 | ,, Basic parameter for catching level  fish on the player's own island during fishing activities | nan |
+| 262 | 3.0 | ,, Basic parameter for catching level  fish on another player's island during fishing activities | nan |
+| 263 | 4.0 | ,, Title for the first-ranked island in island rankings | nan |
+| 264 | 8660.0 | ,, Title for the second to third-ranked islands in island rankings | nan |
+| 265 | 8661.0 | ,, Title for the fourth to tenth-ranked islands in island rankings | nan |
+| 266 | 8662.0 | ,, Title for the th to th-ranked islands in island rankings | nan |
+| 267 | 8663.0 | ,, Title for the most popular island in island rankings | nan |
+| 268 | 8664.0 | ,, Title for the second to third-most popular islands in island rankings | nan |
+| 269 | 8665.0 | ,, Title for the fourth to tenth-most popular islands in island rankings | nan |
+| 270 | 8666.0 | ,, Title for the th to th-most popular islands in island rankings | nan |
+| 271 | 8667.0 | The names and titles for the th to th most popular players on the island. | nan |
+| 272 | 5.0 | The reward evaluation for upgrading a crop to a normal state on the island. | nan |
+| 273 | 20.0 | The reward evaluation for upgrading a crop to a good state on the island. | nan |
+| 274 | 30.0 | The reward evaluation for upgrading a crop to the best state on the island. | nan |
+| 275 | 10.0 | The maximum number of marriage battlefields that can be opened at the same time. | nan |
+| 276 | 200.0 | The maximum number of players allowed in a marriage battlefield. | nan |
+| 277 | 300000.0 | The cost to enter a marriage battlefield. | nan |
+| 278 | 2.0 | The amount of resources consumed when using the map teleportation feature. | nan |
+| 279 | 50.0 | The probability of not decreasing the level of equipment when transferring it to another player. | nan |
+| 280 | 25.0 | The probability of decreasing the level of equipment by one when transferring it to another player. | nan |
+| 281 | 15.0 | The probability of decreasing the level of equipment by two when transferring it to another player. | nan |
+| 282 | 10.0 | The probability of decreasing the level of equipment by three when transferring it to another player. | nan |
+| 283 | 20.0 | The total number of questions in the Elf Academy. | nan |
+| 284 | 10.0 | The interval time after each question in the Elf Academy. | nan |
+| 285 | 5.0 | The basic score that can be obtained for each question in the Elf Academy. | nan |
+| 286 | 58206.0 | The ID number of the treasure sending table in the Elf Academy. | nan |
+| 287 | 8690.0 | The title reward for the first-place winner in the Elf Academy. | nan |
+| 288 | 8691.0 | The title reward for the nd-rd place winners in the Elf Academy. | nan |
+| 289 | 8692.0 | The title reward for the th-th place winners in the Elf Academy. | nan |
+| 290 | 8693.0 | The title reward for the th-th place winners in the Elf Academy. | nan |
+| 291 | 8694.0 | The title reward for the st-th place winners in the Elf Academy. | nan |
+| 292 | 1.0 | ,,Price of purchasing Star Essence. | nan |
+| 293 | 2.0 | ,,Multiplier for purchasing Star Essence. | nan |
+| 294 | 10.0 | ,,Quantity of Star Essence that can be purchased at once. | nan |
+| 295 | 5.0 | ,,Quantity of Star Essence for the first level of general exchange. | nan |
+| 296 | 15.0 | ,,Quantity of Star Essence for the second level of general exchange. | nan |
+| 297 | 30.0 | ,,Quantity of Star Essence for the third level of general exchange. | nan |
+| 298 | 55.0 | ,,Quantity of Star Essence for the fourth level of general exchange. | nan |
+| 299 | 80.0 | ,,Quantity of Star Essence for the fifth level of general exchange. | nan |
+| 300 | 5.0 | ,,Quantity of Star Essence for the first level of random exchange. | nan |
+| 301 | 10.0 | ,,Quantity of Star Essence for the second level of random exchange. | nan |
+| 302 | 15.0 | ,,Quantity of Star Essence for the third level of random exchange. | nan |
+| 303 | 20.0 | ,,Quantity of Star Essence for the fourth level of random exchange. | nan |
+| 304 | 30.0 | ,,Quantity of Star Essence for the fifth level of random exchange. | nan |
+| 305 | 0.1 | ,.,Ratio of growth mount experience value. | nan |
+| 306 | 1.0 | ,,Ratio of combat mount I version experience gain. | nan |
+| 307 | 0.5 | ,.,Ratio of combat mount G version experience gain. | nan |
+| 308 | 50000.0 | ,,Amount of gold deducted each time a player participates in the "Gladiator Contest". | nan |
+| 309 | 60.0 | ,,Probability of winning elves gaining skill experience after completing a full "Gladiator Contest". | nan |
+| 310 | 3.0 | ,,Amount of skill experience that winning elves have a chance to gain after completing a full "Gladiator Contest". | nan |
+| 311 | 50.0 | ,,When the total number of wins and losses recorded by a player in a month exceeds this parameter, they will be ranked on the leaderboard. | nan |
+| 312 | 30.0 | ,,Amount of elf stamina deducted each time they participate in the Gladiator Contest. | nan |
+| 313 | 45000.0 | ,,Experience required for upgrading a first-tier combat skill of an elf. | nan |
+| 314 | 80000.0 | ,,Experience required for upgrading a second-tier combat skill of an elf. | nan |
+| 315 | 100000.0 | ,,Experience required for upgrading a third-tier combat skill of an elf. | nan |
+| 316 | 10.0 | ,,Constant value for equipping spirit for the first-tier combat skill of an elf. | nan |
+| 317 | 5.0 | ,,Constant value for equipping spirit for the second-tier combat skill of an elf. | nan |
+| 318 | 1.0 | ,,Constant value for equipping spirit for the third-tier combat skill of an elf. | nan |
+| 319 | 0.09 | ,.,Level coefficient for equipping spirits for levels -. | nan |
+| 320 | 0.4 | ,.,Level coefficient for equipping spirits for levels -. | nan |
+| 321 | 1.0 | ,,Level coefficient for equipping spirits for levels -. | nan |
+| 322 | 1.8 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 323 | 2.02 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 324 | 2.04 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 325 | 2.1 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 326 | 2.16 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 327 | 2.16 | ,., Elf Transformation Equipment Level Coefficient -, | nan |
+| 328 | 2.0 | ,, Elf Transformation Equipment Level Coefficient -, | nan |
+| 329 | 1.0 | ,, Points required to upgrade Elf Battle Skill to level , | nan |
+| 330 | 2.0 | ,, Points required to upgrade Elf Battle Skill to level , | nan |
+| 331 | 4.0 | ,, Points required to upgrade Elf Battle Skill to level , | nan |
+| 332 | 7.0 | ,, Points required to upgrade Elf Battle Skill to level , | nan |
+| 333 | 11.0 | ,, Points required to upgrade Elf Battle Skill to level , | nan |
+| 334 | 0.5 | ,., Elf Transformation Equipment Quality Coefficient - Green, | nan |
+| 335 | 0.8 | ,., Elf Transformation Equipment Quality Coefficient - Blue, | nan |
+| 336 | 5.0 | ,, Elf Transformation Equipment Quality Coefficient - Orange, | nan |
+| 337 | 300.0 | ,, Elf Transformation Equipment Quality Coefficient - Yellow, | nan |
+| 338 | 1350.0 | ,, Elf Transformation Equipment Quality Coefficient - Purple, | nan |
+| 339 | 250.0 | ,, Maximum cumulative skill points for Elf Transformation Equipment, | nan |
+| 340 | 55267.0 | ,, Skill automatically given to players when they open the basic Elf Battle Skill, | nan |
+| 341 | 55291.0 | ,, Skill automatically given to players when they open the basic Elf Battle Skill, | nan |
+| 342 | 55369.0 | ,, Skill automatically given to players when they open the intermediate Elf Battle Skill, | nan |
+| 343 | 55363.0 | ,, Skill automatically given to players when they open the intermediate Elf Battle Skill, | nan |
+| 344 | 55429.0 | ,, Skill automatically given to players when they open the advanced Elf Battle Skill, | nan |
+| 345 | 8771.0 | ,, Reward title for st place in the Top  Fighters list, | nan |
+| 346 | 8772.0 | ,, Reward title for nd-rd place in the Top  Fighters list, | nan |
+| 347 | 8773.0 | ,, Reward title for th-th place in the Top  Fighters list, | nan |
+| 348 | 8774.0 | ,, Reward title for th-th place in the Top  Fighters list, | nan |
+| 349 | 8775.0 | ,, Reward title for st-th place in the Top  Fighters list, | nan |
+| 350 | 1.0 | ,, Boxing King Lottery Setting, | nan |
+| 351 | 1.0 | ,, Maximum number of Boxing King changes per week, | nan |
+| 352 | 30.0 | ,, Summoning cooldown for Elf Island (in /th of a second), | nan |
+| 353 | 21116.0 | ,, Free PK Arena Reward , | nan |
+| 354 | 21112.0 | ,, Free PK Arena Reward , | nan |
+| 355 | 21113.0 | ,, Free PK Arena Reward , | nan |
+| 356 | 21114.0 | ,, Free PK Arena Reward , | nan |
+| 357 | 21115.0 | ,, Free PK Arena Reward , | nan |
+| 358 | 20.0 | ,, Points required for Free PK Arena Reward , | nan |
+| 359 | 100.0 | ,, Points required for Free PK Arena Reward , | nan |
+| 360 | 300.0 | ,, Points required for Free PK Arena Reward , | nan |
+| 361 | 500.0 | ,, Points required for Free PK Arena Reward , | nan |
+| 362 | 1000.0 | ,, Points required for Free PK Arena Reward , | nan |
+| 363 | 5.0 | ,, For each + upgrade to a weapon from + to +, it represents the percentage increase in the weapon's attack power., | nan |
+| 364 | 10.0 | ,, For each + upgrade to a weapon from + to +, it represents the percentage increase in the weapon's attack power. | nan |
+| 365 | 5.0 | ,,Armor +~+, each enhancement +, represents the percentage increase in defense power of the armor. | nan |
+| 366 | 10.0 | ,,Armor +~+, each enhancement +, represents the percentage increase in defense power of the armor. | nan |
+| 367 | 3000.0 | ,,Guardian's Score in Kiel's Defense War - Winning Score. | nan |
+| 368 | 1500.0 | ,,Guardian's Score in Kiel's Defense War - Performance Score of Winning Guild. | nan |
+| 369 | 400.0 | ,,Guardian's Score in Kiel's Defense War - Performance Score of Losing Guild. | nan |
+| 370 | 500.0 | ,,Guardian's Score in Kiel's Defense War - Flag Capture Score. | nan |
+| 371 | 10.0 | ,,Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Winning Guild. | nan |
+| 372 | 5.0 | ,,Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Losing Guild. | nan |
+| 373 | 2.0 | ,,Guardian's Score in Kiel's Defense War - Kill Score of Winning Guild. | nan |
+| 374 | 1.0 | ,,Guardian's Score in Kiel's Defense War - Kill Score of Losing Guild. | nan |
+| 375 | 1000.0 | ,,Guardian's Score in Kiel's Defense War - Maximum Score for a Kill. | nan |
+| 376 | 900.0 | ,,Guardian's Score in Kiel's Defense War - Attack Time for the Flag. | nan |
+| 377 | 500.0 | ,,Guardian's Score in Kiel's Defense War - Score for Attacking the Flag. | nan |
+| 378 | 100.0 | ,,Experience required to upgrade Guild Tree to Level . | nan |
+| 379 | 200.0 | ,,Experience required to upgrade Guild Tree to Level . | nan |
+| 380 | 300.0 | ,,Experience required to upgrade Guild Tree to Level . | nan |
+| 381 | 100.0 | ,,Energy Limit of Guild Tree - Level . | nan |
+| 382 | 200.0 | ,,Energy Limit of Guild Tree - Level . | nan |
+| 383 | 300.0 | ,,Energy Limit of Guild Tree - Level . | nan |
+| 384 | 400.0 | ,,Energy Limit of Guild Tree - Level . | nan |
+| 385 | 100.0 | ,,Maximum Energy Bar of a player. | nan |
+| 386 | 100.0 | ,,Maximum Water Content of Guild Tree. | nan |
+| 387 | 0.1 | ,.,Water Consumption per second for Guild Tree. | nan |
+| 388 | 1.0 | ,,Maximum number of Specializations. | nan |
+| 389 | 20.0 | ,,Maximum number of Specialization Points. | nan |
+| 390 | 1.0 | ,,Login Reward Switch. | nan |
+| 391 | 1.0 | ,,Starting number of transition prompt images. | nan |
+| 392 | 104.0 | ,,Ending number of transition prompt images. | nan |
+| 393 | 42170.0 | ,,Item ID of Enchanted Alchemy Fragment. | nan |
+| 394 | 1.0 | ,,Amount of Mount Points that can be earned by using "Enchanted Alchemy Fragment". | nan |
+| 395 | 2.0 | ,,Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis I" operation flag. | nan |
+| 396 | 2.0 | ,,Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis G" operation flag. | nan |
+| 397 | 1.0 | , , "Magical Alchemy Fragment" minimum GK requirement for ability washing, | nan |
+| 398 | 40.0 | , , "Magical Alchemy Fragment" maximum GK requirement for white washing, | nan |
+| 399 | 60.0 | , , "Magical Alchemy Fragment" maximum GK requirement for green washing, | nan |
+| 400 | 80.0 | , , "Magical Alchemy Fragment" maximum GK requirement for blue washing, | nan |
+| 401 | 139.0 | , , "Magical Alchemy Fragment" maximum GK requirement for orange washing, | nan |
+| 402 | 999.0 | , , "Magical Alchemy Fragment" maximum GK requirement for yellow washing, | nan |
+| 403 | 1.0 | , , "Magical Alchemy Fragment" minimum IK requirement for ability washing, | nan |
+| 404 | 56.0 | , , "Magical Alchemy Fragment" maximum IK requirement for white washing, | nan |
+| 405 | 90.0 | , , "Magical Alchemy Fragment" maximum IK requirement for green washing, | nan |
+| 406 | 114.0 | , , "Magical Alchemy Fragment" maximum IK requirement for blue washing, | nan |
+| 407 | 238.0 | , , "Magical Alchemy Fragment" maximum IK requirement for orange washing. | nan |
+| 408 | 999.0 | ,,Maximum GK Requirement for Washing Magic Alchemy Fragments in Yellow, | nan |
+| 409 | 4.0 | ,,Base parameter for giving the player's activity island a level  fishing seed. | nan |
+| 410 | 5.0 | ,,When fishing on another player's island, obtain basic parameters for catching level  fish. | nan |
+| 411 | 5.0 | ,,Give the player's island (where the activity is being executed) the basic parameters for catching level  fish. | nan |
+| 412 | 6.0 | ,,When fishing on another player's island, obtain basic parameters for catching level  fish. | nan |
+| 413 | 10.0 | ,,Recruitment price for players with guild mail. | nan |
+| 414 | 168.0 | ,,Time limit for guild transfer queue and duration of transferred guild buff (in hours). | nan |
+| 415 | 50614.0 | ,,Guild transfer buff. | nan |
+| 416 | 200.0 | ,,Guild Energy LV.. | nan |
+| 417 | 250.0 | ,,Guild Energy LV.. | nan |
+| 418 | 300.0 | ,,Guild Energy LV.. | nan |
+| 419 | 350.0 | ,,Guild Energy LV.. | nan |
+| 420 | 400.0 | ,,Guild Energy LV.. | nan |
+| 421 | 450.0 | ,,Guild Energy LV.. | nan |
+| 422 | 500.0 | ,,Guild Energy LV.. | nan |
+| 423 | 600.0 | ,,Guild Energy LV.. | nan |
+| 424 | 800.0 | ,,Guild Energy LV.. | nan |
+| 425 | 1000.0 | ,,Guild Energy LV.. | nan |
+| 426 | 100.0 | ,,Guild experience conversion to guild energy parameter. | nan |
+| 427 | 5.0 | ,,Guild prestige conversion to guild energy parameter. | nan |
+| 428 | 100.0 | ,,Number of participants in the guild tree challenge. | nan |
+| 429 | 49176.0 | ,,Newcomer reward items. | nan |
+| 430 | 1.0 | ,,Amount of sprite coins obtainable by greeting. | nan |
+| 431 | 200.0 | ,,Depth Guard Rights - maximum number of deaths allowed before the game ends. | nan |
+| 432 | 1.0 | ,,Depth Guard Rights - number of additional deaths per death. | nan |
+| 433 | 50.0 | ,,Depth Guard Rights - health of the main tower. | nan |
+| 434 | 1.0 | ,,Depth Guard Rights - damage dealt by monsters to the main tower. | nan |
+| 435 | 1500.0 | ,,Depth Guard Rights - base score for winning team. | nan |
+| 436 | 500.0 | ,,Depth Guard Rights - base score for losing team. | nan |
+| 437 | 3.0 | ,,Depth Guard Rights - survival bonus multiplier for winning team. | nan |
+| 438 | 1.0 | ,,Depth Guard Rights - survival bonus multiplier for losing team. | nan |
+| 439 | 800.0 | ,,Depth Guard Rights - score for killing the king monster. | nan |
+| 440 | 750.0 | ,,Depth Guard Rights - upper limit score for interference bonus of the winning team. | nan |
+| 441 | 250.0 | ,,Depth Guard Rights - upper limit score for interference bonus of the losing team. | nan |
+| 442 | 15.0 | ,,Master-Apprentice System-Open Level, | nan |
+| 443 | 40.0 | ,,Master-Apprentice System-Master Open Level, | nan |
+| 444 | 1.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 445 | 2.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 446 | 4.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 447 | 8.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 448 | 12.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 449 | 20.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 450 | 40.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 451 | 100.0 | ,,Master-Apprentice System-Points given to the Master when an Apprentice levels up between -, | nan |
+| 452 | 4.0 | ,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have, | nan |
+| 453 | 5.0 | ,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have, | nan |
+| 454 | 6.0 | ,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have, | nan |
+| 455 | 7.0 | ,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have, | nan |
+| 456 | 8.0 | ,,Master-Apprentice System-The maximum number of Apprentices a Master with level  can have, | nan |
+| 457 | 1.0 | ,,Maximum value for "Transcendence" level, | nan |
+| 458 | 0.1 | ,.,Parameter for calculating "Experience Gain" based on Transcendence Evaluation, | nan |
+| 459 | 0.1 | ,.,Parameter for calculating "Experience Gain" based on Transcendence Level, | nan |
+| 460 | 2.5 | ,.,Parameter for calculating "Attribute Bonus", | nan |
+| 461 | 1.0 | ,,Parameter for calculating the amount of money required to learn a "Memory Skill" per level, | nan |
+| 462 | 2.0 | ,,Parameter for calculating the "Super Specialization" limit increase, | nan |
+| 463 | 4.0 | ,,Parameter for calculating the "Extreme Specialization" limit increase, | nan |
+| 464 | 62.0 | ,,Color (green) of the character's name display for Transcendence level  (enter the color code number), | nan |
+| 465 | 5.0 | ,,Color (blue) of the character's name display for Transcendence level , | nan |
+| 466 | 9.0 | ,,Color (orange) of the character's name display for Transcendence level , | nan |
+| 467 | 7.0 | ,,Color (yellow) of the character's name display for Transcendence level , | nan |
+| 468 | 0.0 | ,,Obsolete and not in use, | nan |
+| 469 | 8.0 | ,,Exchange rate of  gold coins for Coconut Coins, | nan |
+| 470 | 40.0 | ,,Exchange rate of  gold coins for Coconut Coins, | nan |
+| 471 | 80.0 | ,,Exchange rate of  gold coins for Coconut Coins, | nan |
+| 472 | 200.0 | ,,Exchange rate of  gold coins for Coconut Coins, | nan |
+| 473 | 400.0 | ,,Exchange rate of  gold coins for Coconut Coins. | nan |
+| 474 | 2.0 | When failing in the Elf Race, deduct victory points by (fill in  or a positive integer). | nan |
+| 475 | 10.0 | When winning in the Elf Race, increase victory points by (fill in  or a positive integer). | nan |
+| 476 | 130.0 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). | nan |
+| 477 | 150.0 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). | nan |
+| 478 | 175.0 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). | nan |
+| 479 | 0.3 | The ratio of experience points given as a reincarnation bonus ( = %). | nan |
+| 480 | 2.0 | The maximum auction days Y value that can be set when auctioning items in the auction interface. | nan |
+| 481 | 60.0 | The percentage Z value of the auction tax charged when the auction days of an item are greater than ; enter an integer, and the actual value will be divided by . | nan |
+| 482 | 90.0 | New restriction parameter for participating in the Beast Tower based on level. | nan |
+| 483 | 10.0 | New daily challenge limit for participating in the Beast Tower. | nan |
+| 484 | 30.0 | New maximum number of challengers per group in the Beast Tower. | nan |
+| 485 | 1.0 | The number of guild groups that can be created for the Beast Tower LV-LV (maximum of ). | nan |
+| 486 | 2.0 | The number of guild groups that can be created for the Beast Tower LV and above (maximum of ). | nan |
+| 487 | 60000000.0 | The cost to create a guild group for the Beast Tower. | nan |
+| 488 | 1.0 | The time in hours for returning undelivered mail with postage due; enter an integer. | nan |
+| 489 | 15.0 | The minimum level requirement for using postage due for mailing. | nan |
+| 490 | 30008.0 | The special shop item number required to reset the daily exchange limit in the barter interface. | nan |
+| 491 | 5.0 | The number of clay used per consumption in advanced alchemy. | nan |
+| 492 | 0.0 | The probability of getting a white item in normal alchemy. | nan |
+| 493 | 0.0 | The probability of getting a green item in normal alchemy. | nan |
+| 494 | 0.0 | The probability of getting a blue item in normal alchemy. | nan |
+| 495 | 0.0 | The probability of getting a yellow item in normal alchemy. | nan |
+| 496 | 0.0 | The probability of getting a white item in enchanted alchemy. | nan |
+| 497 | 0.0 | The probability of getting a green item in enchanted alchemy. | nan |
+| 498 | 0.0 | The probability of getting a blue item in enchanted alchemy. | nan |
+| 499 | 0.0 | The probability of getting a yellow item in enchanted alchemy. | nan |
+| 500 | 0.0 | The probability of getting a white item in advanced alchemy. | nan |
+| 501 | 0.0 | The probability of getting a green item in advanced alchemy. | nan |
+| 502 | 0.0 | The probability of getting a blue item in advanced alchemy. | nan |
+| 503 | 0.0 | The probability of getting a yellow item in advanced alchemy. | nan |
+| 504 | 1.0 | The number of throne points affected by "Enchanted Alchemy Fragments". | nan |
+| 505 | 2.0 | Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis I". | nan |
+| 506 | 2.0 | Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis G". | nan |
+| 507 | 1.0 | The minimum number of GK required for the washing ability of "Enchanted Alchemy Fragments". | nan |
+| 508 | 40.0 | "Minimum number of GK with ability to cleanse 'Enchanted Alchemy Fragment'" | nan |
+| 509 | 52.0 | ,, "Magic Alchemy Fragment" maximum demand for white GK washing, | nan |
+| 510 | 62.0 | ,, "Magic Alchemy Fragment" maximum demand for green GK washing, | nan |
+| 511 | 72.0 | ,, "Magic Alchemy Fragment" maximum demand for blue GK washing, | nan |
+| 512 | 999.0 | ,, "Magic Alchemy Fragment" maximum demand for orange GK washing, | nan |
+| 513 | 1.0 | ,, "Magic Alchemy Fragment" maximum demand for yellow GK washing, | nan |
+| 514 | 56.0 | ,, Minimum demand for IK washing with "Magic Alchemy Fragment", | nan |
+| 515 | 90.0 | ,, Maximum demand for white IK washing with "Magic Alchemy Fragment", | nan |
+| 516 | 124.0 | ,, Maximum demand for green IK washing with "Magic Alchemy Fragment", | nan |
+| 517 | 198.0 | ,, Maximum demand for blue IK washing with "Magic Alchemy Fragment", | nan |
+| 518 | 999.0 | ,, Maximum demand for orange IK washing with "Magic Alchemy Fragment", | nan |
+| 519 | 1.0 | ,, Maximum demand for yellow IK washing with "Magic Alchemy Fragment", | nan |
+| 520 | 350.0 | ,, Advanced Alchemy Switch,  for off, others for on (requires UI replacement), | nan |
+| 521 | 350.0 | ,, Probability of adding  special abilities to red equipment: fill in , sum of  is ., | nan |
+| 522 | 250.0 | ,, Probability of adding  special ability to red equipment: fill in , sum of  is ., | nan |
+| 523 | 50.0 | ,, Probability of adding  special abilities to red equipment: fill in , sum of  is ., | nan |
+| 524 | 2.0 | ,, Probability of adding  special abilities to red equipment: fill in , sum of  is ., | nan |
+| 525 | 2.0 | ,, Points received when weapon awakening fails (fill in ), | nan |
+| 526 | 100.0 | ,, Points received when armor awakening fails (fill in ), | nan |
+| 527 | 93191.0 | ,, Parameter value for calculating the repair cost of the Throne's durability, | nan |
+| 528 | 500.0 | ,, New Year's Eve fireworks special effect number, | nan |
+| 529 | 85.0 | ,, Maximum personal performance score in Gaslow Guild War, | nan |
+| 530 | 14.0 | ,, Probability of adding one-star rune, combinable once, | nan |
+| 531 | 1.0 | ,, Probability of adding two-star rune, combinable three times, | nan |
+| 532 | 2.0 | ,, Probability of adding three-star rune, combinable five times, | nan |
+| 533 | 85.0 | ,, Daily increase in the number of challenges in the Holy Sanctum, | nan |
+| 534 | 14.0 | ,, Probability of adding one-star crystal, combinable once, | nan |
+| 535 | 1.0 | ,, Probability of adding two-star crystal, combinable twice, | nan |
+| 536 | 7.0 | ,, Probability of adding three-star crystal, combinable three times, | nan |
+| 537 | 16633.0 | ,, Duration of the opening of the Wishing Pool, in real-time days, | nan |
+| 538 | 16637.0 | ,, Minimum interval value for general item messages in Wishing Pool (non-announcement items), | nan |
+| 539 | 16571.0 | ,, Maximum interval value for general item messages in Wishing Pool, value must be greater than or equal to parameter  (non-announcement items), | nan |
+| 540 | 16573.0 | ,, Minimum interval value for rare item messages in Wishing Pool (announcement items), | nan |
+| 541 | 16569.0 | ,, Maximum interval value for rare item messages in Wishing Pool, value must be greater than or equal to parameter  (announcement items), | nan |
+| 542 | 16570.0 | ,, Minimum interval value for performance messages in Wishing Pool. | nan |
+| 543 | 85.0 | ,,Message for Wishing Pool : Maximum value of interval during performance, value must be greater than or equal to parameter . | nan |
+| 544 | 14.0 | ,,Probability of adding one star to souvenir, can be combined once. | nan |
+| 545 | 1.0 | ,,Probability of adding two stars to souvenir, can be combined twice. | nan |
+| 546 | 16.0 | ,,Probability of adding three stars to souvenir, can be combined three times. | nan |
+| 547 | 90.0 | ,,Minimum required level for leaving a message on the message board (greater than or equal to). | nan |
+| 548 | 10.0 | ,,When washing red equipment, probability of adding one-star ability, after addition can obtain one combination ability. | nan |
+| 549 | 1775.0 | ,,When washing red equipment, probability of adding two-star ability, after addition can obtain two combination abilities. | nan |
+| 550 | 10.0 | ,,Upper limit of specialization points. | nan |
+| 551 | 15.0 | ,,After sending a hyperlink to a message channel, it cannot be sent again within a certain number of seconds. | nan |
+| 552 | 12.0 | ,,Self-effect status in BUFF_ICON, will be displayed if less than this number of seconds. | nan |
+| 553 | 5.0 | ,,Condition for opening the World Tree of Hardship. | nan |
+| 554 | 60.0 | ,,Punishment for clicking too quickly_time that the server receives the command, in seconds. | nan |
+| 555 | 18000.0 | ,,Punishment for clicking too quickly_within the time parameter , the total number of commands received, in units of times. | nan |
+| 556 | 10.0 | ,,Duration of the punishment_BUFF for clicking too quickly, in units of . seconds. | nan |
+| 557 | 30.0 | ,,Speed of automatic alchemy function, in units of . seconds. | nan |
+| 558 | 100.0 | ,,Refresh frequency of detailed attributes, in units of . seconds. | nan |
+| 559 | 53993.0 | ,,Base money cost of decoration, in copper units. | nan |
+| 560 | 53994.0 | ,,Limitation of dungeon attempts, recoverable using items (rank one). | nan |
+| 561 | 512.0 | ,,Limitation of dungeon attempts, recoverable using items (rank two). | nan |
+| 562 | 1024.0 | ,,(Abandoned but available). | nan |
+| 563 | 40.0 | ,,(Abandoned but available). | nan |
+| 564 | 55.0 | ,,Decoration system - Probability of reducing perfection when decorating from + to + (%). | nan |
+| 565 | 70.0 | ,,Decoration system - Probability of reducing perfection when decorating from + to + (%). | nan |
+| 566 | 90.0 | ,,Decoration system - Probability of reducing perfection when decorating from + to + (%). | nan |
+| 567 | 6.0 | ,,Decoration system - Probability of reducing perfection when decorating from + to + (%). | nan |
+| 568 | 5.0 | ,,Decoration system - Maximum perfect value for orange quality. | nan |
+| 569 | 4.0 | ,,Decoration system - Maximum perfect value for yellow quality. | nan |
+| 570 | 3.0 | ,,Decoration system - Maximum perfect value for purple quality. | nan |
+| 571 | 0.5 | ,,Decoration system - Maximum perfect value for red quality. | nan |
+| 572 | 1.0 | ,.,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %. | nan |
+| 573 | 2.0 | ,,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %. | nan |
+| 574 | 1.0 | ,,Decoration levels -, ratio of attack attribute bonus for jewelry, in units of %. | nan |
+| 575 | 2.0 | ,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %. | nan |
+| 576 | 4.0 | ,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %. | nan |
+| 577 | 0.5 | ,,Decoration levels -, ratio of attack attribute bonus for back equipment, in units of %. | nan |
+| 578 | 1.0 | ,.,Decoration levels -, ratio of defense attribute bonus for jewelry, in units of %. | nan |
+| 579 | 250.0 | ,,Decoration levels -, ratio of defense attribute bonus for back equipment, in units of %,... | nan |
+| 580 | 10.0 | Maximum number of times for automatic alchemy. | nan |
+| 581 | 50.0 | ,,Auto alchemy limit | nan |
+| 582 | 6.0 | ,,Base amount of copper coins required for decorating repair | nan |
+| 583 | 15.0 | ,,Decoration ability group , success rate of refining when consuming  decoration, unit: % | nan |
+| 584 | 29.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 585 | 50.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 586 | 100.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 587 | 1.8 | ,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: % | nan |
+| 588 | 4.5 | ,.,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 589 | 12.0 | ,.,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 590 | 34.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 591 | 100.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 592 | 1.0 | ,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: % | nan |
+| 593 | 3.5 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 594 | 11.0 | ,.,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 595 | 33.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 596 | 100.0 | ,,Decoration ability group , success rate of refining when consuming  decorations, unit: % | nan |
+| 597 | 10.0 | ,,Decoration ability group , success rate of refining when consuming  or more decorations, unit: % | nan |
+| 598 | 15.0 | ,,Price of gold coins required for resetting specialization at Master level (per  point of specialization) | nan |
+| 599 | 20.0 | ,,Price of gold coins required for resetting specialization at Legendary level (per  point of specialization) | nan |
+| 600 | 28.0 | ,,Price of gold coins required for resetting specialization at Mythical level (per  point of specialization) | nan |
+| 601 | 35.0 | ,,Price of gold coins required for resetting specialization at Extreme level (per  point of specialization) | nan |
+| 602 | 0.0 | ,,Price of gold coins required for resetting specialization at Infinite level (per  point of specialization) | nan |
+| 603 | 1.0 | ,,Percentage of specialization refunded by gold coins (~); if  is entered in this table, the reset button will be hidden on the client side. | nan |
+| 604 | 15.0 | ,,GM characters with specified level of permissions or higher are not affected by the "Hide Other Players" function. | nan |
+| 605 | 24.0 | ,,Minimum level requirement for sending messages | nan |
+| 606 | 24.0 | ,,Cooling time for rejoining a guild after voluntarily leaving it, unit: hours | nan |
+| 607 | 16.0 | Interval time for sending guild recruitment letters to a single character, unit: hours | nan |
+| 608 | nan | Minimum character level for sending guild recruitment letters. | nan |
 
 
 
