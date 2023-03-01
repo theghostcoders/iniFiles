@@ -18,18 +18,6 @@ We're documenting this on english so this will have ENGLISH description instead.
 
 You can also see some observations (NOT NEEDED WHEN EDITING)
 
-| ID | VALUE | DESCRIPTION | OBS |
-| 106 | 10 | Reduction of equipment durability when you DIE. | Can be 0. |
-| 140 | 3500000 | Exp required to Level up 1 point of mastery. | Needs editing at C_Parameter.ini to work |
-| 143 | 10 | How much EXP you lose when you die. | Can be 0. |
-| 146 | 5000 | How many points are needed to earn the GVG | No tested if can be 0. | 
-| 147 | 3600 | How long does GVG last in seconds | No tested if can be 0. |
-| 148 | 75 | Maximum number of players in Guild Wars | No tested if can be 0. |
-| 229 | 2600 | Ilia's Guild Battle - Starting Score | No tested if can be 0. |
-| 277 | 2 | How much Teleport stones you need to teleport | Can be 0. No stone needed in bag to teleport |
-| 412 | 10 | Card price to recruit players who already have guilds | Can be 0. |
-| 486 | 60000000 | Tower of Beasts Guild group creation rate | Can be 0. |
-
 | <center>ID</center> | <center>Value</center> | <center>Description</center> | <center>Observation</center> |
 |----------------|------------------|-------------------------|---------------|
 | <center>1</center> | <center>3.0</center> | <center>Body constitution conversion and maximum life formula parameter: ,</center> | <center>nan</center> |
