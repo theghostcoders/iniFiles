@@ -18,30 +18,615 @@ We're documenting this on english so this will have ENGLISH description instead.
 
 You can also see some observations (NOT NEEDED WHEN EDITING)
 
-| ID | VALUE | DESCRIPTION | OBS |
-| 106 | 10 | Reduction of equipment durability when you DIE. | Can be 0. |
-| 140 | 3500000 | Exp required to Level up 1 point of mastery. | Needs editing at C_Parameter.ini to work |
-| 143 | 10 | How much EXP you lose when you die. | Can be 0. |
-| 146 | 5000 | How many points are needed to earn the GVG | No tested if can be 0. | 
-| 147 | 3600 | How long does GVG last in seconds | No tested if can be 0. |
-| 148 | 75 | Maximum number of players in Guild Wars | No tested if can be 0. |
-| 229 | 2600 | Ilia's Guild Battle - Starting Score | No tested if can be 0. |
-| 277 | 2 | How much Teleport stones you need to teleport | Can be 0. No stone needed in bag to teleport |
-| 412 | 10 | Card price to recruit players who already have guilds | Can be 0. |
-| 415 | 200 | Guild Energy LV.1 | |
-| 416 | 250 | Guild Energy LV.2 | |
-| 417 | 300 | Guild Energy LV.3 | |
-| 418 | 350 | Guild Energy LV.4 | |
-| 419 | 400 | Guild Energy LV.5 | |
-| 420 | 450 | Guild Energy LV.6 | |
-| 421 | 500 | Guild Energy LV.7 | |
-| 422 | 600 | Guild Energy LV.8 | |
-| 423 | 800 | Guild Energy LV.9 | |
-| 424 | 1000 | Guild Energy LV.10 | |
-| 486 | 60000000 | Tower of Beasts Guild group creation rate | Can be 0. |
+#+ATTR_HTML: <style> td, th { text-align: center; }</style>
+| ID | Value | Description | Obs |
+|----+-------+-------------+-----|
+| 1 | 40 | Parameter for the formula to convert vitality into maximum health. (For example 1 VIT is = 40 Max HP.) |  |
+| 2 | 0.5 | Formula parameter for converting vitality to health recovery. (Not tested, might be for every 1 VIT it recovers 0.5 health per second.) |  |
+| 3 | 20 | Willpower conversion to mana.  (For example 1 WIL is = 20 Max MP.) |  |
+| 4 | 0.4 | Willpower conversion to mana recover. (Not tested, might be for every 1 WIL it recovers 0.4 MP per second.) |  |
+| 5 | 3 | Parameter for the formula to convert strength into melee attack.  (For every 1 STR = 3 P. ATK) |  |
+| 6 | 3 | Parameter for the formula to convert agility into ranged attack. (For every 1 AGI = 3 R. ATK) |  |
+| 7 | 3 | Parameter for the formula to convert intelligence into magic health. (For every 1 INT = 3 M. ATK) |  |
+| 8 | 1.5 | Vitality to Defense conversion formula parameter. (For every 1 VIT = 1.5 DEF) |  |
+| 9 | 1.5 | Willpower to Magic Defense conversion formula parameter. (For every 1 WIL = 1.5 M. DEF) |  |
+| 10 | 10 | Agility to Dodge % conversion formula parameter. (For every 10 AGI = 1% Dodge) |  |
+| 11 | 28 | Agility to P. Crit % conversion formula parameter. (For every 28 AGI = 1% P. Crit) |  |
+| 12 | 5 | Agility conversion and critical hit formula & Wisdom conversion and magic critical formula basic critical probability parameter:  |  |
+| 13 | 150 | Base critical damage formula parameter:  | This is equal to 150% critical damage, base crit dmg. Not tested yet. |
+| 14 | 28 | Wisdom conversion and magic critical formula parameter:  |  |
+| 15 | 150 | Base magic critical damage formula parameter:  | This is equal to 150% critical damage, base crit dmg. Not tested yet. |
+| 16 | 10 |  Formula parameter for additional damage type advantage damage and other diminishing returns. |  |
+| 17 | 1.5 | . Represents the attack speed in barehanded state i.e. the interval time required for each attack. |  |
+| 18 | 10.0 |  Represents the movement speed in normal walking state i.e. the number of grids that can be moved per second. |  |
+| 19 | 0.9 | . Adjustment variable for main hand weapon attack speed when calculating attack speed in dual-wield state. |  |
+| 20 | 0.9 | . Adjustment variable for off-hand weapon attack speed when calculating attack speed in dual-wield state. |  |
+| 21 | 8.0 |  Parameter value for the corresponding attack level check of the defender's strength in the block damage diminishing formula. |  |
+| 22 | 0.8 | . Percentage of damage to be diminished after blocking in the block damage diminishing formula. |  |
+| 23 | 0.2 | . Percentage of damage not to be diminished after blocking in the block damage diminishing formula. |  |
+| 24 | 0.5 | . Adjustment parameter for adding the damage of the main hand and off-hand weapons when in dual-wield state. |  |
+| 25 | 2.0 |  Distance of the player's barehanded normal attack in grid units where  grid represents . meters in the game world. |  |
+| 26 | 0.25 | . Diminishing value of HP recovery when not sitting down. |  |
+| 27 | 0.25 | . Diminishing value of energy recovery when not sitting down. |  |
+| 28 | 0.75 | . Adjustment parameter for adding the attack power of the main hand and off-hand weapons when in dual-wield state. |  |
+| 29 | 4.0 |  Parameter value for the equal difference adjustment of the attack defense and hit rate formula. |  |
+| 30 | 100.0 |  Basic probability of attack hit for normal attacks and physical skills. |  |
+| 31 | 5.0 |  Parameter value for the arithmetic progression correction of normal attack damage. |  |
+| 32 | 1.0 |  Parameter value for the defense correction of normal attack and physical skill damage formulas for the defending side. |  |
+| 33 | 5.0 |  Minimum random value used in calculating damage when attacking with bare hands. |  |
+| 34 | 10.0 |  Maximum random value used in calculating damage when attacking with bare hands. |  |
+| 35 | 10.0 |  Parameter value for the arithmetic progression correction of physical skill damage. |  |
+| 36 | 3.0 |  Parameter value for the arithmetic progression correction of magic skill hit formula. |  |
+| 37 | 100.0 |  Base probability of the attacker hitting with a magic skill. |  |
+| 38 | 1.0 |  Parameter value for the magic skill damage formula defense correction of the defending side's magic defense. |  |
+| 39 | 2.0 |  Parameter value for the arithmetic progression correction of the normal attack and defense critical hit formula. |  |
+| 40 | 20.0 |  Parameter value for the arithmetic progression correction of the experience point formula. |  |
+| 41 | 3.0 |  Parameter value for the non-depreciation of experience points within N levels in the arithmetic progression correction of the experience point formula. |  |
+| 42 | 15.0 |  Reward parameter value in the team experience distribution formula. |  |
+| 43 | 10.0 |  Parameter value in the damage monster's impact on personal hatred calculation formula. |  |
+| 44 | 1.2 | . Parameter value in the healing skill's impact on personal hatred calculation formula. |  |
+| 45 | 3.0 |  Number of points of stamina recovered by the elf every  seconds. |  |
+| 46 | 150.0 | When the elf's mood value is between  and  the percentage of extra time required to perform a task. |  |
+| 47 | 200.0 | When the elf's mood value is between  and  the percentage of extra time required to perform a task. |  |
+| 48 | 1.0 | When the elf's mood value is between  and  the additional experience points that can be obtained upon completion of a task. |  |
+| 49 | 2.0 | When the elf's mood value is between  and  the additional experience points that can be obtained upon completion of a task. |  |
+| 50 | 5.0 | The radius of the no-shooting zone which represents the range where ranged weapons cannot be used. |  |
+| 51 | 180.0 | The duration in seconds that summoned monsters remain alive when not in combat after their summoner has died. |  |
+| 52 | 100.0 | The range within which monsters will chase a player character measured in grid units. |  |
+| 53 | 10.0 | Every N seconds in standby mode one monster is summoned. |  |
+| 54 | 2.0 | Every N seconds in combat mode one monster is summoned. |  |
+| 55 | 3.0 | For each point of armor enhancement the percentage of additional defense that the armor provides. |  |
+| 56 | 3.0 | For each point of weapon enhancement the percentage of additional attack power that the weapon provides. |  |
+| 57 | -0.05 | When the elf's return gauge is between  and % the parameter value used in the reputation calculation formula for the elf's faction. |  |
+| 58 | -0.03 | When the elf's return gauge is between  and % the parameter value used in the reputation calculation formula for the elf's faction. |  |
+| 59 | -0.01 | When the elf's return gauge is between  and % the parameter value used in the reputation calculation formula for the elf's faction. |  |
+| 60 | 0.02 | When the elf's return gauge is between  and % the parameter value used in the reputation calculation formula for the elf's faction. |  |
+| 61 | 0.04 | .The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. |  |
+| 62 | 0.06 | .The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. |  |
+| 63 | 0.08 | .The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at -%. |  |
+| 64 | 0.1 | .The reputation formula parameter given by the elves to the faction when the Elf's Return progress bar is at %. |  |
+| 65 | 100.0 | The required intimacy value for elf prayer. |  |
+| 66 | 50.0 | The required stamina value for elf prayer. |  |
+| 67 | 200.0 | The required mood value for elf prayer. |  |
+| 68 | 20.0 | The range of grid squares in which a sound effect built into the dynamic effect editor can be heard when played in the game. |  |
+| 69 | 33052.0 | The static effect parameter used if no special effect is specified for a summoned monster. |  |
+| 70 | 33052.0 | The static effect parameter used when a summoned monster is killed or meets the necessary conditions to disappear. |  |
+| 71 | 98.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 72 | 95.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 73 | 92.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 74 | 88.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 75 | 84.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 76 | 80.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 77 | 75.0 | The percentage of the original price at which an item can be bought when the reputation level reaches . |  |
+| 78 | nan | Reserved for store discount usage... |  |
+| 79 | nan | Reserved for store discount usage... |  |
+| 80 | nan | Reserved for store discount usage... |  |
+| 81 | nan | Reserved for store discount usage... |  |
+| 82 | nan | Reserved for store discount usage... |  |
+| 83 | nan | Reserved for store discount usage... |  |
+| 84 | nan | Reserved for store discount usage... |  |
+| 85 | 60.0 | The probability of reducing the maximum durability value when repairing equipment with a current durability value of . |  |
+| 86 | 6000.0 | The amount of time (in / second increments) a character is temporarily unable to participate in a battlefield when they exit the battlefield. | 10 Min |
+| 87 | 50.0 | The invincibility time (in / second increments) a character has when they are killed. |  |
+| 88 | 150.0 | The weakness time (in / second increments) a character has when they are killed. |  |
+| 89 | 24.0 | The parameter for the HP regeneration rate formula to ensure that low-level characters quickly recover their HP. |  |
+| 90 | 12.0 | The parameter for the MP regeneration rate formula to ensure that low-level characters quickly recover their MP. |  |
+| 91 | 4.0 | : The difference between a player's level and the level of the task they are accepting must be less than or equal to this value. Additionally the combined value of the player's character experience guild experience and reputation must equal the value of parameter . |  |
+| 92 | 6.0 | : Same as parameter  but with different values for the difference between levels and the required combined value. |  |
+| 93 | 8.0 | : Same as parameter  but with different values for the difference between levels and the required combined value. |  |
+| 94 | 10.0 | : Same as parameter  but with different values for the difference between levels and the required combined value. If the difference between levels is greater than this value the combined value of character experience guild experience and reputation must equal the value of parameter . |  |
+| 95 | 100.0 | : This is a parameter that determines the decay of character experience guild experience and reputation for completing a task. |  |
+| 96 | 75.0 | : Same as parameter  but with a different decay value. |  |
+| 97 | 50.0 | : Same as parameter  but with a different decay value. |  |
+| 98 | 25.0 | : Same as parameter  but with a different decay value. |  |
+| 99 | 0.0 | : Same as parameter  but with a different decay value. |  |
+| 100 | 10.0 | : This parameter determines the time interval for random special actions to occur when a player's character is idle. |  |
+| 101 | 15.0 | : This parameter determines the probability that a special action will occur when a player's character is idle. |  |
+| 102 | 180.0 | : This parameter determines the amount of time a player's character can be idle before automatically sitting down. |  |
+| 103 | 0.05 | : This parameter is used in the formula for determining the amount a player will receive for selling an item to an NPC. |  |
+| 104 | 2.0 | : This parameter determines the probability of weapon durability decreasing when a player uses a normal attack or skill. |  |
+| 105 | 1.0 | : This parameter determines the probability of armor durability decreasing when a player receives a normal or skill attack. |  |
+| 106 | 10 | : When a player dies this parameter determines the percentage of durability lost from all equipped weapons and armor. | Can be 0. |
+| 107 | 20.0 | : When repairing equipment there is a chance that the maximum durability value will decrease. This parameter determines the probability of that happening when the current durability value is not zero. |  |
+| 108 | 10.0 | : When repairing equipment there is a chance that the maximum durability value will decrease. This parameter determines the percentage of the maximum durability value that will be lost. |  |
+| 109 | 0.08 | : This parameter is used in the formula for determining the cost of repairing equipment durability. |  |
+| 110 | 60.0 | : This parameter determines the amount of time a player has to pick up an item before it disappears. |  |
+| 111 | 5.0 | : After a scene's environmental sound effects have finished playing this parameter determines how many seconds to wait before checking if background music should play. If not the environmental sound effects continue. |  |
+| 112 | 10.0 | : After a scene's environmental sound effects have finished playing and the wait period specified in parameter  has ended this parameter determines the probability of playing background music. |  |
+| 113 | 4.0 | : This parameter determines the time interval for a monster to scan for its next movement point. |  |
+| 114 | 50.0 | : When a player or monster is injured by an attack this parameter determines the probability of playing an injury animation. |  |
+| 115 | 50.0 | : When a player or monster is critically injured by an attack this parameter determines the probability of playing a critical injury animation. |  |
+| 116 | 100.0 | When characters or monsters dodge attacks there is an N% chance of performing a dodge action. |  |
+| 117 | 1000.0 | When releasing a Regen fairy at levels - the reputation value is %. |  |
+| 118 | 4000.0 | When releasing a Regen fairy at levels - the reputation value is %. |  |
+| 119 | 9000.0 | When releasing a Regen fairy at levels - the reputation value is %. |  |
+| 120 | 16000.0 | When releasing a Regen fairy at levels - the reputation value is %. |  |
+| 121 | 25000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 122 | 36000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 123 | 49000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 124 | 64000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 125 | 81000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 126 | 100000.0 |  When releasing a regression elf of level - the reputation value is %. |  |
+| 127 | 6.0 |  The time difference between the action launched by the client. When the skill has a flying effect and a target is required the hit time is equal to the server's calculation distance time plus parameter  (in units of / second). |  |
+| 128 | 4.0 |  The time difference between the flying distance and the client. When the skill has a flying effect and no target is needed the hit time is equal to parameter  plus parameter  (in units of / second). Cannot calculate distance time because the target cannot be found. |  |
+| 129 | 0.0 |  Reserved. |  |
+| 130 | 0.0 |  Reserved. |  |
+| 131 | 20.0 |  Battlefield type : Central crystal acquisition score. |  |
+| 132 | 10.0 |  Battlefield type : Mine crystal acquisition score. |  |
+| 133 | 10.0 |  Battlefield type : North village crystal acquisition score. |  |
+| 134 | 10.0 |  Battlefield type : Forest crystal acquisition score. |  |
+| 135 | 10.0 |  Battlefield type : South village crystal acquisition score. |  |
+| 136 | 250.0 |  Battlefield type : Victory determining score. |  |
+| 137 | 1200.0 |  Battlefield type : Round time. |  |
+| 138 | 1.0 |  Battlefield type : Winning score coefficient. |  |
+| 139 | 0.5 |  Battlefield type : Losing score coefficient. |  |
+| 140 | 3500000.0 |  AA experience value. | Needs editing at C_Parameter.ini to work |
+| 141 | 150.0 |  Invincibility time after battlefield resurrection in tenths of a second. |  |
+| 142 | 10.0 |  For the small monsters summoned by the king monster the number of seconds they will automatically disappear if they have not entered combat. |  |
+| 143 | 10.0 |  The percentage of experience value deduction after death and resurrection. | Can be 0. |
+| 144 | 10.0 |  The percentage of health recovery after death and resurrection. |  |
+| 145 | 10.0 |  The percentage of energy recovery after death and resurrection. |  |
+| 146 | 5000.0 |  Guild battle: victory determining score. | No tested if can be 0. |
+| 147 | 3600.0 |  Guild battle: round time. | No tested if can be 0. |
+| 148 | 75.0 |  Guild battle: maximum number of participants. | No tested if can be 0. |
+| 149 | 300.0 |  Guild battle: time for advancing victory after occupation of the altar by the same camp. |  |
+| 150 | 1000.0 |  Guild battle: unit score for occupying the altar at the end. |  |
+| 151 | 200.0 | - level elf battlefield world king summoning score |  |
+| 152 | 2.0 | Number of teleportation stones required for automatic mission teleportation |  |
+| 153 | 16.0 | PVP server protection level |  |
+| 154 | 0.0 | Percentage of experience points deducted from PVP death and resurrection |  |
+| 155 | 100.0 | Percentage of health restored upon PVP death and resurrection |  |
+| 156 | 100.0 | Percentage of energy restored upon PVP death and resurrection |  |
+| 157 | 1.0 | Percentage of current durability of equipped weapons and armor deducted upon PVP character death |  |
+| 158 | 1.0 | Location of PVP character resurrection |  |
+| 159 | 10.0 | Percentage of experience points deducted for resurrection at the nearest location upon death |  |
+| 160 | 25.0 | Percentage of health restored upon resurrection at the nearest location upon death |  |
+| 161 | 25.0 | Percentage of energy restored upon resurrection at the nearest location upon death |  |
+| 162 | 20.0 | Percentage of current durability of equipped weapons and armor deducted upon resurrection at the nearest location upon death |  |
+| 163 | 4.0 | Percentage increase in defense for each + upgrade for armor + to + |  |
+| 164 | 4.0 | Percentage increase in attack for each + upgrade for weapons + to + |  |
+| 165 | 6.0 | Percentage increase in defense for each + upgrade for armor + to + |  |
+| 166 | 6.0 | Percentage increase in attack for each + upgrade for weapons + to + |  |
+| 167 | 10.0 | Percentage increase in defense for each + upgrade for armor + to + |  |
+| 168 | 10.0 | Percentage increase in attack for each + upgrade for weapons + to + |  |
+| 169 | 12.0 | Total number of character creation times |  |
+| 170 | 0.4 | .Parameter for attack power when the elf's mood is happy. |  |
+| 171 | 0.2 | .When the elf's mood is happy the parameter by which attack power is multiplied: |  |
+| 172 | 0.15 | .When the elf's mood is normal the parameter by which attack power is multiplied: |  |
+| 173 | 0.05 | .When the elf's mood is down the parameter by which attack power is multiplied: |  |
+| 174 | 0.02 | .When the elf's mood is sad the parameter by which attack power is multiplied: |  |
+| 175 | 300.0 | Invisibility time after revival in the battlefield in tenths of a second: |  |
+| 176 | 26.0 | The attack range of the elf's combat (. equals  grid): |  |
+| 177 | 35.0 | New rule in the Flame War: if the score difference between the two sides is greater than this value a player will be randomly selected to perform the event specified in parameter . |  |
+| 178 | 200.0 | New rule in the Flame War: event given when the score difference between the two sides reaches this value: |  |
+| 179 | 10.0 | Points earned for killing an opponent in the free PK area: |  |
+| 180 | 0.9 | .Correction factor for attack speed of elf's single-handed weapons (faster <  (normal) < slower): |  |
+| 181 | 0.8 | .Correction factor for attack speed of elf's two-handed weapons (faster <  (normal) < slower): |  |
+| 182 | 0.7 | .Correction factor for attack speed of elf's staff-type weapons (faster <  (normal) < slower): |  |
+| 183 | 0.6 | .Correction factor for attack speed of elf's long-range weapons (faster <  (normal) < slower): |  |
+| 184 | 2.0 | Number of skills that can be converted into super specialization skills: |  |
+| 185 | 15.0 | Upper limit of points for a single super specialization: |  |
+| 186 | 6.0 | For every + upgrade of an armor from + to + represents the percentage increase of defense of the armor: |  |
+| 187 | 6.0 | For every + upgrade of a weapon from + to + represents the percentage increase of attack power of the weapon: |  |
+| 188 | 6.0 | For every + upgrade of an armor from + to + represents the percentage increase of defense of the armor: |  |
+| 189 | 6.0 | For every + upgrade of a weapon from + to + represents the percentage increase of attack power of the weapon: |  |
+| 190 | 10.0 | For every + upgrade of an armor from + to + represents the percentage increase of defense of the armor: |  |
+| 191 | 10.0 | Weapon +~+ strengthening every time + representing the percentage increase in the weapon's attack power. |  |
+| 192 | 40351.0 | Red Coconut City Optimization - Lucky Star Special Prize. |  |
+| 193 | 1.0 | The basic parameter that gives the rating value to the small island (player's activity execution small island). |  |
+| 194 | 2.0 | An additional basic parameter that gives the player's own small island a rating value when performing actions on another player's small island. |  |
+| 195 | 0.2 | .The proportion of score obtained when performing actions on the small island (currently: fishing feeding building restoration). |  |
+| 196 | 47864.0 | Red Coconut City Optimization - Lucky Wheel Grand Prize. |  |
+| 197 | 38431.0 | Red Coconut City Optimization - Lucky Star Lottery ID. |  |
+| 198 | 25.0 | PK Arena - Winning Points. |  |
+| 199 | 10.0 | PK Arena - Draw Points. |  |
+| 200 | 5.0 | PK Arena - Losing Points. |  |
+| 201 | 70.0 | PK Arena - Additional points for winning three consecutive games. |  |
+| 202 | 0.0 | PK Arena - Additional points for two wins two losses and one tie. |  |
+| 203 | 8256.0 | PK Arena - st Place Reward Title. |  |
+| 204 | 8257.0 | PK Arena - nd and rd Place Reward Title. |  |
+| 205 | 8258.0 | PK Arena - th to th Place Reward Title. |  |
+| 206 | 8259.0 | PK Arena - th to th Place Reward Title. |  |
+| 207 | 8260.0 | PK Arena - st to th Place Reward Title. |  |
+| 208 | 42170.0 | Kuso Synthesis - Fragment ID. |  |
+| 209 | 3.0 | Kuso Synthesis - IK Back Fragment Required Quantity. |  |
+| 210 | 3.0 | Kuso Synthesis - IK Head Fragment Required Quantity. |  |
+| 211 | 3.0 | : Number of Kuso synthesis-IK set blocks required. |  |
+| 212 | 3.0 | : Number of Kuso synthesis-IK shield blocks required. |  |
+| 213 | 3.0 | : Number of Kuso synthesis-IK one-handed weapon blocks required. |  |
+| 214 | 6.0 | : Number of Kuso synthesis-IK two-handed weapon blocks required. |  |
+| 215 | 3.0 | : Number of Kuso synthesis-GK back accessory blocks required. |  |
+| 216 | 3.0 | : Number of Kuso synthesis-GK head blocks required. |  |
+| 217 | 3.0 | : Number of Kuso synthesis-GK set blocks required. |  |
+| 218 | 3.0 | : Number of Kuso synthesis-GK shield blocks required. |  |
+| 219 | 3.0 | : Number of Kuso synthesis-GK one-handed weapon blocks required. |  |
+| 220 | 6.0 | : Number of Kuso synthesis-GK two-handed weapon blocks required. |  |
+| 221 | 2.0 | : Number of Kuso synthesis-IK composite materials required. |  |
+| 222 | 3.0 | : Number of Kuso synthesis-GK composite materials required. |  |
+| 223 | 50.0 | : Probability of Kuso synthesis-IK composite white equipment upgrading to green equipment. |  |
+| 224 | 40.0 | : Probability of Kuso synthesis-IK composite green equipment upgrading to blue equipment. |  |
+| 225 | 20.0 | : Probability of Kuso synthesis-IK composite blue equipment upgrading to yellow equipment. |  |
+| 226 | 50.0 | : Probability of Kuso synthesis-GK composite white equipment upgrading to green equipment. |  |
+| 227 | 40.0 | : Probability of Kuso synthesis-GK composite green equipment upgrading to blue equipment. |  |
+| 228 | 20.0 | : Probability of Kuso synthesis-GK composite blue equipment upgrading to yellow equipment. |  |
+| 229 | 2600.0 |  Starting score for Illya Guild War | No tested if can be 0. |
+| 230 | 1500.0 |  Basic score for the winning team in Illya Guild War |  |
+| 231 | 750.0 |  Basic score for the losing team in Illya Guild War |  |
+| 232 | 20.0 |  Bonus score for activating magic in the Guild War |  |
+| 233 | 1.0 |  Score for picking up the battle flag in Illya Guild War |  |
+| 234 | 10.0 |  Score for using battlefield magic in Illya Guild War |  |
+| 235 | 200.0 |  Personal score for achieving A grade in Illya Guild War |  |
+| 236 | 100.0 |  Personal score for achieving B grade in Illya Guild War |  |
+| 237 | 50.0 |  Personal score for achieving C grade in Illya Guild War |  |
+| 238 | 0.0 |  Personal score for achieving D grade in Illya Guild War |  |
+| 239 | 300.0 |  Penalty score for using battlefield magic against the enemy in Illya Guild War |  |
+| 240 | 5.0 |  Time limit for flag capture in Illya Guild War |  |
+| 241 | 15.0 |  Time limit for tower capture in Illya Guild War |  |
+| 242 | 10.0 |  Time limit for blessing in Illya Guild War |  |
+| 243 | 30.0 |  Preparation time for entering dungeons |  |
+| 244 | 900.0 |  Time limit for dungeons |  |
+| 245 | 0.1 | . Ratio of equipment experience value |  |
+| 246 | 1.1 | . Equipment attribute multiplier - single weapon |  |
+| 247 | 2.2 | . Equipment attribute multiplier - dual weapon |  |
+| 248 | 1.0 |  Equipment attribute multiplier - head armor |  |
+| 249 | 1.2 | . Equipment attribute multiplier - body armor |  |
+| 250 | 0.8 | . Equipment attribute multiplier - leg armor |  |
+| 251 | 1.0 |  Equipment attribute multiplier - hand armor |  |
+| 252 | 1.0 |  Equipment attribute multiplier - foot armor |  |
+| 253 | 0.5 | . Equipment attribute multiplier - accessory armor |  |
+| 254 | 1.0 |  Equipment attribute multiplier - back armor |  |
+| 255 | 15.0 |  Relationship decay value for the marriage system - calculated every  minutes when only one person is online |  |
+| 256 | 10.0 |  Relationship decay value for the marriage system - calculated every  minutes when both parties are online |  |
+| 257 | 1.0 |  Basic parameter for catching level  fish on the player's own island during fishing activities |  |
+| 258 | 2.0 |  Basic parameter for catching level  fish on another player's island during fishing activities |  |
+| 259 | 2.0 |  Basic parameter for catching level  fish on the player's own island during fishing activities |  |
+| 260 | 3.0 |  Basic parameter for catching level  fish on another player's island during fishing activities |  |
+| 261 | 3.0 |  Basic parameter for catching level  fish on the player's own island during fishing activities |  |
+| 262 | 4.0 |  Basic parameter for catching level  fish on another player's island during fishing activities |  |
+| 263 | 8660.0 |  Title for the first-ranked island in island rankings |  |
+| 264 | 8661.0 |  Title for the second to third-ranked islands in island rankings |  |
+| 265 | 8662.0 |  Title for the fourth to tenth-ranked islands in island rankings |  |
+| 266 | 8663.0 |  Title for the th to th-ranked islands in island rankings |  |
+| 267 | 8664.0 |  Title for the most popular island in island rankings |  |
+| 268 | 8665.0 |  Title for the second to third-most popular islands in island rankings |  |
+| 269 | 8666.0 |  Title for the fourth to tenth-most popular islands in island rankings |  |
+| 270 | 8667.0 |  Title for the th to th-most popular islands in island rankings |  |
+| 271 | 5.0 | The names and titles for the th to th most popular players on the island. |  |
+| 272 | 20.0 | The reward evaluation for upgrading a crop to a normal state on the island. |  |
+| 273 | 30.0 | The reward evaluation for upgrading a crop to a good state on the island. |  |
+| 274 | 10.0 | The reward evaluation for upgrading a crop to the best state on the island. |  |
+| 275 | 200.0 | The maximum number of marriage battlefields that can be opened at the same time. |  |
+| 276 | 300000.0 | The maximum number of players allowed in a marriage battlefield. |  |
+| 277 | 2 | The cost to enter a marriage battlefield. | Can be 0. No stone needed in bag to teleport |
+| 278 | 50 | The amount of resources consumed when using the map teleportation feature. |  |
+| 279 | 25.0 | The probability of not decreasing the level of equipment when transferring it to another player. |  |
+| 280 | 15.0 | The probability of decreasing the level of equipment by one when transferring it to another player. |  |
+| 281 | 10.0 | The probability of decreasing the level of equipment by two when transferring it to another player. |  |
+| 282 | 20.0 | The probability of decreasing the level of equipment by three when transferring it to another player. |  |
+| 283 | 10.0 | The total number of questions in the Elf Academy. |  |
+| 284 | 5.0 | The interval time after each question in the Elf Academy. |  |
+| 285 | 58206.0 | The basic score that can be obtained for each question in the Elf Academy. |  |
+| 286 | 8690.0 | The ID number of the treasure sending table in the Elf Academy. |  |
+| 287 | 8691.0 | The title reward for the first-place winner in the Elf Academy. |  |
+| 288 | 8692.0 | The title reward for the nd-rd place winners in the Elf Academy. |  |
+| 289 | 8693.0 | The title reward for the th-th place winners in the Elf Academy. |  |
+| 290 | 8694.0 | The title reward for the th-th place winners in the Elf Academy. |  |
+| 291 | 1.0 | The title reward for the st-th place winners in the Elf Academy. |  |
+| 292 | 2.0 | Price of purchasing Star Essence. |  |
+| 293 | 10.0 | Multiplier for purchasing Star Essence. |  |
+| 294 | 5.0 | Quantity of Star Essence that can be purchased at once. |  |
+| 295 | 15.0 | Quantity of Star Essence for the first level of general exchange. |  |
+| 296 | 30.0 | Quantity of Star Essence for the second level of general exchange. |  |
+| 297 | 55.0 | Quantity of Star Essence for the third level of general exchange. |  |
+| 298 | 80.0 | Quantity of Star Essence for the fourth level of general exchange. |  |
+| 299 | 5.0 | Quantity of Star Essence for the fifth level of general exchange. |  |
+| 300 | 10.0 | Quantity of Star Essence for the first level of random exchange. |  |
+| 301 | 15.0 | Quantity of Star Essence for the second level of random exchange. |  |
+| 302 | 20.0 | Quantity of Star Essence for the third level of random exchange. |  |
+| 303 | 30.0 | Quantity of Star Essence for the fourth level of random exchange. |  |
+| 304 | 0.1 | Quantity of Star Essence for the fifth level of random exchange. |  |
+| 305 | 1.0 | .Ratio of growth mount experience value. |  |
+| 306 | 0.5 | Ratio of combat mount I version experience gain. |  |
+| 307 | 50000.0 | .Ratio of combat mount G version experience gain. |  |
+| 308 | 60.0 | Amount of gold deducted each time a player participates in the "Gladiator Contest". |  |
+| 309 | 3.0 | Probability of winning elves gaining skill experience after completing a full "Gladiator Contest". |  |
+| 310 | 50.0 | Amount of skill experience that winning elves have a chance to gain after completing a full "Gladiator Contest". |  |
+| 311 | 30.0 | When the total number of wins and losses recorded by a player in a month exceeds this parameter they will be ranked on the leaderboard. |  |
+| 312 | 45000.0 | Amount of elf stamina deducted each time they participate in the Gladiator Contest. |  |
+| 313 | 80000.0 | Experience required for upgrading a first-tier combat skill of an elf. |  |
+| 314 | 100000.0 | Experience required for upgrading a second-tier combat skill of an elf. |  |
+| 315 | 10.0 | Experience required for upgrading a third-tier combat skill of an elf. |  |
+| 316 | 5.0 | Constant value for equipping spirit for the first-tier combat skill of an elf. |  |
+| 317 | 1.0 | Constant value for equipping spirit for the second-tier combat skill of an elf. |  |
+| 318 | 0.09 | Constant value for equipping spirit for the third-tier combat skill of an elf. |  |
+| 319 | 0.4 | .Level coefficient for equipping spirits for levels -. |  |
+| 320 | 1.0 | .Level coefficient for equipping spirits for levels -. |  |
+| 321 | 1.8 | Level coefficient for equipping spirits for levels -. |  |
+| 322 | 2.02 | . Elf Transformation Equipment Level Coefficient - |  |
+| 323 | 2.04 | . Elf Transformation Equipment Level Coefficient - |  |
+| 324 | 2.1 | . Elf Transformation Equipment Level Coefficient - |  |
+| 325 | 2.16 | . Elf Transformation Equipment Level Coefficient - |  |
+| 326 | 2.16 | . Elf Transformation Equipment Level Coefficient - |  |
+| 327 | 2.0 | . Elf Transformation Equipment Level Coefficient - |  |
+| 328 | 1.0 |  Elf Transformation Equipment Level Coefficient - |  |
+| 329 | 2.0 |  Points required to upgrade Elf Battle Skill to level  |  |
+| 330 | 4.0 |  Points required to upgrade Elf Battle Skill to level  |  |
+| 331 | 7.0 |  Points required to upgrade Elf Battle Skill to level  |  |
+| 332 | 11.0 |  Points required to upgrade Elf Battle Skill to level  |  |
+| 333 | 0.5 |  Points required to upgrade Elf Battle Skill to level  |  |
+| 334 | 0.8 | . Elf Transformation Equipment Quality Coefficient - Green |  |
+| 335 | 5.0 | . Elf Transformation Equipment Quality Coefficient - Blue |  |
+| 336 | 300.0 |  Elf Transformation Equipment Quality Coefficient - Orange |  |
+| 337 | 1350.0 |  Elf Transformation Equipment Quality Coefficient - Yellow |  |
+| 338 | 250.0 |  Elf Transformation Equipment Quality Coefficient - Purple |  |
+| 339 | 55267.0 |  Maximum cumulative skill points for Elf Transformation Equipment |  |
+| 340 | 55291.0 |  Skill automatically given to players when they open the basic Elf Battle Skill |  |
+| 341 | 55369.0 |  Skill automatically given to players when they open the basic Elf Battle Skill |  |
+| 342 | 55363.0 |  Skill automatically given to players when they open the intermediate Elf Battle Skill |  |
+| 343 | 55429.0 |  Skill automatically given to players when they open the intermediate Elf Battle Skill |  |
+| 344 | 8771.0 |  Skill automatically given to players when they open the advanced Elf Battle Skill |  |
+| 345 | 8772.0 |  Reward title for st place in the Top  Fighters list |  |
+| 346 | 8773.0 |  Reward title for nd-rd place in the Top  Fighters list |  |
+| 347 | 8774.0 |  Reward title for th-th place in the Top  Fighters list |  |
+| 348 | 8775.0 |  Reward title for th-th place in the Top  Fighters list |  |
+| 349 | 1.0 |  Reward title for st-th place in the Top  Fighters list |  |
+| 350 | 1.0 |  Boxing King Lottery Setting |  |
+| 351 | 30.0 |  Maximum number of Boxing King changes per week |  |
+| 352 | 21116.0 |  Summoning cooldown for Elf Island (in /th of a second) |  |
+| 353 | 21112.0 |  Free PK Arena Reward  |  |
+| 354 | 21113.0 |  Free PK Arena Reward  |  |
+| 355 | 21114.0 |  Free PK Arena Reward  |  |
+| 356 | 21115.0 |  Free PK Arena Reward  |  |
+| 357 | 20.0 |  Free PK Arena Reward  |  |
+| 358 | 100.0 |  Points required for Free PK Arena Reward  |  |
+| 359 | 300.0 |  Points required for Free PK Arena Reward  |  |
+| 360 | 500.0 |  Points required for Free PK Arena Reward  |  |
+| 361 | 1000.0 |  Points required for Free PK Arena Reward  |  |
+| 362 | 5.0 |  Points required for Free PK Arena Reward  |  |
+| 363 | 10.0 |  For each + upgrade to a weapon from + to + it represents the percentage increase in the weapon's attack power. |  |
+| 364 | 5.0 |  For each + upgrade to a weapon from + to + it represents the percentage increase in the weapon's attack power. |  |
+| 365 | 10.0 | Armor +~+ each enhancement + represents the percentage increase in defense power of the armor. |  |
+| 366 | 3000.0 | Armor +~+ each enhancement + represents the percentage increase in defense power of the armor. |  |
+| 367 | 1500.0 | Guardian's Score in Kiel's Defense War - Winning Score. |  |
+| 368 | 400.0 | Guardian's Score in Kiel's Defense War - Performance Score of Winning Guild. |  |
+| 369 | 500.0 | Guardian's Score in Kiel's Defense War - Performance Score of Losing Guild. |  |
+| 370 | 10.0 | Guardian's Score in Kiel's Defense War - Flag Capture Score. |  |
+| 371 | 5.0 | Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Winning Guild. |  |
+| 372 | 2.0 | Guardian's Score in Kiel's Defense War - Crystal Occupation Score of Losing Guild. |  |
+| 373 | 1.0 | Guardian's Score in Kiel's Defense War - Kill Score of Winning Guild. |  |
+| 374 | 1000.0 | Guardian's Score in Kiel's Defense War - Kill Score of Losing Guild. |  |
+| 375 | 900.0 | Guardian's Score in Kiel's Defense War - Maximum Score for a Kill. |  |
+| 376 | 500.0 | Guardian's Score in Kiel's Defense War - Attack Time for the Flag. |  |
+| 377 | 100.0 | Guardian's Score in Kiel's Defense War - Score for Attacking the Flag. |  |
+| 378 | 200.0 | Experience required to upgrade Guild Tree to Level . |  |
+| 379 | 300.0 | Experience required to upgrade Guild Tree to Level . |  |
+| 380 | 100.0 | Experience required to upgrade Guild Tree to Level . |  |
+| 381 | 200.0 | Energy Limit of Guild Tree - Level . |  |
+| 382 | 300.0 | Energy Limit of Guild Tree - Level . |  |
+| 383 | 400.0 | Energy Limit of Guild Tree - Level . |  |
+| 384 | 100.0 | Energy Limit of Guild Tree - Level . |  |
+| 385 | 100.0 | Maximum Energy Bar of a player. |  |
+| 386 | 0.1 | Maximum Water Content of Guild Tree. |  |
+| 387 | 1.0 | .Water Consumption per second for Guild Tree. |  |
+| 388 | 20.0 | Maximum number of Specializations. |  |
+| 389 | 1.0 | Maximum number of Specialization Points. |  |
+| 390 | 1.0 | Login Reward Switch. |  |
+| 391 | 104.0 | Starting number of transition prompt images. |  |
+| 392 | 42170.0 | Ending number of transition prompt images. |  |
+| 393 | 1.0 | Item ID of Enchanted Alchemy Fragment. |  |
+| 394 | 2.0 | Amount of Mount Points that can be earned by using "Enchanted Alchemy Fragment". |  |
+| 395 | 2.0 | Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis I" operation flag. |  |
+| 396 | 1.0 | Enter  to affect the maximum number of material slots that can be used when using the "Upgrade Star Level" option in the "Mount Synthesis G" operation flag. |  |
+| 397 | 40.0 |   "Magical Alchemy Fragment" minimum GK requirement for ability washing |  |
+| 398 | 60.0 |   "Magical Alchemy Fragment" maximum GK requirement for white washing |  |
+| 399 | 80.0 |   "Magical Alchemy Fragment" maximum GK requirement for green washing |  |
+| 400 | 139.0 |   "Magical Alchemy Fragment" maximum GK requirement for blue washing |  |
+| 401 | 999.0 |   "Magical Alchemy Fragment" maximum GK requirement for orange washing |  |
+| 402 | 1.0 |   "Magical Alchemy Fragment" maximum GK requirement for yellow washing |  |
+| 403 | 56.0 |   "Magical Alchemy Fragment" minimum IK requirement for ability washing |  |
+| 404 | 90.0 |   "Magical Alchemy Fragment" maximum IK requirement for white washing |  |
+| 405 | 114.0 |   "Magical Alchemy Fragment" maximum IK requirement for green washing |  |
+| 406 | 238.0 |   "Magical Alchemy Fragment" maximum IK requirement for blue washing |  |
+| 407 | 999.0 |   "Magical Alchemy Fragment" maximum IK requirement for orange washing. |  |
+| 408 | 4.0 | Maximum GK Requirement for Washing Magic Alchemy Fragments in Yellow |  |
+| 409 | 5.0 | Base parameter for giving the player's activity island a level  fishing seed. |  |
+| 410 | 5.0 | When fishing on another player's island obtain basic parameters for catching level  fish. |  |
+| 411 | 6.0 | Give the player's island (where the activity is being executed) the basic parameters for catching level  fish. |  |
+| 412 | 10.0 | When fishing on another player's island obtain basic parameters for catching level  fish. | Can be 0. |
+| 413 | 168.0 | Recruitment price for players with guild mail. |  |
+| 414 | 50614.0 | Time limit for guild transfer queue and duration of transferred guild buff (in hours). |  |
+| 415 | 200.0 | Guild transfer buff. |  |
+| 416 | 250.0 | Guild Energy LV.. |  |
+| 417 | 300.0 | Guild Energy LV.. |  |
+| 418 | 350.0 | Guild Energy LV.. |  |
+| 419 | 400.0 | Guild Energy LV.. |  |
+| 420 | 450.0 | Guild Energy LV.. |  |
+| 421 | 500.0 | Guild Energy LV.. |  |
+| 422 | 600.0 | Guild Energy LV.. |  |
+| 423 | 800.0 | Guild Energy LV.. |  |
+| 424 | 1000.0 | Guild Energy LV.. |  |
+| 425 | 100.0 | Guild Energy LV.. |  |
+| 426 | 5.0 | Guild experience conversion to guild energy parameter. |  |
+| 427 | 100.0 | Guild prestige conversion to guild energy parameter. |  |
+| 428 | 49176.0 | Number of participants in the guild tree challenge. |  |
+| 429 | 1.0 | Newcomer reward items. |  |
+| 430 | 200.0 | Amount of sprite coins obtainable by greeting. |  |
+| 431 | 1.0 | Depth Guard Rights - maximum number of deaths allowed before the game ends. |  |
+| 432 | 50.0 | Depth Guard Rights - number of additional deaths per death. |  |
+| 433 | 1.0 | Depth Guard Rights - health of the main tower. |  |
+| 434 | 1500.0 | Depth Guard Rights - damage dealt by monsters to the main tower. |  |
+| 435 | 500.0 | Depth Guard Rights - base score for winning team. |  |
+| 436 | 3.0 | Depth Guard Rights - base score for losing team. |  |
+| 437 | 1.0 | Depth Guard Rights - survival bonus multiplier for winning team. |  |
+| 438 | 800.0 | Depth Guard Rights - survival bonus multiplier for losing team. |  |
+| 439 | 750.0 | Depth Guard Rights - score for killing the king monster. |  |
+| 440 | 250.0 | Depth Guard Rights - upper limit score for interference bonus of the winning team. |  |
+| 441 | 15.0 | Depth Guard Rights - upper limit score for interference bonus of the losing team. |  |
+| 442 | 40.0 | Master-Apprentice System-Open Level |  |
+| 443 | 1.0 | Master-Apprentice System-Master Open Level |  |
+| 444 | 2.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 445 | 4.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 446 | 8.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 447 | 12.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 448 | 20.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 449 | 40.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 450 | 100.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 451 | 4.0 | Master-Apprentice System-Points given to the Master when an Apprentice levels up between - |  |
+| 452 | 5.0 | Master-Apprentice System-The maximum number of Apprentices a Master with level  can have |  |
+| 453 | 6.0 | Master-Apprentice System-The maximum number of Apprentices a Master with level  can have |  |
+| 454 | 7.0 | Master-Apprentice System-The maximum number of Apprentices a Master with level  can have |  |
+| 455 | 8.0 | Master-Apprentice System-The maximum number of Apprentices a Master with level  can have |  |
+| 456 | 1.0 | Master-Apprentice System-The maximum number of Apprentices a Master with level  can have |  |
+| 457 | 0.1 | Maximum value for "Transcendence" level |  |
+| 458 | 0.1 | .Parameter for calculating "Experience Gain" based on Transcendence Evaluation |  |
+| 459 | 2.5 | .Parameter for calculating "Experience Gain" based on Transcendence Level |  |
+| 460 | 1.0 | .Parameter for calculating "Attribute Bonus" |  |
+| 461 | 2.0 | Parameter for calculating the amount of money required to learn a "Memory Skill" per level |  |
+| 462 | 4.0 | Parameter for calculating the "Super Specialization" limit increase |  |
+| 463 | 62.0 | Parameter for calculating the "Extreme Specialization" limit increase |  |
+| 464 | 5.0 | Color (green) of the character's name display for Transcendence level  (enter the color code number) |  |
+| 465 | 9.0 | Color (blue) of the character's name display for Transcendence level  |  |
+| 466 | 7.0 | Color (orange) of the character's name display for Transcendence level  |  |
+| 467 | 0.0 | Color (yellow) of the character's name display for Transcendence level  |  |
+| 468 | 8.0 | Obsolete and not in use |  |
+| 469 | 40.0 | Exchange rate of  gold coins for Coconut Coins |  |
+| 470 | 80.0 | Exchange rate of  gold coins for Coconut Coins |  |
+| 471 | 200.0 | Exchange rate of  gold coins for Coconut Coins |  |
+| 472 | 400.0 | Exchange rate of  gold coins for Coconut Coins |  |
+| 473 | 2.0 | Exchange rate of  gold coins for Coconut Coins. |  |
+| 474 | 10.0 | When failing in the Elf Race deduct victory points by (fill in  or a positive integer). |  |
+| 475 | 130.0 | When winning in the Elf Race increase victory points by (fill in  or a positive integer). |  |
+| 476 | 150.0 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). |  |
+| 477 | 175.0 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). |  |
+| 478 | 0.3 | The exchange rate of coconuts to money; the actual value is the value entered divided by  (corresponds to interface  in the race). |  |
+| 479 | 2.0 | The ratio of experience points given as a reincarnation bonus ( = %). |  |
+| 480 | 60.0 | The maximum auction days Y value that can be set when auctioning items in the auction interface. |  |
+| 481 | 90.0 | The percentage Z value of the auction tax charged when the auction days of an item are greater than ; enter an integer and the actual value will be divided by . |  |
+| 482 | 10.0 | New restriction parameter for participating in the Beast Tower based on level. |  |
+| 483 | 30.0 | New daily challenge limit for participating in the Beast Tower. |  |
+| 484 | 1.0 | New maximum number of challengers per group in the Beast Tower. |  |
+| 485 | 2.0 | The number of guild groups that can be created for the Beast Tower LV-LV (maximum of ). |  |
+| 486 | 60000000 | The number of guild groups that can be created for the Beast Tower LV and above (maximum of ). | Can be 0. |
+| 487 | 1.0 | The cost to create a guild group for the Beast Tower. |  |
+| 488 | 15.0 | The time in hours for returning undelivered mail with postage due; enter an integer. |  |
+| 489 | 30008.0 | The minimum level requirement for using postage due for mailing. |  |
+| 490 | 5.0 | The special shop item number required to reset the daily exchange limit in the barter interface. |  |
+| 491 | 0.0 | The number of clay used per consumption in advanced alchemy. |  |
+| 492 | 0.0 | The probability of getting a white item in normal alchemy. |  |
+| 493 | 0.0 | The probability of getting a green item in normal alchemy. |  |
+| 494 | 0.0 | The probability of getting a blue item in normal alchemy. |  |
+| 495 | 0.0 | The probability of getting a yellow item in normal alchemy. |  |
+| 496 | 0.0 | The probability of getting a white item in enchanted alchemy. |  |
+| 497 | 0.0 | The probability of getting a green item in enchanted alchemy. |  |
+| 498 | 0.0 | The probability of getting a blue item in enchanted alchemy. |  |
+| 499 | 0.0 | The probability of getting a yellow item in enchanted alchemy. |  |
+| 500 | 0.0 | The probability of getting a white item in advanced alchemy. |  |
+| 501 | 0.0 | The probability of getting a green item in advanced alchemy. |  |
+| 502 | 0.0 | The probability of getting a blue item in advanced alchemy. |  |
+| 503 | 1.0 | The probability of getting a yellow item in advanced alchemy. |  |
+| 504 | 2.0 | The number of throne points affected by "Enchanted Alchemy Fragments". |  |
+| 505 | 2.0 | Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis I". |  |
+| 506 | 1.0 | Enter  to  to affect the maximum number of material slots that can be used when upgrading star levels with "Throne Synthesis G". |  |
+| 507 | 40.0 | The minimum number of GK required for the washing ability of "Enchanted Alchemy Fragments". |  |
+| 508 | 52.0 | "Minimum number of GK with ability to cleanse 'Enchanted Alchemy Fragment'" |  |
+| 509 | 62.0 |  "Magic Alchemy Fragment" maximum demand for white GK washing |  |
+| 510 | 72.0 |  "Magic Alchemy Fragment" maximum demand for green GK washing |  |
+| 511 | 999.0 |  "Magic Alchemy Fragment" maximum demand for blue GK washing |  |
+| 512 | 1.0 |  "Magic Alchemy Fragment" maximum demand for orange GK washing |  |
+| 513 | 56.0 |  "Magic Alchemy Fragment" maximum demand for yellow GK washing |  |
+| 514 | 90.0 |  Minimum demand for IK washing with "Magic Alchemy Fragment" |  |
+| 515 | 124.0 |  Maximum demand for white IK washing with "Magic Alchemy Fragment" |  |
+| 516 | 198.0 |  Maximum demand for green IK washing with "Magic Alchemy Fragment" |  |
+| 517 | 999.0 |  Maximum demand for blue IK washing with "Magic Alchemy Fragment" |  |
+| 518 | 1.0 |  Maximum demand for orange IK washing with "Magic Alchemy Fragment" |  |
+| 519 | 350.0 |  Maximum demand for yellow IK washing with "Magic Alchemy Fragment" |  |
+| 520 | 350.0 |  Advanced Alchemy Switch  for off others for on (requires UI replacement) |  |
+| 521 | 250.0 |  Probability of adding  special abilities to red equipment: fill in  sum of  is . |  |
+| 522 | 50.0 |  Probability of adding  special ability to red equipment: fill in  sum of  is . |  |
+| 523 | 2.0 |  Probability of adding  special abilities to red equipment: fill in  sum of  is . |  |
+| 524 | 2.0 |  Probability of adding  special abilities to red equipment: fill in  sum of  is . |  |
+| 525 | 100.0 |  Points received when weapon awakening fails (fill in ) |  |
+| 526 | 93191.0 |  Points received when armor awakening fails (fill in ) |  |
+| 527 | 500.0 |  Parameter value for calculating the repair cost of the Throne's durability |  |
+| 528 | 85.0 |  New Year's Eve fireworks special effect number |  |
+| 529 | 14.0 |  Maximum personal performance score in Gaslow Guild War |  |
+| 530 | 1.0 |  Probability of adding one-star rune combinable once |  |
+| 531 | 2.0 |  Probability of adding two-star rune combinable three times |  |
+| 532 | 85.0 |  Probability of adding three-star rune combinable five times |  |
+| 533 | 14.0 |  Daily increase in the number of challenges in the Holy Sanctum |  |
+| 534 | 1.0 |  Probability of adding one-star crystal combinable once |  |
+| 535 | 7.0 |  Probability of adding two-star crystal combinable twice |  |
+| 536 | 16633.0 |  Probability of adding three-star crystal combinable three times |  |
+| 537 | 16637.0 |  Duration of the opening of the Wishing Pool in real-time days |  |
+| 538 | 16571.0 |  Minimum interval value for general item messages in Wishing Pool (non-announcement items) |  |
+| 539 | 16573.0 |  Maximum interval value for general item messages in Wishing Pool value must be greater than or equal to parameter  (non-announcement items) |  |
+| 540 | 16569.0 |  Minimum interval value for rare item messages in Wishing Pool (announcement items) |  |
+| 541 | 16570.0 |  Maximum interval value for rare item messages in Wishing Pool value must be greater than or equal to parameter  (announcement items) |  |
+| 542 | 85.0 |  Minimum interval value for performance messages in Wishing Pool. |  |
+| 543 | 14.0 | Message for Wishing Pool : Maximum value of interval during performance value must be greater than or equal to parameter . |  |
+| 544 | 1.0 | Probability of adding one star to souvenir can be combined once. |  |
+| 545 | 16.0 | Probability of adding two stars to souvenir can be combined twice. |  |
+| 546 | 90.0 | Probability of adding three stars to souvenir can be combined three times. |  |
+| 547 | 10.0 | Minimum required level for leaving a message on the message board (greater than or equal to). |  |
+| 548 | 1775.0 | When washing red equipment probability of adding one-star ability after addition can obtain one combination ability. |  |
+| 549 | 10.0 | When washing red equipment probability of adding two-star ability after addition can obtain two combination abilities. |  |
+| 550 | 15.0 | Upper limit of specialization points. |  |
+| 551 | 12.0 | After sending a hyperlink to a message channel it cannot be sent again within a certain number of seconds. |  |
+| 552 | 5.0 | Self-effect status in BUFF_ICON will be displayed if less than this number of seconds. |  |
+| 553 | 60.0 | Condition for opening the World Tree of Hardship. |  |
+| 554 | 18000.0 | Punishment for clicking too quickly_time that the server receives the command in seconds. |  |
+| 555 | 10.0 | Punishment for clicking too quickly_within the time parameter  the total number of commands received in units of times. |  |
+| 556 | 30.0 | Duration of the punishment_BUFF for clicking too quickly in units of . seconds. |  |
+| 557 | 100.0 | Speed of automatic alchemy function in units of . seconds. |  |
+| 558 | 53993.0 | Refresh frequency of detailed attributes in units of . seconds. |  |
+| 559 | 53994.0 | Base money cost of decoration in copper units. |  |
+| 560 | 512.0 | Limitation of dungeon attempts recoverable using items (rank one). |  |
+| 561 | 1024.0 | Limitation of dungeon attempts recoverable using items (rank two). |  |
+| 562 | 40.0 | (Abandoned but available). |  |
+| 563 | 55.0 | (Abandoned but available). |  |
+| 564 | 70.0 | Decoration system - Probability of reducing perfection when decorating from + to + (%). |  |
+| 565 | 90.0 | Decoration system - Probability of reducing perfection when decorating from + to + (%). |  |
+| 566 | 6.0 | Decoration system - Probability of reducing perfection when decorating from + to + (%). |  |
+| 567 | 5.0 | Decoration system - Probability of reducing perfection when decorating from + to + (%). |  |
+| 568 | 4.0 | Decoration system - Maximum perfect value for orange quality. |  |
+| 569 | 3.0 | Decoration system - Maximum perfect value for yellow quality. |  |
+| 570 | 0.5 | Decoration system - Maximum perfect value for purple quality. |  |
+| 571 | 1.0 | Decoration system - Maximum perfect value for red quality. |  |
+| 572 | 2.0 | .Decoration levels - ratio of attack attribute bonus for jewelry in units of %. |  |
+| 573 | 1.0 | Decoration levels - ratio of attack attribute bonus for jewelry in units of %. |  |
+| 574 | 2.0 | Decoration levels - ratio of attack attribute bonus for jewelry in units of %. |  |
+| 575 | 4.0 | Decoration levels - ratio of attack attribute bonus for back equipment in units of %. |  |
+| 576 | 0.5 | Decoration levels - ratio of attack attribute bonus for back equipment in units of %. |  |
+| 577 | 1.0 | Decoration levels - ratio of attack attribute bonus for back equipment in units of %. |  |
+| 578 | 250.0 | .Decoration levels - ratio of defense attribute bonus for jewelry in units of %. |  |
+| 579 | 10.0 | Decoration levels - ratio of defense attribute bonus for back equipment in units of %... |  |
+| 580 | 50.0 | Maximum number of times for automatic alchemy. |  |
+| 581 | 6.0 | Auto alchemy limit |  |
+| 582 | 15.0 | Base amount of copper coins required for decorating repair |  |
+| 583 | 29.0 | Decoration ability group  success rate of refining when consuming  decoration unit: % |  |
+| 584 | 50.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 585 | 100.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 586 | 1.8 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 587 | 4.5 | Decoration ability group  success rate of refining when consuming  or more decorations unit: % |  |
+| 588 | 12.0 | .Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 589 | 34.0 | .Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 590 | 100.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 591 | 1.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 592 | 3.5 | Decoration ability group  success rate of refining when consuming  or more decorations unit: % |  |
+| 593 | 11.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 594 | 33.0 | .Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 595 | 100.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 596 | 10.0 | Decoration ability group  success rate of refining when consuming  decorations unit: % |  |
+| 597 | 15.0 | Decoration ability group  success rate of refining when consuming  or more decorations unit: % |  |
+| 598 | 20.0 | Price of gold coins required for resetting specialization at Master level (per  point of specialization) |  |
+| 599 | 28.0 | Price of gold coins required for resetting specialization at Legendary level (per  point of specialization) |  |
+| 600 | 35.0 | Price of gold coins required for resetting specialization at Mythical level (per  point of specialization) |  |
+| 601 | 0.0 | Price of gold coins required for resetting specialization at Extreme level (per  point of specialization) |  |
+| 602 | 1.0 | Price of gold coins required for resetting specialization at Infinite level (per  point of specialization) |  |
+| 603 | 15.0 | Percentage of specialization refunded by gold coins (~); if  is entered in this table the reset button will be hidden on the client side. |  |
+| 604 | 24.0 | GM characters with specified level of permissions or higher are not affected by the "Hide Other Players" function. |  |
+| 605 | 24.0 | Minimum level requirement for sending messages |  |
+| 606 | 16.0 | Cooling time for rejoining a guild after voluntarily leaving it unit: hours |  |
+| 607 | nan | Interval time for sending guild recruitment letters to a single character unit: hours |  |
+| 608 | nan | Minimum character level for sending guild recruitment letters. |  |
 
-
-
-
-
-This file is a bit boring to document since there are a lot of parameters and their name is in chinese, not good translation even with translators tho.
