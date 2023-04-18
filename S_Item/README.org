@@ -4,7 +4,7 @@ Description: This file is related to game items
 
 Item_refer: 25181
 
-| ID_ITEM | ID_ICON | ? | ITEM_BOX_ORIGIN | ? | ? | ? | SOUND_SFX | ? | CHINESE_ITEM_NAME | SLOT_EQUIP | ? | ? | ? | NECESSARY_LEVEL | | | | | | | ? | | | | | | | STR_STAT_ITEM | VIT_STAT_ITEM |  |  | AGI_STAT_ITEM | | | | | | | DEF_ITEM | | MDEF_ITEM | | EVADE_STATS_% | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ITEM_DURABILITY || 2 | 800 ||||| 14 |||||
+| ID_ITEM | ID_ICON | ? | ITEM_BOX_ORIGIN | ? | ? | ? | SOUND_SFX | ? | CHINESE_ITEM_NAME | SLOT_EQUIP | ? | ? | ? | NECESSARY_LEVEL | | | | | | | ? | | | | | | | STR_STAT_ITEM | VIT_STAT_ITEM |  |  | AGI_STAT_ITEM | | | | | | | DEF_ITEM | | MDEF_ITEM | HIT_STATS_% | EVADE_STATS_% | CRIT_HIT_CHANCE_% | CRIT_HIT_DMG_% | MCRIT_HIT_CHANCE_% | MCRIT_DMG_% | P_PEN_% | M_PEN_% | P_PEN_REDUC_% | M_PEN_REDUC_% | | | | | | | | | | | | | | | | | | | | | | | | | | ITEM_DURABILITY || 2 | 800 ||||| 14 |||||
 
 *ID_ITEM*
 
@@ -38,3 +38,7 @@ Slot where the item will be equipped
 | 5 | Boots |
 
 *NECESSARY_LEVEL*
+
+*ON_OPTIMAL_VALUES_EXPECTED*
+
+Regarding the parameters "P_PEN", "M_PEN", "P_PEN_REDUC" and "M_PEN_REDUC", it's necessary to declare values that are multiples of 10 and greater than 0. For instance, the declaration of the value 10 will imply an increase of 1%.
